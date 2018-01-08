@@ -703,7 +703,8 @@
       <param name="color">A tint color to apply on the texture.</param>
       <param name="borderWidth">The width of the border. If 0, the full texture is drawn.</param>
       <param name="borderWidths">The width of the borders (left, top, right and bottom). If Vector4.zero, the full texture is drawn.</param>
-      <param name="cornerRadius">The radius for rounded corners. If 0, corners will not be rounded.</param>
+      <param name="borderRadius">The radius for rounded corners. If 0, corners will not be rounded.</param>
+      <param name="borderRadiuses">The radiuses for rounded corners (top-left, top-right, bottom-right and bottom-left). If Vector4.zero, corners will not be rounded.</param>
     </member>
     <member name="M:UnityEngine.GUI.DrawTexture(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.ScaleMode,System.Boolean,System.Single,UnityEngine.Color,UnityEngine.Vector4,System.Single)">
       <summary>
@@ -717,7 +718,8 @@
       <param name="color">A tint color to apply on the texture.</param>
       <param name="borderWidth">The width of the border. If 0, the full texture is drawn.</param>
       <param name="borderWidths">The width of the borders (left, top, right and bottom). If Vector4.zero, the full texture is drawn.</param>
-      <param name="cornerRadius">The radius for rounded corners. If 0, corners will not be rounded.</param>
+      <param name="borderRadius">The radius for rounded corners. If 0, corners will not be rounded.</param>
+      <param name="borderRadiuses">The radiuses for rounded corners (top-left, top-right, bottom-right and bottom-left). If Vector4.zero, corners will not be rounded.</param>
     </member>
     <member name="M:UnityEngine.GUI.DrawTextureWithTexCoords(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.Rect)">
       <summary>
@@ -1549,7 +1551,7 @@
       <param name="images">An array of textures on the toolbar buttons.</param>
       <param name="contents">An array of text, image and tooltips for the toolbar buttons.</param>
       <param name="style">The style to use. If left out, the button style from the current GUISkin is used.</param>
-      <param name="content"></param>
+      <param name="buttonSize">Determines how toolbar button size is calculated.</param>
       <returns>
         <para>The index of the selected button.</para>
       </returns>
@@ -1564,7 +1566,7 @@
       <param name="images">An array of textures on the toolbar buttons.</param>
       <param name="contents">An array of text, image and tooltips for the toolbar buttons.</param>
       <param name="style">The style to use. If left out, the button style from the current GUISkin is used.</param>
-      <param name="content"></param>
+      <param name="buttonSize">Determines how toolbar button size is calculated.</param>
       <returns>
         <para>The index of the selected button.</para>
       </returns>
@@ -1579,7 +1581,7 @@
       <param name="images">An array of textures on the toolbar buttons.</param>
       <param name="contents">An array of text, image and tooltips for the toolbar buttons.</param>
       <param name="style">The style to use. If left out, the button style from the current GUISkin is used.</param>
-      <param name="content"></param>
+      <param name="buttonSize">Determines how toolbar button size is calculated.</param>
       <returns>
         <para>The index of the selected button.</para>
       </returns>
@@ -1594,7 +1596,7 @@
       <param name="images">An array of textures on the toolbar buttons.</param>
       <param name="contents">An array of text, image and tooltips for the toolbar buttons.</param>
       <param name="style">The style to use. If left out, the button style from the current GUISkin is used.</param>
-      <param name="content"></param>
+      <param name="buttonSize">Determines how toolbar button size is calculated.</param>
       <returns>
         <para>The index of the selected button.</para>
       </returns>
@@ -1609,7 +1611,7 @@
       <param name="images">An array of textures on the toolbar buttons.</param>
       <param name="contents">An array of text, image and tooltips for the toolbar buttons.</param>
       <param name="style">The style to use. If left out, the button style from the current GUISkin is used.</param>
-      <param name="content"></param>
+      <param name="buttonSize">Determines how toolbar button size is calculated.</param>
       <returns>
         <para>The index of the selected button.</para>
       </returns>
@@ -1624,10 +1626,40 @@
       <param name="images">An array of textures on the toolbar buttons.</param>
       <param name="contents">An array of text, image and tooltips for the toolbar buttons.</param>
       <param name="style">The style to use. If left out, the button style from the current GUISkin is used.</param>
-      <param name="content"></param>
+      <param name="buttonSize">Determines how toolbar button size is calculated.</param>
       <returns>
         <para>The index of the selected button.</para>
       </returns>
+    </member>
+    <member name="M:UnityEngine.GUI.Toolbar(UnityEngine.Rect,System.Int32,UnityEngine.GUIContent[],UnityEngine.GUIStyle,UnityEngine.GUI/ToolbarButtonSize)">
+      <summary>
+        <para>Make a toolbar.</para>
+      </summary>
+      <param name="position">Rectangle on the screen to use for the toolbar.</param>
+      <param name="selected">The index of the selected button.</param>
+      <param name="texts">An array of strings to show on the toolbar buttons.</param>
+      <param name="images">An array of textures on the toolbar buttons.</param>
+      <param name="contents">An array of text, image and tooltips for the toolbar buttons.</param>
+      <param name="style">The style to use. If left out, the button style from the current GUISkin is used.</param>
+      <param name="buttonSize">Determines how toolbar button size is calculated.</param>
+      <returns>
+        <para>The index of the selected button.</para>
+      </returns>
+    </member>
+    <member name="T:UnityEngine.GUI.ToolbarButtonSize">
+      <summary>
+        <para>Determines how toolbar button size is calculated.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.GUI.ToolbarButtonSize.FitToContents">
+      <summary>
+        <para>The width of each toolbar button is calculated based on the width of its content.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.GUI.ToolbarButtonSize.Fixed">
+      <summary>
+        <para>Calculates the button size by dividing the available width by the number of buttons. The minimum size is the maximum content width.</para>
+      </summary>
     </member>
     <member name="M:UnityEngine.GUI.UnfocusWindow">
       <summary>
@@ -3273,7 +3305,7 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
       <param name="options">An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the style.&lt;br&gt;
 See Also: GUILayout.Width, GUILayout.Height, GUILayout.MinWidth, GUILayout.MaxWidth, GUILayout.MinHeight,
 GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
-      <param name="content"></param>
+      <param name="buttonSize">Determines how toolbar button size is calculated.</param>
       <returns>
         <para>The index of the selected button.</para>
       </returns>
@@ -3290,7 +3322,7 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
       <param name="options">An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the style.&lt;br&gt;
 See Also: GUILayout.Width, GUILayout.Height, GUILayout.MinWidth, GUILayout.MaxWidth, GUILayout.MinHeight,
 GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
-      <param name="content"></param>
+      <param name="buttonSize">Determines how toolbar button size is calculated.</param>
       <returns>
         <para>The index of the selected button.</para>
       </returns>
@@ -3307,7 +3339,7 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
       <param name="options">An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the style.&lt;br&gt;
 See Also: GUILayout.Width, GUILayout.Height, GUILayout.MinWidth, GUILayout.MaxWidth, GUILayout.MinHeight,
 GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
-      <param name="content"></param>
+      <param name="buttonSize">Determines how toolbar button size is calculated.</param>
       <returns>
         <para>The index of the selected button.</para>
       </returns>
@@ -3324,7 +3356,7 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
       <param name="options">An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the style.&lt;br&gt;
 See Also: GUILayout.Width, GUILayout.Height, GUILayout.MinWidth, GUILayout.MaxWidth, GUILayout.MinHeight,
 GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
-      <param name="content"></param>
+      <param name="buttonSize">Determines how toolbar button size is calculated.</param>
       <returns>
         <para>The index of the selected button.</para>
       </returns>
@@ -3341,7 +3373,7 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
       <param name="options">An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the style.&lt;br&gt;
 See Also: GUILayout.Width, GUILayout.Height, GUILayout.MinWidth, GUILayout.MaxWidth, GUILayout.MinHeight,
 GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
-      <param name="content"></param>
+      <param name="buttonSize">Determines how toolbar button size is calculated.</param>
       <returns>
         <para>The index of the selected button.</para>
       </returns>
@@ -3358,7 +3390,58 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
       <param name="options">An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the style.&lt;br&gt;
 See Also: GUILayout.Width, GUILayout.Height, GUILayout.MinWidth, GUILayout.MaxWidth, GUILayout.MinHeight,
 GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
-      <param name="content"></param>
+      <param name="buttonSize">Determines how toolbar button size is calculated.</param>
+      <returns>
+        <para>The index of the selected button.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.GUILayout.Toolbar(System.Int32,System.String[],UnityEngine.GUIStyle,UnityEngine.GUI/ToolbarButtonSize,UnityEngine.GUILayoutOption[])">
+      <summary>
+        <para>Make a toolbar.</para>
+      </summary>
+      <param name="selected">The index of the selected button.</param>
+      <param name="texts">An array of strings to show on the buttons.</param>
+      <param name="images">An array of textures on the buttons.</param>
+      <param name="contents">An array of text, image and tooltips for the button.</param>
+      <param name="style">The style to use. If left out, the button style from the current GUISkin is used.</param>
+      <param name="options">An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the style.&lt;br&gt;
+See Also: GUILayout.Width, GUILayout.Height, GUILayout.MinWidth, GUILayout.MaxWidth, GUILayout.MinHeight,
+GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
+      <param name="buttonSize">Determines how toolbar button size is calculated.</param>
+      <returns>
+        <para>The index of the selected button.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.GUILayout.Toolbar(System.Int32,UnityEngine.Texture[],UnityEngine.GUIStyle,UnityEngine.GUI/ToolbarButtonSize,UnityEngine.GUILayoutOption[])">
+      <summary>
+        <para>Make a toolbar.</para>
+      </summary>
+      <param name="selected">The index of the selected button.</param>
+      <param name="texts">An array of strings to show on the buttons.</param>
+      <param name="images">An array of textures on the buttons.</param>
+      <param name="contents">An array of text, image and tooltips for the button.</param>
+      <param name="style">The style to use. If left out, the button style from the current GUISkin is used.</param>
+      <param name="options">An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the style.&lt;br&gt;
+See Also: GUILayout.Width, GUILayout.Height, GUILayout.MinWidth, GUILayout.MaxWidth, GUILayout.MinHeight,
+GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
+      <param name="buttonSize">Determines how toolbar button size is calculated.</param>
+      <returns>
+        <para>The index of the selected button.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.GUILayout.Toolbar(System.Int32,UnityEngine.GUIContent[],UnityEngine.GUIStyle,UnityEngine.GUI/ToolbarButtonSize,UnityEngine.GUILayoutOption[])">
+      <summary>
+        <para>Make a toolbar.</para>
+      </summary>
+      <param name="selected">The index of the selected button.</param>
+      <param name="texts">An array of strings to show on the buttons.</param>
+      <param name="images">An array of textures on the buttons.</param>
+      <param name="contents">An array of text, image and tooltips for the button.</param>
+      <param name="style">The style to use. If left out, the button style from the current GUISkin is used.</param>
+      <param name="options">An optional list of layout options that specify extra layouting properties. Any values passed in here will override settings defined by the style.&lt;br&gt;
+See Also: GUILayout.Width, GUILayout.Height, GUILayout.MinWidth, GUILayout.MaxWidth, GUILayout.MinHeight,
+GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
+      <param name="buttonSize">Determines how toolbar button size is calculated.</param>
       <returns>
         <para>The index of the selected button.</para>
       </returns>

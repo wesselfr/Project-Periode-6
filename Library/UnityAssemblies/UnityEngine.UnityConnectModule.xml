@@ -4,6 +4,71 @@
     <assembly>
       <name>UnityEngine.UnityConnectModule</name>
     </assembly>
+    <member name="T:UnityEngine.Analytics.AnalyticsSessionInfo">
+      <summary>
+        <para>Accesses for Analytics session information (common for all game instances).</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Analytics.AnalyticsSessionInfo.sessionElapsedTime">
+      <summary>
+        <para>Session time since the begining of player game session.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Analytics.AnalyticsSessionInfo.sessionId">
+      <summary>
+        <para>Session id is used for tracking player game session.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.Analytics.AnalyticsSessionInfo.sessionState">
+      <summary>
+        <para>Session state.</para>
+      </summary>
+    </member>
+    <member name="?:UnityEngine.Analytics.AnalyticsSessionInfo.sessionStateChanged(UnityEngine.Analytics.AnalyticsSessionInfo/SessionStateChanged)">
+      <summary>
+        <para>This event occurs when a Analytics session state changes.</para>
+      </summary>
+      <param name="value"></param>
+    </member>
+    <member name="P:UnityEngine.Analytics.AnalyticsSessionInfo.userId">
+      <summary>
+        <para>UserId is random GUID to track a player and is persisted across game session.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.Analytics.AnalyticsSessionInfo.SessionStateChanged">
+      <summary>
+        <para>This event occurs when a Analytics session state changes.</para>
+      </summary>
+      <param name="sessionState">Current session state.</param>
+      <param name="sessionId">Current session id.</param>
+      <param name="sessionElapsedTime">Game player current session time.</param>
+      <param name="sessionChanged">Set to true when sessionId has changed.</param>
+    </member>
+    <member name="T:UnityEngine.Analytics.AnalyticsSessionState">
+      <summary>
+        <para>Session tracking states.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Analytics.AnalyticsSessionState.kSessionPaused">
+      <summary>
+        <para>Session tracking has paused.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Analytics.AnalyticsSessionState.kSessionResumed">
+      <summary>
+        <para>Session tracking has resumed.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Analytics.AnalyticsSessionState.kSessionStarted">
+      <summary>
+        <para>Session tracking has started.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.Analytics.AnalyticsSessionState.kSessionStopped">
+      <summary>
+        <para>Session tracking has stopped.</para>
+      </summary>
+    </member>
     <member name="T:UnityEngine.RemoteSettings">
       <summary>
         <para>Accesses remote settings (common for all game instances).</para>
