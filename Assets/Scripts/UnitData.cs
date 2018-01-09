@@ -4,9 +4,8 @@ public enum UnitType
 {
     Gatherer,
     Warrior,
-    Archer,
-    Abilties,
-    Tower
+    Archer, //Towers are archers with no movement
+    Abilties
 }
 
 [CreateAssetMenu(menuName = "Unit")]
@@ -20,6 +19,7 @@ public class UnitData : ScriptableObject
     public float Range;
     public float Cost;
     public bool SpawnAtBase;
+    public float MoneyReturned;
     public Sprite UiImage;
     public GameObject Unitprefab;
 

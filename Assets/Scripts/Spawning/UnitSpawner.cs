@@ -2,23 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public delegate void OnSpawnCall(GameObject spawn, UnitData unitData);
+public delegate void OnSpawnCall(GameObject spawn, UnitData unitData, List<GameObject> gatherTowers);
 
 public class UnitSpawner : MonoBehaviour
 {
-    private void Start()
+    public static event OnSpawnCall OnSpanCalled;
+
+
+    public static void SpawnCalled()
     {
-        OnSpawnCall onSpawnCall = new OnSpawnCall(Spawn);
+        OnSpanCalled += Spawn;
     }
 
-    private void Spawn(GameObject spawn, UnitData unitData)
+    public static void Spawn(GameObject spawn, UnitData unitData, List<GameObject> gatherTowers)
     {
-        GameObject go = Instantiate(spawn,this.gameObject.transform.position,Quaternion.identity);
+        GameObject go = Instantiate(spawn,spawn.transform.position,Quaternion.identity);
         
         if(unitData.m_UnitType == UnitType.Archer)
         {
-
+            go.AddComponent<GenericUnit>().Initialize(new Team(),unitData);
         }
-
+        if(unitData.m_UnitType == UnitType.Warrior)
+        {
+            go.AddComponent<GenericUnit>().Initialize(new Team(),unitData);
+        }
+        if (unitData.m_UnitType == UnitType.Gatherer)
+        {
+            go.AddComponent<Gatherer>().Initialize(unitData, spawn.gameObject, gatherTowers);
+        }
     }
 }
