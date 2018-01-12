@@ -70,6 +70,7 @@ public class GenericUnit : MonoBehaviour {
             m_Direciton = WalkDireciton.Right;
         }
 
+
         m_Rigidbody = GetComponent<Rigidbody>();
 
         m_Walking = true; 
@@ -159,6 +160,15 @@ public class GenericUnit : MonoBehaviour {
             {
                 m_FocussedUnit = unit;
             }
+        }
+    }
+
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.tag.Contains("Waypoint"))
+        {
+            m_Target = collision.collider.GetComponent<Waypoints>().GetTarget(m_Direciton);
         }
     }
 

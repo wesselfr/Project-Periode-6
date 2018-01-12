@@ -200,6 +200,12 @@
         <para>Disposes the resources used by gesture recognizer.</para>
       </summary>
     </member>
+    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.GestureError(System.Action`1&lt;UnityEngine.XR.WSA.Input.GestureErrorEventArgs&gt;)">
+      <summary>
+        <para>Fires when Microsoft's gesture-recognition system encounters a warning or error.</para>
+      </summary>
+      <param name="value"></param>
+    </member>
     <member name="T:UnityEngine.XR.WSA.Input.GestureRecognizer.GestureErrorDelegate">
       <summary>
         <para>Callback indicating an error or warning occurred.</para>
@@ -221,6 +227,12 @@
         <para>A mask indicating which Gestures are currently recognizable.</para>
       </returns>
     </member>
+    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.HoldCanceled(System.Action`1&lt;UnityEngine.XR.WSA.Input.HoldCanceledEventArgs&gt;)">
+      <summary>
+        <para>Fires when Microsoft's gesture-recognition system recognizers that a user has canceled a hold gesture.</para>
+      </summary>
+      <param name="value"></param>
+    </member>
     <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.HoldCanceledEvent(UnityEngine.XR.WSA.Input.GestureRecognizer/HoldCanceledEventDelegate)">
       <summary>
         <para>Fired when the user does a cancel event either using their hands or in speech.</para>
@@ -234,6 +246,12 @@
       <param name="source">Indicates which input medium triggered this event.</param>
       <param name="headRay">Ray (with normalized direction) from user at the time this gesture began.</param>
     </member>
+    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.HoldCompleted(System.Action`1&lt;UnityEngine.XR.WSA.Input.HoldCompletedEventArgs&gt;)">
+      <summary>
+        <para>Fires when Microsoft's gesture-recognition system recognizers that a user has completed a hold gesture.</para>
+      </summary>
+      <param name="value"></param>
+    </member>
     <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.HoldCompletedEvent(UnityEngine.XR.WSA.Input.GestureRecognizer/HoldCompletedEventDelegate)">
       <summary>
         <para>Fired when users complete a hold gesture.</para>
@@ -246,6 +264,12 @@
       </summary>
       <param name="source">Indicates which input medium triggered this event.</param>
       <param name="headRay">Ray (with normalized direction) from user at the time this gesture began.</param>
+    </member>
+    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.HoldStarted(System.Action`1&lt;UnityEngine.XR.WSA.Input.HoldStartedEventArgs&gt;)">
+      <summary>
+        <para>Fires when Microsoft's gesture-recognition system recognizes that a user has started a hold gesture.</para>
+      </summary>
+      <param name="value"></param>
     </member>
     <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.HoldStartedEvent(UnityEngine.XR.WSA.Input.GestureRecognizer/HoldStartedEventDelegate)">
       <summary>
@@ -268,6 +292,12 @@
         <para>True if the GestureRecognizer is receiving events or false otherwise.</para>
       </returns>
     </member>
+    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.ManipulationCanceled(System.Action`1&lt;UnityEngine.XR.WSA.Input.ManipulationCanceledEventArgs&gt;)">
+      <summary>
+        <para>Fires when Microsoft's gesture-recognition system recognizes that a user has canceled a manipulation gesture.</para>
+      </summary>
+      <param name="value"></param>
+    </member>
     <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.ManipulationCanceledEvent(UnityEngine.XR.WSA.Input.GestureRecognizer/ManipulationCanceledEventDelegate)">
       <summary>
         <para>Fires when a Manipulation gesture is canceled.</para>
@@ -281,6 +311,12 @@
       <param name="source">Indicates which input medium triggered this event.</param>
       <param name="cumulativeDelta">Total distance moved since the beginning of the manipulation gesture.</param>
       <param name="headRay">Ray (with normalized direction) from user at the time this gesture began.</param>
+    </member>
+    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.ManipulationCompleted(System.Action`1&lt;UnityEngine.XR.WSA.Input.ManipulationCompletedEventArgs&gt;)">
+      <summary>
+        <para>Fires when Microsoft's gesture-recognition system recognizes that a user has completed a manipulation gesture.</para>
+      </summary>
+      <param name="value"></param>
     </member>
     <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.ManipulationCompletedEvent(UnityEngine.XR.WSA.Input.GestureRecognizer/ManipulationCompletedEventDelegate)">
       <summary>
@@ -296,6 +332,12 @@
       <param name="cumulativeDelta">Total distance moved since the beginning of the manipulation gesture.</param>
       <param name="headRay">Ray (with normalized direction) from user at the time this gesture began.</param>
     </member>
+    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.ManipulationStarted(System.Action`1&lt;UnityEngine.XR.WSA.Input.ManipulationStartedEventArgs&gt;)">
+      <summary>
+        <para>Fires when Microsoft's gesture-recognition system recognizes that a user has started a manipulation gesture.</para>
+      </summary>
+      <param name="value"></param>
+    </member>
     <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.ManipulationStartedEvent(UnityEngine.XR.WSA.Input.GestureRecognizer/ManipulationStartedEventDelegate)">
       <summary>
         <para>Fires when an interaction becomes a Manipulation gesture.</para>
@@ -309,6 +351,12 @@
       <param name="source">Indicates which input medium triggered this event.</param>
       <param name="cumulativeDelta">Total distance moved since the beginning of the manipulation gesture.</param>
       <param name="headRay">Ray (with normalized direction) from user at the time this gesture began.</param>
+    </member>
+    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.ManipulationUpdated(System.Action`1&lt;UnityEngine.XR.WSA.Input.ManipulationUpdatedEventArgs&gt;)">
+      <summary>
+        <para>Fires when Microsoft's gesture-recognition system recognizes that a user has updated a manipulation gesture.</para>
+      </summary>
+      <param name="value"></param>
     </member>
     <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.ManipulationUpdatedEvent(UnityEngine.XR.WSA.Input.GestureRecognizer/ManipulationUpdatedEventDelegate)">
       <summary>
@@ -324,6 +372,12 @@
       <param name="cumulativeDelta">Total distance moved since the beginning of the manipulation gesture.</param>
       <param name="headRay">Ray (with normalized direction) from user at the time this gesture began.</param>
     </member>
+    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.NavigationCanceled(System.Action`1&lt;UnityEngine.XR.WSA.Input.NavigationCanceledEventArgs&gt;)">
+      <summary>
+        <para>Fires when Microsoft's gesture-recognition system recognizes that a user has canceled a navigation gesture.</para>
+      </summary>
+      <param name="value"></param>
+    </member>
     <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.NavigationCanceledEvent(UnityEngine.XR.WSA.Input.GestureRecognizer/NavigationCanceledEventDelegate)">
       <summary>
         <para>Fires when a Navigation gesture is canceled.</para>
@@ -337,6 +391,12 @@
       <param name="source">Indicates which input medium triggered this event.</param>
       <param name="normalizedOffset">The last known normalized offset of the input within the unit cube for the navigation gesture.</param>
       <param name="headRay">Ray (with normalized direction) from user at the time this gesture began.</param>
+    </member>
+    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.NavigationCompleted(System.Action`1&lt;UnityEngine.XR.WSA.Input.NavigationCompletedEventArgs&gt;)">
+      <summary>
+        <para>Fires when Microsoft's gesture-recognition system recognizes that a navigation gesture completes.</para>
+      </summary>
+      <param name="value"></param>
     </member>
     <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.NavigationCompletedEvent(UnityEngine.XR.WSA.Input.GestureRecognizer/NavigationCompletedEventDelegate)">
       <summary>
@@ -352,6 +412,12 @@
       <param name="normalizedOffset">The last known normalized offset, since the navigation gesture began, of the input within the unit cube for the navigation gesture.</param>
       <param name="headRay">Ray (with normalized direction) from user at the time this gesture began.</param>
     </member>
+    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.NavigationStarted(System.Action`1&lt;UnityEngine.XR.WSA.Input.NavigationStartedEventArgs&gt;)">
+      <summary>
+        <para>Fires when Microsoft's gesture-recognition system recognizes that a user has started a navigation gesture.</para>
+      </summary>
+      <param name="value"></param>
+    </member>
     <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.NavigationStartedEvent(UnityEngine.XR.WSA.Input.GestureRecognizer/NavigationStartedEventDelegate)">
       <summary>
         <para>Fires when an interaction becomes a Navigation gesture.</para>
@@ -365,6 +431,12 @@
       <param name="source">Indicates which input medium triggered this event.</param>
       <param name="normalizedOffset">The normalized offset, since the navigation gesture began, of the input within the unit cube for the navigation gesture.</param>
       <param name="headRay">Ray (with normalized direction) from user at the time this gesture began.</param>
+    </member>
+    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.NavigationUpdated(System.Action`1&lt;UnityEngine.XR.WSA.Input.NavigationUpdatedEventArgs&gt;)">
+      <summary>
+        <para>Fires when Microsoft's gesture-recognition system recognizes that navigation gesture has updated.</para>
+      </summary>
+      <param name="value"></param>
     </member>
     <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.NavigationUpdatedEvent(UnityEngine.XR.WSA.Input.GestureRecognizer/NavigationUpdatedEventDelegate)">
       <summary>
@@ -380,93 +452,9 @@
       <param name="normalizedOffset">The last known normalized offset, since the navigation gesture began, of the input within the unit cube for the navigation gesture.</param>
       <param name="headRay">Ray (with normalized direction) from user at the time this gesture began.</param>
     </member>
-    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.OnGestureErrorEvent(System.Action`1&lt;UnityEngine.XR.WSA.Input.GestureErrorEventArgs&gt;)">
-      <summary>
-        <para>Fires when the system encounters a warning or error.</para>
-      </summary>
-      <param name="value"></param>
-    </member>
-    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.OnHoldCanceledEvent(System.Action`1&lt;UnityEngine.XR.WSA.Input.HoldCanceledEventArgs&gt;)">
-      <summary>
-        <para>Fires when the system recognizers that a user has canceled a hold gesture.</para>
-      </summary>
-      <param name="value"></param>
-    </member>
-    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.OnHoldCompletedEvent(System.Action`1&lt;UnityEngine.XR.WSA.Input.HoldCompletedEventArgs&gt;)">
-      <summary>
-        <para>Fires when the system recognizers that a user has completed a hold gesture.</para>
-      </summary>
-      <param name="value"></param>
-    </member>
-    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.OnHoldStartedEvent(System.Action`1&lt;UnityEngine.XR.WSA.Input.HoldStartedEventArgs&gt;)">
-      <summary>
-        <para>Fires when the system recognizes that a user has started a hold gesture.</para>
-      </summary>
-      <param name="value"></param>
-    </member>
-    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.OnManipulationCanceledEvent(System.Action`1&lt;UnityEngine.XR.WSA.Input.ManipulationCanceledEventArgs&gt;)">
-      <summary>
-        <para>Fires when the system recognizes that a user has canceled a manipulation gesture.</para>
-      </summary>
-      <param name="value"></param>
-    </member>
-    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.OnManipulationCompletedEvent(System.Action`1&lt;UnityEngine.XR.WSA.Input.ManipulationCompletedEventArgs&gt;)">
-      <summary>
-        <para>Fires when teh system recognizes that a user has completed a manipulation gesture.</para>
-      </summary>
-      <param name="value"></param>
-    </member>
-    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.OnManipulationStartedEvent(System.Action`1&lt;UnityEngine.XR.WSA.Input.ManipulationStartedEventArgs&gt;)">
-      <summary>
-        <para>Fires when the system recognizes that a user has started a manipulation gesture.</para>
-      </summary>
-      <param name="value"></param>
-    </member>
-    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.OnManipulationUpdatedEvent(System.Action`1&lt;UnityEngine.XR.WSA.Input.ManipulationUpdatedEventArgs&gt;)">
-      <summary>
-        <para>Fires when the system recognizes that a user has updated a manipulation gesture.</para>
-      </summary>
-      <param name="value"></param>
-    </member>
-    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.OnNavigationCanceledEvent(System.Action`1&lt;UnityEngine.XR.WSA.Input.NavigationCanceledEventArgs&gt;)">
-      <summary>
-        <para>Fires when the system recognizes that a user has canceled a navigation gesture.</para>
-      </summary>
-      <param name="value"></param>
-    </member>
-    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.OnNavigationCompletedEvent(System.Action`1&lt;UnityEngine.XR.WSA.Input.NavigationCompletedEventArgs&gt;)">
-      <summary>
-        <para>Fires when the system recognizes that a navigation gesture completes.</para>
-      </summary>
-      <param name="value"></param>
-    </member>
-    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.OnNavigationStartedEvent(System.Action`1&lt;UnityEngine.XR.WSA.Input.NavigationStartedEventArgs&gt;)">
-      <summary>
-        <para>Fires when the system recognizes that a user has started a navigation gesture.</para>
-      </summary>
-      <param name="value"></param>
-    </member>
-    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.OnNavigationUpdatedEvent(System.Action`1&lt;UnityEngine.XR.WSA.Input.NavigationUpdatedEventArgs&gt;)">
-      <summary>
-        <para>Fires when the system recognizes that navigation gesture has updated.</para>
-      </summary>
-      <param name="value"></param>
-    </member>
-    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.OnRecognitionEndedEvent(System.Action`1&lt;UnityEngine.XR.WSA.Input.RecognitionEndedEventArgs&gt;)">
+    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.RecognitionEnded(System.Action`1&lt;UnityEngine.XR.WSA.Input.RecognitionEndedEventArgs&gt;)">
       <summary>
         <para>Fires when recognition of gestures is done, either due to completion of a gesture or cancellation.</para>
-      </summary>
-      <param name="value"></param>
-    </member>
-    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.OnRecognitionStartedEvent(System.Action`1&lt;UnityEngine.XR.WSA.Input.RecognitionStartedEventArgs&gt;)">
-      <summary>
-        <para>Fires when recognition of gestures begins.</para>
-      </summary>
-      <param name="value"></param>
-    </member>
-    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.OnTappedEvent(System.Action`1&lt;UnityEngine.XR.WSA.Input.TappedEventArgs&gt;)">
-      <summary>
-        <para>Fires when the system recognizes that a user has done a tap gesture and after the system voice command "Select" has been processed. For controllers, this event fires when the primary button is released after it was pressed.</para>
       </summary>
       <param name="value"></param>
     </member>
@@ -482,6 +470,12 @@
       </summary>
       <param name="source">Indicates which input medium triggered this event.</param>
       <param name="headRay">Ray (with normalized direction) from user at the time a gesture began.</param>
+    </member>
+    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.RecognitionStarted(System.Action`1&lt;UnityEngine.XR.WSA.Input.RecognitionStartedEventArgs&gt;)">
+      <summary>
+        <para>Fires when recognition of gestures begins.</para>
+      </summary>
+      <param name="value"></param>
     </member>
     <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.RecognitionStartedEvent(UnityEngine.XR.WSA.Input.GestureRecognizer/RecognitionStartedEventDelegate)">
       <summary>
@@ -514,6 +508,12 @@
       <summary>
         <para>Call to stop receiving gesture events on this recognizer.</para>
       </summary>
+    </member>
+    <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.Tapped(System.Action`1&lt;UnityEngine.XR.WSA.Input.TappedEventArgs&gt;)">
+      <summary>
+        <para>Fires when Microsoft's gesture-recognition system recognizes that a user has done a tap gesture and after the system voice command "Select" has been processed. For controllers, this event fires when the primary button is released after it was pressed.</para>
+      </summary>
+      <param name="value"></param>
     </member>
     <member name="?:UnityEngine.XR.WSA.Input.GestureRecognizer.TappedEvent(UnityEngine.XR.WSA.Input.GestureRecognizer/TappedEventDelegate)">
       <summary>
@@ -594,14 +594,9 @@
         <para>Contains fields that are relevant when a user cancels a hold gesture.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.XR.WSA.Input.HoldCanceledEventArgs.headRay">
+    <member name="P:UnityEngine.XR.WSA.Input.HoldCanceledEventArgs.headPose">
       <summary>
-        <para>Represents user's gaze from when the gesture occurred.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.HoldCanceledEventArgs.pose">
-      <summary>
-        <para>Represents pose data of the input source, such as a hand or controller, when the gesture occurred.</para>
+        <para>Head pose of the user at the time of the gesture.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.XR.WSA.Input.HoldCanceledEventArgs.source">
@@ -609,19 +604,19 @@
         <para>The InteractionSource (hand, controller, or user's voice) that canceled the hold gesture.</para>
       </summary>
     </member>
+    <member name="P:UnityEngine.XR.WSA.Input.HoldCanceledEventArgs.sourcePose">
+      <summary>
+        <para>Represents pose data of the input source, such as a hand or controller, when the gesture occurred.</para>
+      </summary>
+    </member>
     <member name="T:UnityEngine.XR.WSA.Input.HoldCompletedEventArgs">
       <summary>
         <para>Contains fields that are relevant when a hold gesture completes.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.XR.WSA.Input.HoldCompletedEventArgs.headRay">
+    <member name="P:UnityEngine.XR.WSA.Input.HoldCompletedEventArgs.headPose">
       <summary>
-        <para>Represents user's gaze from when the gesture occurred.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.HoldCompletedEventArgs.pose">
-      <summary>
-        <para>Represents pose data of the input source, such as a hand or controller, when the gesture occurred.</para>
+        <para>Head pose of the user at the time of the gesture.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.XR.WSA.Input.HoldCompletedEventArgs.source">
@@ -629,24 +624,29 @@
         <para>The InteractionSource (hand, controller, or user's voice) that completed the hold gesture.</para>
       </summary>
     </member>
+    <member name="P:UnityEngine.XR.WSA.Input.HoldCompletedEventArgs.sourcePose">
+      <summary>
+        <para>Pose data of the interaction source at the time of the gesture.</para>
+      </summary>
+    </member>
     <member name="T:UnityEngine.XR.WSA.Input.HoldStartedEventArgs">
       <summary>
         <para>Contains fields that are relevant when a hold gesture starts.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.XR.WSA.Input.HoldStartedEventArgs.headRay">
+    <member name="P:UnityEngine.XR.WSA.Input.HoldStartedEventArgs.headPose">
       <summary>
-        <para>Represents user's gaze from when the gesture occurred.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.HoldStartedEventArgs.pose">
-      <summary>
-        <para>Represents pose data of the input source, such as a hand or controller, when the gesture occurred.</para>
+        <para>Head pose of the user at the time of the gesture.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.XR.WSA.Input.HoldStartedEventArgs.source">
       <summary>
         <para>The InteractionSource (hand, controller, or user's voice) that started the hold gesture.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.WSA.Input.HoldStartedEventArgs.sourcePose">
+      <summary>
+        <para>Pose data of the interaction source at the time of the gesture.</para>
       </summary>
     </member>
     <member name="T:UnityEngine.XR.WSA.Input.InteractionManager">
@@ -676,39 +676,63 @@
         <para>The number of snapshots stored in the array, up to the size of the array.</para>
       </returns>
     </member>
-    <member name="?:UnityEngine.XR.WSA.Input.InteractionManager.OnSourceDetected(System.Action`1&lt;UnityEngine.XR.WSA.Input.SourceDetectedEventArgs&gt;)">
+    <member name="?:UnityEngine.XR.WSA.Input.InteractionManager.InteractionSourceDetected(System.Action`1&lt;UnityEngine.XR.WSA.Input.InteractionSourceDetectedEventArgs&gt;)">
       <summary>
         <para>Occurs when a new hand, controller, or source of voice commands has been detected.</para>
       </summary>
       <param name="value"></param>
     </member>
-    <member name="?:UnityEngine.XR.WSA.Input.InteractionManager.OnSourceLost(System.Action`1&lt;UnityEngine.XR.WSA.Input.SourceLostEventArgs&gt;)">
+    <member name="?:UnityEngine.XR.WSA.Input.InteractionManager.InteractionSourceDetectedLegacy(UnityEngine.XR.WSA.Input.InteractionManager/SourceEventHandler)">
+      <summary>
+        <para>Occurs when a new hand, controller, or source of voice commands has been detected.</para>
+      </summary>
+      <param name="value"></param>
+    </member>
+    <member name="?:UnityEngine.XR.WSA.Input.InteractionManager.InteractionSourceLost(System.Action`1&lt;UnityEngine.XR.WSA.Input.InteractionSourceLostEventArgs&gt;)">
       <summary>
         <para>Occurs when a hand, controller, or source of voice commands is no longer available.</para>
       </summary>
       <param name="value"></param>
     </member>
-    <member name="?:UnityEngine.XR.WSA.Input.InteractionManager.OnSourcePressed(System.Action`1&lt;UnityEngine.XR.WSA.Input.SourcePressedEventArgs&gt;)">
+    <member name="?:UnityEngine.XR.WSA.Input.InteractionManager.InteractionSourceLostLegacy(UnityEngine.XR.WSA.Input.InteractionManager/SourceEventHandler)">
+      <summary>
+        <para>Occurs when a hand, controller, or source of voice commands is no longer available.</para>
+      </summary>
+      <param name="value"></param>
+    </member>
+    <member name="?:UnityEngine.XR.WSA.Input.InteractionManager.InteractionSourcePressed(System.Action`1&lt;UnityEngine.XR.WSA.Input.InteractionSourcePressedEventArgs&gt;)">
       <summary>
         <para>Occurs when a hand or controller has entered the pressed state.</para>
       </summary>
       <param name="value"></param>
     </member>
-    <member name="?:UnityEngine.XR.WSA.Input.InteractionManager.OnSourceReleased(System.Action`1&lt;UnityEngine.XR.WSA.Input.SourceReleasedEventArgs&gt;)">
+    <member name="?:UnityEngine.XR.WSA.Input.InteractionManager.InteractionSourcePressedLegacy(UnityEngine.XR.WSA.Input.InteractionManager/SourceEventHandler)">
+      <summary>
+        <para>Occurs when a hand or controller has entered the pressed state.</para>
+      </summary>
+      <param name="value"></param>
+    </member>
+    <member name="?:UnityEngine.XR.WSA.Input.InteractionManager.InteractionSourceReleased(System.Action`1&lt;UnityEngine.XR.WSA.Input.InteractionSourceReleasedEventArgs&gt;)">
       <summary>
         <para>Occurs when a hand or controller has exited the pressed state.</para>
       </summary>
       <param name="value"></param>
     </member>
-    <member name="?:UnityEngine.XR.WSA.Input.InteractionManager.OnSourceUpdated(System.Action`1&lt;UnityEngine.XR.WSA.Input.SourceUpdatedEventArgs&gt;)">
+    <member name="?:UnityEngine.XR.WSA.Input.InteractionManager.InteractionSourceReleasedLegacy(UnityEngine.XR.WSA.Input.InteractionManager/SourceEventHandler)">
+      <summary>
+        <para>Occurs when a hand or controller has exited the pressed state.</para>
+      </summary>
+      <param name="value"></param>
+    </member>
+    <member name="?:UnityEngine.XR.WSA.Input.InteractionManager.InteractionSourceUpdated(System.Action`1&lt;UnityEngine.XR.WSA.Input.InteractionSourceUpdatedEventArgs&gt;)">
       <summary>
         <para>Occurs when a hand or controller has experienced a change to its SourceState.</para>
       </summary>
       <param name="value"></param>
     </member>
-    <member name="?:UnityEngine.XR.WSA.Input.InteractionManager.SourceDetected(UnityEngine.XR.WSA.Input.InteractionManager/SourceEventHandler)">
+    <member name="?:UnityEngine.XR.WSA.Input.InteractionManager.InteractionSourceUpdatedLegacy(UnityEngine.XR.WSA.Input.InteractionManager/SourceEventHandler)">
       <summary>
-        <para>Occurs when a new hand, controller, or source of voice commands has been detected.</para>
+        <para>Occurs when a hand or controller has experienced a change to its SourceState.</para>
       </summary>
       <param name="value"></param>
     </member>
@@ -718,33 +742,14 @@
       </summary>
       <param name="state"></param>
     </member>
-    <member name="?:UnityEngine.XR.WSA.Input.InteractionManager.SourceLost(UnityEngine.XR.WSA.Input.InteractionManager/SourceEventHandler)">
-      <summary>
-        <para>Occurs when a hand, controller, or source of voice commands is no longer available.</para>
-      </summary>
-      <param name="value"></param>
-    </member>
-    <member name="?:UnityEngine.XR.WSA.Input.InteractionManager.SourcePressed(UnityEngine.XR.WSA.Input.InteractionManager/SourceEventHandler)">
-      <summary>
-        <para>Occurs when a hand or controller has entered the pressed state.</para>
-      </summary>
-      <param name="value"></param>
-    </member>
-    <member name="?:UnityEngine.XR.WSA.Input.InteractionManager.SourceReleased(UnityEngine.XR.WSA.Input.InteractionManager/SourceEventHandler)">
-      <summary>
-        <para>Occurs when a hand or controller has exited the pressed state.</para>
-      </summary>
-      <param name="value"></param>
-    </member>
-    <member name="?:UnityEngine.XR.WSA.Input.InteractionManager.SourceUpdated(UnityEngine.XR.WSA.Input.InteractionManager/SourceEventHandler)">
-      <summary>
-        <para>Occurs when a hand or controller has experienced a change to its SourceState.</para>
-      </summary>
-      <param name="value"></param>
-    </member>
     <member name="T:UnityEngine.XR.WSA.Input.InteractionSource">
       <summary>
         <para>Represents one detected instance of an interaction source (hand, controller, or user's voice) that can cause interactions and gestures.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.WSA.Input.InteractionSource.handedness">
+      <summary>
+        <para>Denotes which hand was used as the input source.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.XR.WSA.Input.InteractionSource.id">
@@ -754,10 +759,60 @@
     </member>
     <member name="P:UnityEngine.XR.WSA.Input.InteractionSource.kind">
       <summary>
-        <para>The kind of the interaction source.</para>
+        <para>Specifies the kind of an interaction source.</para>
       </summary>
     </member>
-    <member name="T:UnityEngine.XR.WSA.Input.InteractionSourceHandType">
+    <member name="P:UnityEngine.XR.WSA.Input.InteractionSource.productId">
+      <summary>
+        <para>Following the make and model nomenclature of cars, this equates to the model number.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.WSA.Input.InteractionSource.productVersion">
+      <summary>
+        <para>Following the make and model nomenclature of cars, this would be a minor update to the model.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.WSA.Input.InteractionSource.supportsGrasp">
+      <summary>
+        <para>This property returns true when the interaction source has at least one grasp button, and false if otherwise.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.WSA.Input.InteractionSource.supportsMenu">
+      <summary>
+        <para>This property returns true when the interaction source has a menu button, and false if otherwise.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.WSA.Input.InteractionSource.supportsPointing">
+      <summary>
+        <para>This property returns true if the interaction source has a separate pose for the pointer, and false if otherwise.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.WSA.Input.InteractionSource.supportsThumbstick">
+      <summary>
+        <para>Returns true if the interaction source has a thumbstick, and false if otherwise.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.WSA.Input.InteractionSource.supportsTouchpad">
+      <summary>
+        <para>Returns true if the interaction source has a touchpad, and false if otherwise.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.WSA.Input.InteractionSource.vendorId">
+      <summary>
+        <para>All interaction sources developed by the same company will have the same vendor ID.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.XR.WSA.Input.InteractionSourceDetectedEventArgs">
+      <summary>
+        <para>Contains fields that are relevent when an interaction source is detected.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.WSA.Input.InteractionSourceDetectedEventArgs.state">
+      <summary>
+        <para>The current state of the reported interaction source that was just detected.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.XR.WSA.Input.InteractionSourceHandedness">
       <summary>
         <para>Denotes which hand was used as the input source.</para>
       </summary>
@@ -769,7 +824,7 @@
     </member>
     <member name="F:UnityEngine.XR.WSA.Input.InteractionSourceKind.Controller">
       <summary>
-        <para>The interaction source is a controller.</para>
+        <para>The interaction source is of a kind not known in this version of the API.</para>
       </summary>
     </member>
     <member name="F:UnityEngine.XR.WSA.Input.InteractionSourceKind.Hand">
@@ -789,22 +844,12 @@
     </member>
     <member name="T:UnityEngine.XR.WSA.Input.InteractionSourceLocation">
       <summary>
-        <para>Represents the position and velocity of a hand or controller.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.InteractionSourceLocation.grip">
-      <summary>
-        <para>The main pose of a controller.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.InteractionSourceLocation.pointer">
-      <summary>
-        <para>The pose of the controller's pointer, or tip.</para>
+        <para>Represents the position and velocity of a hand or controller - this has been deprecated. Use InteractionSourcePose instead.</para>
       </summary>
     </member>
     <member name="M:UnityEngine.XR.WSA.Input.InteractionSourceLocation.TryGetPosition(UnityEngine.Vector3&amp;)">
       <summary>
-        <para>Get the position of the interaction.</para>
+        <para>Get the position of the interaction - this has been deprecated. Use InteractionSourcePose instead.</para>
       </summary>
       <param name="position">Supplied Vector3 to be populated with interaction position.</param>
       <returns>
@@ -813,16 +858,179 @@
     </member>
     <member name="M:UnityEngine.XR.WSA.Input.InteractionSourceLocation.TryGetVelocity(UnityEngine.Vector3&amp;)">
       <summary>
-        <para>Get the velocity of the interaction.</para>
+        <para>Get the velocity of the interaction - this has been deprecated. Use InteractionSourcePose instead.</para>
       </summary>
       <param name="velocity">Supplied Vector3 to be populated with interaction velocity.</param>
       <returns>
         <para>True if the velocity is successfully returned.</para>
       </returns>
     </member>
+    <member name="T:UnityEngine.XR.WSA.Input.InteractionSourceLostEventArgs">
+      <summary>
+        <para>Contains fields that are relevent when an interaction source is lost.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.WSA.Input.InteractionSourceLostEventArgs.state">
+      <summary>
+        <para>The current state of the reported interaction source that was just lost.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.XR.WSA.Input.InteractionSourceNode">
+      <summary>
+        <para>Specifies which part of the controller to query pose information for.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.XR.WSA.Input.InteractionSourceNode.Grip">
+      <summary>
+        <para>The grip of the controller.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.XR.WSA.Input.InteractionSourceNode.Pointer">
+      <summary>
+        <para>The pointer of the controller.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.XR.WSA.Input.InteractionSourcePose">
+      <summary>
+        <para>Pose data of the interaction source at the time of either the gesture or interaction.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.WSA.Input.InteractionSourcePose.positionAccuracy">
+      <summary>
+        <para>The position-tracking accuracy of the interaction source.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEngine.XR.WSA.Input.InteractionSourcePose.TryGetAngularVelocity(UnityEngine.Vector3&amp;)">
+      <summary>
+        <para>Attempts to retrieve a Vector3 representing the current angular velocity of the tracked node.</para>
+      </summary>
+      <param name="angularVelocity">If the function returns true, this will be filled out with the angular velocity of the interaction source. If the function returns false, the value filled out should not be used.</param>
+      <returns>
+        <para>True if the angular velocity was set in the output parameter. False if the angular velocity is not available due to limitations of the underlying platform or if the node is not presently tracked.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.XR.WSA.Input.InteractionSourcePose.TryGetForward(UnityEngine.Vector3&amp;,UnityEngine.XR.WSA.Input.InteractionSourceNode)">
+      <summary>
+        <para>Gets the forward vector of the interaction source, assuming rotation is valid.</para>
+      </summary>
+      <param name="forward">The forward vector of the interaction source, if the function returns true.</param>
+      <param name="node">Specifies which part of the controller to query for its forward vector.</param>
+      <returns>
+        <para>This method returns true when the rotation is valid and the Vector3 passed in was filled out correctly, and false if otherwise.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.XR.WSA.Input.InteractionSourcePose.TryGetPosition(UnityEngine.Vector3&amp;,UnityEngine.XR.WSA.Input.InteractionSourceNode)">
+      <summary>
+        <para>Gets the position of the interaction source, assuming the backing data is valid.</para>
+      </summary>
+      <param name="position">The position of the interaction source, is the function returns true.</param>
+      <param name="node">Specifies which part of the controller to query for its position.</param>
+      <returns>
+        <para>This method returns true when the Vector3 passed in was filled out correctly, and false if otherwise.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.XR.WSA.Input.InteractionSourcePose.TryGetRight(UnityEngine.Vector3&amp;,UnityEngine.XR.WSA.Input.InteractionSourceNode)">
+      <summary>
+        <para>Gets the right vector of the interaction source, assuming rotation is valid.</para>
+      </summary>
+      <param name="right">The right vector of the interaction source, if the function returns true.</param>
+      <param name="node">Specifies which part of the controller to query for its right vector.</param>
+      <returns>
+        <para>This method returns true if rotation is valid and the Vector3 passed in was filled out correctly, and false if otherwise.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.XR.WSA.Input.InteractionSourcePose.TryGetRotation(UnityEngine.Quaternion&amp;,UnityEngine.XR.WSA.Input.InteractionSourceNode)">
+      <summary>
+        <para>Gets the rotation of the interaction source, assuming the backing data is valid.</para>
+      </summary>
+      <param name="node">Specifies which part of the controller to query for its rotation.</param>
+      <param name="rotation">The rotation of the interaction source, if the function returns true.</param>
+      <returns>
+        <para>This method returns true if the Quaternion passed in was filled out correctly, and false if otherwise.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.XR.WSA.Input.InteractionSourcePose.TryGetUp(UnityEngine.Vector3&amp;,UnityEngine.XR.WSA.Input.InteractionSourceNode)">
+      <summary>
+        <para>Gets the up vector of the interaction source, assuming rotation is valid.</para>
+      </summary>
+      <param name="up">The up vector of the interaction source, if the function returns true.</param>
+      <param name="node">Specifies which part of the controller to query for its up vector.</param>
+      <returns>
+        <para>Returns true if the rotation is valid and the Vector3 passed in was filled out correctly, and false if otherwise.</para>
+      </returns>
+    </member>
+    <member name="M:UnityEngine.XR.WSA.Input.InteractionSourcePose.TryGetVelocity(UnityEngine.Vector3&amp;)">
+      <summary>
+        <para>Gets the velocity of the interaction source, assuming the backing data is valid.</para>
+      </summary>
+      <param name="velocity">The velocity of the interaction source, if the function returns true.</param>
+      <returns>
+        <para>Returns true if the Vector3 passed in was filled out correctly, and false if otherwise.</para>
+      </returns>
+    </member>
+    <member name="T:UnityEngine.XR.WSA.Input.InteractionSourcePositionAccuracy">
+      <summary>
+        <para>Denotes the accuracy of tracking on the interaction source.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.XR.WSA.Input.InteractionSourcePositionAccuracy.Approximate">
+      <summary>
+        <para>A position accuracy of Approximate reports that you may not want to fully trust the positions reported, as the position is inferred or synthesized in some way, such as the controller leaving the sensors' field of view and forcing the API to rely on the device's IMU instead of visual tracking.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.XR.WSA.Input.InteractionSourcePositionAccuracy.High">
+      <summary>
+        <para>A position accuracy of High reports that you can fully trust the position, as the interaction source is within the sensors' visual field of view.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.XR.WSA.Input.InteractionSourcePositionAccuracy.None">
+      <summary>
+        <para>A position accuracy of None reports that there is no position accuracy, as the interaction source unlocatable.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEngine.XR.WSA.Input.InteractionSourcePressedEventArgs">
+      <summary>
+        <para>Contains fields that are relevent when an interaction source enters the pressed state for one of its buttons.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.WSA.Input.InteractionSourcePressedEventArgs.pressType">
+      <summary>
+        <para>Denotes the type of button that was just pressed.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.WSA.Input.InteractionSourcePressedEventArgs.state">
+      <summary>
+        <para>The current state of the reported interaction source that just had one of its buttons enter the pressed state.</para>
+      </summary>
+    </member>
     <member name="T:UnityEngine.XR.WSA.Input.InteractionSourcePressType">
       <summary>
         <para>The type of button or controller feature pressed, if any.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.XR.WSA.Input.InteractionSourcePressType.Grasp">
+      <summary>
+        <para>These buttons are generally found on the side of the controller. Some hardware has more than one grasp button.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.XR.WSA.Input.InteractionSourcePressType.Menu">
+      <summary>
+        <para>This button is marked with three horizontal lines, same as you would fine on an Xbox One controller.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.XR.WSA.Input.InteractionSourcePressType.Select">
+      <summary>
+        <para>Depending on the InteractionSourceType of the interaction source, this could be a number of equivalent things: main button on a blicker, air-tap on a hand, and the trigger on a motion controller.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.XR.WSA.Input.InteractionSourcePressType.Thumbstick">
+      <summary>
+        <para>Similar to the touchpad, moving the thumbstick won't count as pressing it - a press will occur when pressing down on the thumbstick enough.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.XR.WSA.Input.InteractionSourcePressType.Touchpad">
+      <summary>
+        <para>A touchpad only counts as pressed when it's held down enough - otherwise, it's just touched, and will give a reading of the position through InteractionSourceState.touchpadPosition.</para>
       </summary>
     </member>
     <member name="T:UnityEngine.XR.WSA.Input.InteractionSourceProperties">
@@ -832,7 +1040,7 @@
     </member>
     <member name="P:UnityEngine.XR.WSA.Input.InteractionSourceProperties.location">
       <summary>
-        <para>The position and velocity of the hand, expressed in the specified coordinate system.</para>
+        <para>The position and velocity of the hand, expressed in the specified coordinate system - this has been deprecated. Use InteractionSourcePose instead.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.XR.WSA.Input.InteractionSourceProperties.sourceLossMitigationDirection">
@@ -845,37 +1053,20 @@
         <para>Gets the risk that detection of the hand will be lost as a value from 0.0 to 1.0.</para>
       </summary>
     </member>
-    <member name="T:UnityEngine.XR.WSA.Input.InteractionSourceRay">
+    <member name="T:UnityEngine.XR.WSA.Input.InteractionSourceReleasedEventArgs">
       <summary>
-        <para>Contains a ray that may or may not be available.</para>
+        <para>Contains fields that are relevent when an interaction source exits the pressed state for one of its buttons.</para>
       </summary>
     </member>
-    <member name="M:UnityEngine.XR.WSA.Input.InteractionSourceRay.TryGetPosition(UnityEngine.Vector3&amp;)">
+    <member name="P:UnityEngine.XR.WSA.Input.InteractionSourceReleasedEventArgs.pressType">
       <summary>
-        <para>Getter for the origin of the ray.</para>
+        <para>Denotes the type of button that was just released.</para>
       </summary>
-      <param name="position">When this method returns, contains the origin of the ray this object represents, if it exists; otherwise, this value will be the world origin.</param>
-      <returns>
-        <para>Whether or not the position filled out is valid.</para>
-      </returns>
     </member>
-    <member name="M:UnityEngine.XR.WSA.Input.InteractionSourceRay.TryGetRay(UnityEngine.Ray&amp;)">
+    <member name="P:UnityEngine.XR.WSA.Input.InteractionSourceReleasedEventArgs.state">
       <summary>
-        <para>Getter for the ray.</para>
+        <para>The current state of the reported interaction source that just had one of its buttons exit the pressed state.</para>
       </summary>
-      <param name="ray">When this method returns, contains the full ray this object represents, if it exists; otherwise, this value will be a ray anchored at the origin with a direction aligned with the world forward vector.</param>
-      <returns>
-        <para>Whether or not the ray filled out is valid.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.XR.WSA.Input.InteractionSourceRay.TryGetRotation(UnityEngine.Quaternion&amp;)">
-      <summary>
-        <para>Getter for the rotation of the ray.</para>
-      </summary>
-      <param name="rotation">When this method returns, contains the rotation of the direction of the ray this object represents, if it exists; otherwise, this value will be the identity quaternion. To get the direction of the ray, one would need to apply this rotation to the world forward vector.</param>
-      <returns>
-        <para>Whether or not the rotation filled out is valid.</para>
-      </returns>
     </member>
     <member name="T:UnityEngine.XR.WSA.Input.InteractionSourceState">
       <summary>
@@ -892,19 +1083,14 @@
         <para>Whether the controller is grasped.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.XR.WSA.Input.InteractionSourceState.handType">
+    <member name="P:UnityEngine.XR.WSA.Input.InteractionSourceState.headPose">
       <summary>
-        <para>Which hand type this interaction source represents.</para>
+        <para>Head pose of the user at the time of the interaction.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.XR.WSA.Input.InteractionSourceState.headRay">
       <summary>
         <para>The Ray at the time represented by this InteractionSourceState.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.InteractionSourceState.headSourceRay">
-      <summary>
-        <para>The ray representing the user's gaze.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.XR.WSA.Input.InteractionSourceState.menuPressed">
@@ -914,7 +1100,7 @@
     </member>
     <member name="P:UnityEngine.XR.WSA.Input.InteractionSourceState.pressed">
       <summary>
-        <para>True if the source is in the pressed state.</para>
+        <para>True if the source is in the pressed state, false otherwise.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.XR.WSA.Input.InteractionSourceState.properties">
@@ -924,12 +1110,12 @@
     </member>
     <member name="P:UnityEngine.XR.WSA.Input.InteractionSourceState.selectPressed">
       <summary>
-        <para>Whether or not the select button is pressed.</para>
+        <para>Depending on the InteractionSourceType of the interaction source, this returning true could represent a number of equivalent things: main button on a clicker, air-tap on a hand, and the trigger on a motion controller. For hands, a select-press represents the user's index finger in the down position. For motion controllers, a select-press represents the controller's index-finger trigger (or primary face button, if no trigger) being fully pressed. Note that a voice command of "Select" causes an instant press and release, so you cannot poll for a voice press using this property - instead, you must use GestureRecognizer and subscribe to the Tapped event, or subscribe to the InteractionSourcePressed event from InteractionManager.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.XR.WSA.Input.InteractionSourceState.selectPressedAmount">
       <summary>
-        <para>Normalized amount ([0, 1]) representing how much the select button is pressed.</para>
+        <para>Normalized amount ([0, 1]) representing how much select is pressed.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.XR.WSA.Input.InteractionSourceState.source">
@@ -937,29 +1123,9 @@
         <para>The interaction source that this state describes.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.XR.WSA.Input.InteractionSourceState.supportsGrasp">
+    <member name="P:UnityEngine.XR.WSA.Input.InteractionSourceState.sourcePose">
       <summary>
-        <para>Whether or not the interaction source has at least one grasp button.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.InteractionSourceState.supportsMenu">
-      <summary>
-        <para>Whether or not the interaction source has a menu button.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.InteractionSourceState.supportsPointing">
-      <summary>
-        <para>Whether or not the interaction source has a separate pose for the pointer.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.InteractionSourceState.supportsThumbstick">
-      <summary>
-        <para>Whether or not the interaction source has a thumbstick.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.InteractionSourceState.supportsTouchpad">
-      <summary>
-        <para>Whether or not the interaction source has a touchpad.</para>
+        <para>Pose data of the interaction source at the time of the interaction.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.XR.WSA.Input.InteractionSourceState.thumbstickPosition">
@@ -987,56 +1153,34 @@
         <para>Whether or not the touchpad is touched.</para>
       </summary>
     </member>
-    <member name="M:UnityEngine.XR.WSA.Input.InteractionSourceState.TryGetProductId(System.UInt16&amp;)">
+    <member name="T:UnityEngine.XR.WSA.Input.InteractionSourceUpdatedEventArgs">
       <summary>
-        <para>Getter for the product ID for this interaction source.</para>
+        <para>Contains fields that are relevent when an interaction source updates.</para>
       </summary>
-      <param name="productId">When this method returns, contains product ID of the controller, if it exists; otherwise, this value will be zero.</param>
-      <returns>
-        <para>Whether or not the product ID filled out is valid.</para>
-      </returns>
     </member>
-    <member name="M:UnityEngine.XR.WSA.Input.InteractionSourceState.TryGetProductVersion(System.UInt16&amp;)">
+    <member name="P:UnityEngine.XR.WSA.Input.InteractionSourceUpdatedEventArgs.state">
       <summary>
-        <para>Getter for the product version of this interaction source.</para>
+        <para>The current state of the reported interaction source that just updated.</para>
       </summary>
-      <param name="productVersion">When this method returns, contains the product version of the controller, if it exists; otherwise, this value will be zero.</param>
-      <returns>
-        <para>Whether or not the product version filled out is valid.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.XR.WSA.Input.InteractionSourceState.TryGetVendorId(System.UInt16&amp;)">
-      <summary>
-        <para>Getter for the vendor ID of this interaction source.</para>
-      </summary>
-      <param name="vendorId">When this method returns, contains the vendor ID of the controller, if it exists; otherwise, this value will be zero.</param>
-      <returns>
-        <para>Whether or not the ID filled out is valid.</para>
-      </returns>
     </member>
     <member name="T:UnityEngine.XR.WSA.Input.ManipulationCanceledEventArgs">
       <summary>
         <para>Contains fields that are relevant when a manipulation gesture is canceled.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.XR.WSA.Input.ManipulationCanceledEventArgs.cumulativeDelta">
+    <member name="P:UnityEngine.XR.WSA.Input.ManipulationCanceledEventArgs.headPose">
       <summary>
-        <para>Total distance moved since the beginning of the manipulation gesture.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.ManipulationCanceledEventArgs.headRay">
-      <summary>
-        <para>Represents user's gaze from when the gesture occurred.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.ManipulationCanceledEventArgs.pose">
-      <summary>
-        <para>Represents pose data of the input source, such as a hand or controller, when the gesture occurred.</para>
+        <para>Head pose of the user at the time of the gesture.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.XR.WSA.Input.ManipulationCanceledEventArgs.source">
       <summary>
         <para>The InteractionSource (hand, controller, or user's voice) that canceled the manipulation gesture.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.WSA.Input.ManipulationCanceledEventArgs.sourcePose">
+      <summary>
+        <para>Pose data of the interaction source at the time of the gesture.</para>
       </summary>
     </member>
     <member name="T:UnityEngine.XR.WSA.Input.ManipulationCompletedEventArgs">
@@ -1049,14 +1193,9 @@
         <para>Total distance moved since the beginning of the manipulation gesture.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.XR.WSA.Input.ManipulationCompletedEventArgs.headRay">
+    <member name="P:UnityEngine.XR.WSA.Input.ManipulationCompletedEventArgs.headPose">
       <summary>
-        <para>Represents user's gaze from when the gesture occurred.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.ManipulationCompletedEventArgs.pose">
-      <summary>
-        <para>Represents pose data of the input source, such as a hand or controller, when the gesture occurred.</para>
+        <para>Head pose of the user at the time of the gesture.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.XR.WSA.Input.ManipulationCompletedEventArgs.source">
@@ -1064,29 +1203,29 @@
         <para>The InteractionSource (hand, controller, or user's voice) that completed the manipulation gesture.</para>
       </summary>
     </member>
+    <member name="P:UnityEngine.XR.WSA.Input.ManipulationCompletedEventArgs.sourcePose">
+      <summary>
+        <para>Pose data of the interaction source at the time of the gesture.</para>
+      </summary>
+    </member>
     <member name="T:UnityEngine.XR.WSA.Input.ManipulationStartedEventArgs">
       <summary>
         <para>Contains fields relevant when a manipulation gesture starts.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.XR.WSA.Input.ManipulationStartedEventArgs.cumulativeDelta">
+    <member name="P:UnityEngine.XR.WSA.Input.ManipulationStartedEventArgs.headPose">
       <summary>
-        <para>Total distance moved since the beginning of the manipulation gesture.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.ManipulationStartedEventArgs.headRay">
-      <summary>
-        <para>Represents user's gaze from when the gesture occurred.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.ManipulationStartedEventArgs.pose">
-      <summary>
-        <para>Represents pose data of the input source, such as a hand or controller, when the gesture occurred.</para>
+        <para>Head pose of the user at the time of the gesture.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.XR.WSA.Input.ManipulationStartedEventArgs.source">
       <summary>
         <para>The InteractionSource (hand, controller, or user's voice) that started the manipulation gesture.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.WSA.Input.ManipulationStartedEventArgs.sourcePose">
+      <summary>
+        <para>Pose data of the interaction source at the time of the gesture.</para>
       </summary>
     </member>
     <member name="T:UnityEngine.XR.WSA.Input.ManipulationUpdatedEventArgs">
@@ -1099,14 +1238,9 @@
         <para>Total distance moved since the beginning of the manipulation gesture.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.XR.WSA.Input.ManipulationUpdatedEventArgs.headRay">
+    <member name="P:UnityEngine.XR.WSA.Input.ManipulationUpdatedEventArgs.headPose">
       <summary>
-        <para>Represents user's gaze from when the gesture occurred.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.ManipulationUpdatedEventArgs.pose">
-      <summary>
-        <para>Represents pose data of the input source, such as a hand or controller, when the gesture occurred.</para>
+        <para>Head pose of the user at the time of the gesture.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.XR.WSA.Input.ManipulationUpdatedEventArgs.source">
@@ -1114,24 +1248,19 @@
         <para>The InteractionSource (hand, controller, or user's voice) being used for the manipulation gesture.</para>
       </summary>
     </member>
+    <member name="P:UnityEngine.XR.WSA.Input.ManipulationUpdatedEventArgs.sourcePose">
+      <summary>
+        <para>Pose data of the interaction source at the time of the gesture.</para>
+      </summary>
+    </member>
     <member name="T:UnityEngine.XR.WSA.Input.NavigationCanceledEventArgs">
       <summary>
         <para>Contains fields that are relevant when a navigation gesture is canceled.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.XR.WSA.Input.NavigationCanceledEventArgs.headRay">
+    <member name="P:UnityEngine.XR.WSA.Input.NavigationCanceledEventArgs.headPose">
       <summary>
-        <para>Represents user's gaze from when the gesture occurred.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.NavigationCanceledEventArgs.normalizedOffset">
-      <summary>
-        <para>The normalized offset, since the navigation gesture began, of the input within the unit cube for the navigation gesture.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.NavigationCanceledEventArgs.pose">
-      <summary>
-        <para>Represents pose data of the input source, such as a hand or controller, when the gesture occurred.</para>
+        <para>Head pose of the user at the time of the gesture.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.XR.WSA.Input.NavigationCanceledEventArgs.source">
@@ -1139,14 +1268,19 @@
         <para>The InteractionSource (hand, controller, or user's voice) that canceled the navigation gesture.</para>
       </summary>
     </member>
+    <member name="P:UnityEngine.XR.WSA.Input.NavigationCanceledEventArgs.sourcePose">
+      <summary>
+        <para>Pose data of the interaction source at the time of the gesture.</para>
+      </summary>
+    </member>
     <member name="T:UnityEngine.XR.WSA.Input.NavigationCompletedEventArgs">
       <summary>
         <para>Contains fields that are relevant when a navigation gesture completes.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.XR.WSA.Input.NavigationCompletedEventArgs.headRay">
+    <member name="P:UnityEngine.XR.WSA.Input.NavigationCompletedEventArgs.headPose">
       <summary>
-        <para>Represents user's gaze from when the gesture occurred.</para>
+        <para>Head pose of the user at the time of the gesture.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.XR.WSA.Input.NavigationCompletedEventArgs.normalizedOffset">
@@ -1154,14 +1288,14 @@
         <para>The normalized offset, since the navigation gesture began, of the input within the unit cube for the navigation gesture.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.XR.WSA.Input.NavigationCompletedEventArgs.pose">
-      <summary>
-        <para>Represents pose data of the input source, such as a hand or controller, when the gesture occurred.</para>
-      </summary>
-    </member>
     <member name="P:UnityEngine.XR.WSA.Input.NavigationCompletedEventArgs.source">
       <summary>
         <para>The InteractionSource (hand, controller, or user's voice) that completed the navigation gesture.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.WSA.Input.NavigationCompletedEventArgs.sourcePose">
+      <summary>
+        <para>Pose data of the interaction source at the time of the gesture.</para>
       </summary>
     </member>
     <member name="T:UnityEngine.XR.WSA.Input.NavigationStartedEventArgs">
@@ -1169,19 +1303,9 @@
         <para>Contains fields that are relevant when a navigation gesture starts.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.XR.WSA.Input.NavigationStartedEventArgs.headRay">
+    <member name="P:UnityEngine.XR.WSA.Input.NavigationStartedEventArgs.headPose">
       <summary>
-        <para>Represents user's gaze from when the gesture occurred.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.NavigationStartedEventArgs.normalizedOffset">
-      <summary>
-        <para>The normalized offset, since the navigation gesture began, of the input within the unit cube for the navigation gesture.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.NavigationStartedEventArgs.pose">
-      <summary>
-        <para>Represents pose data of the input source, such as a hand or controller, when the gesture occurred.</para>
+        <para>Head pose of the user at the time of the gesture.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.XR.WSA.Input.NavigationStartedEventArgs.source">
@@ -1189,14 +1313,19 @@
         <para>The InteractionSource (hand, controller, or user's voice) that started the navigation gesture.</para>
       </summary>
     </member>
+    <member name="P:UnityEngine.XR.WSA.Input.NavigationStartedEventArgs.sourcePose">
+      <summary>
+        <para>Pose data of the interaction source at the time of the gesture.</para>
+      </summary>
+    </member>
     <member name="T:UnityEngine.XR.WSA.Input.NavigationUpdatedEventArgs">
       <summary>
         <para>Contains fields that are relevant when a navigation gesture updates.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.XR.WSA.Input.NavigationUpdatedEventArgs.headRay">
+    <member name="P:UnityEngine.XR.WSA.Input.NavigationUpdatedEventArgs.headPose">
       <summary>
-        <para>Represents user's gaze from when the gesture occurred.</para>
+        <para>Head pose of the user at the time of the gesture.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.XR.WSA.Input.NavigationUpdatedEventArgs.normalizedOffset">
@@ -1204,14 +1333,14 @@
         <para>The normalized offset, since the navigation gesture began, of the input within the unit cube for the navigation gesture.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.XR.WSA.Input.NavigationUpdatedEventArgs.pose">
-      <summary>
-        <para>Represents pose data of the input source, such as a hand or controller, when the gesture occurred.</para>
-      </summary>
-    </member>
     <member name="P:UnityEngine.XR.WSA.Input.NavigationUpdatedEventArgs.source">
       <summary>
         <para>The InteractionSource (hand, controller, or user's voice) being used for the navigation gesture.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.WSA.Input.NavigationUpdatedEventArgs.sourcePose">
+      <summary>
+        <para>Pose data of the interaction source at the time of the gesture.</para>
       </summary>
     </member>
     <member name="T:UnityEngine.XR.WSA.Input.RecognitionEndedEventArgs">
@@ -1219,14 +1348,9 @@
         <para>Contains fields that are relevant when recognition of a gesture event ends.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.XR.WSA.Input.RecognitionEndedEventArgs.headRay">
+    <member name="P:UnityEngine.XR.WSA.Input.RecognitionEndedEventArgs.headPose">
       <summary>
-        <para>Represents user's gaze from when the recognition ended.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.RecognitionEndedEventArgs.pose">
-      <summary>
-        <para>Represents pose data of the input source, such as a hand or controller, when the recognition ended.</para>
+        <para>Head pose of the user at the time of the gesture.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.XR.WSA.Input.RecognitionEndedEventArgs.source">
@@ -1234,19 +1358,19 @@
         <para>The InteractionSource (hand, controller, or user's voice) that ended the gesture.</para>
       </summary>
     </member>
+    <member name="P:UnityEngine.XR.WSA.Input.RecognitionEndedEventArgs.sourcePose">
+      <summary>
+        <para>Pose data of the interaction source at the time of the gesture.</para>
+      </summary>
+    </member>
     <member name="T:UnityEngine.XR.WSA.Input.RecognitionStartedEventArgs">
       <summary>
         <para>Contains fields that are relevant when recognition of a gesture event begins.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.XR.WSA.Input.RecognitionStartedEventArgs.headRay">
+    <member name="P:UnityEngine.XR.WSA.Input.RecognitionStartedEventArgs.headPose">
       <summary>
-        <para>Represents user's gaze from when the recognition began.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.RecognitionStartedEventArgs.pose">
-      <summary>
-        <para>Represents pose data of the input source, such as a hand or controller, when the recognition began.</para>
+        <para>Head pose of the user at the time of the gesture.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.XR.WSA.Input.RecognitionStartedEventArgs.source">
@@ -1254,64 +1378,9 @@
         <para>The InteractionSource (hand, controller, or user's voice) that started the gesture.</para>
       </summary>
     </member>
-    <member name="T:UnityEngine.XR.WSA.Input.SourceDetectedEventArgs">
+    <member name="P:UnityEngine.XR.WSA.Input.RecognitionStartedEventArgs.sourcePose">
       <summary>
-        <para>Contains fields that are relevent when an interaction source is detected.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.SourceDetectedEventArgs.state">
-      <summary>
-        <para>The current state of the reported interaction source that was just detected.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.XR.WSA.Input.SourceLostEventArgs">
-      <summary>
-        <para>Contains fields that are relevent when an interaction source is lost.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.SourceLostEventArgs.state">
-      <summary>
-        <para>The current state of the reported interaction source that was just lost.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.XR.WSA.Input.SourcePressedEventArgs">
-      <summary>
-        <para>Contains fields that are relevent when an interaction source enters the pressed state for one of its buttons.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.SourcePressedEventArgs.pressType">
-      <summary>
-        <para>Denotes the type of button that was just pressed.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.SourcePressedEventArgs.state">
-      <summary>
-        <para>The current state of the reported interaction source that just had one of its buttons enter the pressed state.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.XR.WSA.Input.SourceReleasedEventArgs">
-      <summary>
-        <para>Contains fields that are relevent when an interaction source exits the pressed state for one of its buttons.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.SourceReleasedEventArgs.pressType">
-      <summary>
-        <para>Denotes the type of button that was just released.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.SourceReleasedEventArgs.state">
-      <summary>
-        <para>The current state of the reported interaction source that just had one of its buttons exit the pressed state.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.XR.WSA.Input.SourceUpdatedEventArgs">
-      <summary>
-        <para>Contains fields that are relevent when an interaction source updates.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.SourceUpdatedEventArgs.state">
-      <summary>
-        <para>The current state of the reported interaction source that just updated.</para>
+        <para>Pose data of the interaction source at the time of the gesture.</para>
       </summary>
     </member>
     <member name="T:UnityEngine.XR.WSA.Input.TappedEventArgs">
@@ -1319,19 +1388,19 @@
         <para>Contains fields that are relevant when a tap gesture occurs.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.XR.WSA.Input.TappedEventArgs.headRay">
+    <member name="P:UnityEngine.XR.WSA.Input.TappedEventArgs.headPose">
       <summary>
-        <para>Represents user's gaze from when the gesture occurred.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.XR.WSA.Input.TappedEventArgs.pose">
-      <summary>
-        <para>Represents pose data of the input source, such as a hand or controller, when the gesture occurred.</para>
+        <para>Head pose of the user at the time of the gesture.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.XR.WSA.Input.TappedEventArgs.source">
       <summary>
         <para>The InteractionSource (hand, controller, or user's voice) that initiated the tap gesture.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.WSA.Input.TappedEventArgs.sourcePose">
+      <summary>
+        <para>Pose data of the interaction source at the time of the gesture.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.XR.WSA.Input.TappedEventArgs.tapCount">
@@ -2477,6 +2546,11 @@ and false if the node is not presently being tracked by the underlying XR system
         <para>Globally enables or disables XR for the application.</para>
       </summary>
     </member>
+    <member name="P:UnityEngine.XR.XRSettings.eyeTextureDesc">
+      <summary>
+        <para>Fetch the eye texture RenderTextureDescriptor from the active stereo device.</para>
+      </summary>
+    </member>
     <member name="P:UnityEngine.XR.XRSettings.eyeTextureHeight">
       <summary>
         <para>The current height of an eye texture for the loaded device.</para>
@@ -2484,7 +2558,7 @@ and false if the node is not presently being tracked by the underlying XR system
     </member>
     <member name="P:UnityEngine.XR.XRSettings.eyeTextureResolutionScale">
       <summary>
-        <para>Controls the texel:pixel ratio before lens correction, trading performance for sharpness.</para>
+        <para>Controls the actual size of eye textures as a multiplier of the device's default resolution.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.XR.XRSettings.eyeTextureWidth">
@@ -2514,7 +2588,7 @@ and false if the node is not presently being tracked by the underlying XR system
     </member>
     <member name="P:UnityEngine.XR.XRSettings.renderViewportScale">
       <summary>
-        <para>Controls the texel:pixel ratio before lens correction, trading performance for sharpness.</para>
+        <para>Controls how much of the allocated eye texture should be used for rendering.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.XR.XRSettings.showDeviceView">
@@ -2525,6 +2599,11 @@ and false if the node is not presently being tracked by the underlying XR system
     <member name="P:UnityEngine.XR.XRSettings.supportedDevices">
       <summary>
         <para>Returns a list of supported XR devices that were included at build time.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.XR.XRSettings.useOcclusionMesh">
+      <summary>
+        <para>Specifies whether or not the occlusion mesh should be used when rendering. Enabled by default.</para>
       </summary>
     </member>
     <member name="M:UnityEngine.XR.XRSettings.LoadDeviceByName(System.String)">

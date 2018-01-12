@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Waypoints : MonoBehaviour {
+public class Waypoints : MonoBehaviour
+{
 
     [SerializeField]
     private Transform m_LeftTarget, m_RightTarget;
@@ -11,18 +12,19 @@ public class Waypoints : MonoBehaviour {
     {
         Vector3 target = Vector3.zero;
 
-        if(direction == WalkDireciton.Left)
+        if (direction == WalkDireciton.Left)
         {
             target = m_LeftTarget.position;
         }
 
-        if(direction == WalkDireciton.Right)
+        if (direction == WalkDireciton.Right)
         {
             target = m_RightTarget.position;
         }
 
         return target;
     }
+
 
     public void OnDrawGizmos()
     {
