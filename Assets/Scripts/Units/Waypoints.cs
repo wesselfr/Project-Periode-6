@@ -23,4 +23,17 @@ public class Waypoints : MonoBehaviour {
 
         return target;
     }
+
+    public void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        if (m_LeftTarget != null)
+        {
+            Gizmos.DrawLine(transform.position, m_LeftTarget.position);
+        }
+        if (m_RightTarget != null)
+        {
+            Gizmos.DrawLine(transform.position, m_RightTarget.position);
+        }
+    }
 }
