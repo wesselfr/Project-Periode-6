@@ -2614,14 +2614,6 @@ Transitions with exit times greater than one will be evaluated only once, so the
       </summary>
       <param name="path"></param>
     </member>
-    <member name="M:UnityEditor.AssetDatabase.GetCurrentCacheServerIp">
-      <summary>
-        <para>Gets the IP address of the Cache Server currently in use by the Editor.</para>
-      </summary>
-      <returns>
-        <para>Returns a string representation of the current Cache Server IP address.</para>
-      </returns>
-    </member>
     <member name="M:UnityEditor.AssetDatabase.GetDependencies(System.String)">
       <summary>
         <para>Given a pathName, returns the list of all assets that it depends on.</para>
@@ -13684,7 +13676,7 @@ More information - https:msdn.microsoft.comen-uslibrary/dn584397(v=vs.110).aspx.
     </member>
     <member name="P:UnityEditor.EditorWindow.maximized">
       <summary>
-        <para>Is this window maximized?</para>
+        <para>Is this window maximized.</para>
       </summary>
     </member>
     <member name="P:UnityEditor.EditorWindow.maxSize">
@@ -13704,7 +13696,7 @@ More information - https:msdn.microsoft.comen-uslibrary/dn584397(v=vs.110).aspx.
     </member>
     <member name="P:UnityEditor.EditorWindow.position">
       <summary>
-        <para>The desired position of the window in screen space.</para>
+        <para>The position of the window in screen space.</para>
       </summary>
     </member>
     <member name="P:UnityEditor.EditorWindow.title">
@@ -15031,7 +15023,7 @@ If the Unity Editor setting "Auto-Update" is set to enabled, editing a script ou
       <summary>
         <para>Flood fills tiles and GameObjects starting from a given position within the selected layers.</para>
       </summary>
-      <param name="gridLayout">GridLayout used for layout.</param>
+      <param name="gridLayout"> used for layout.</param>
       <param name="brushTarget">Target of the flood fill operation. By default the currently selected GameObject.</param>
       <param name="position">Starting position of the flood fill.</param>
     </member>
@@ -18760,41 +18752,6 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
         <para>A light status bar, intended for use on dark backgrounds.</para>
       </summary>
     </member>
-    <member name="T:UnityEditor.iOSSystemGestureDeferMode">
-      <summary>
-        <para>Bit-mask used to control the deferring of system gestures on iOS.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEditor.iOSSystemGestureDeferMode.All">
-      <summary>
-        <para>Identifies all screen edges.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEditor.iOSSystemGestureDeferMode.BottomEdge">
-      <summary>
-        <para>Identifies bottom screen edge.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEditor.iOSSystemGestureDeferMode.LeftEdge">
-      <summary>
-        <para>Identifies left screen edge.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEditor.iOSSystemGestureDeferMode.None">
-      <summary>
-        <para>Disables gesture deferring on all edges.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEditor.iOSSystemGestureDeferMode.RightEdge">
-      <summary>
-        <para>Identifies right screen edge.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEditor.iOSSystemGestureDeferMode.TopEdge">
-      <summary>
-        <para>Identifies top screen edge.</para>
-      </summary>
-    </member>
     <member name="T:UnityEditor.iOSTargetDevice">
       <summary>
         <para>Target iOS device.</para>
@@ -21983,49 +21940,59 @@ If the target name is in the provided list of existing names, a unique name is g
         <para>Operation resulted in an unknown error.</para>
       </summary>
     </member>
+    <member name="T:UnityEditor.PackageManager.OriginType">
+      <summary>
+        <para>Type of origin path for packages.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEditor.PackageManager.OriginType.Path">
+      <summary>
+        <para>The value is the file system path or a gzip containing the package.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEditor.PackageManager.OriginType.Registry">
+      <summary>
+        <para>The value is the url of a registry.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEditor.PackageManager.OriginType.Unknown">
+      <summary>
+        <para>The type of the value is unknown.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEditor.PackageManager.OriginType.Url">
+      <summary>
+        <para>The value is the url of a folder or a gzip containing the package.</para>
+      </summary>
+    </member>
     <member name="T:UnityEditor.PackageManager.PackageCollection">
       <summary>
-        <para>A collection of PackageInfo objects.</para>
+        <para>A collection of UpmPackageInfo objects.</para>
       </summary>
     </member>
-    <member name="T:UnityEditor.PackageManager.PackageInfo">
+    <member name="T:UnityEditor.PackageManager.RelationType">
       <summary>
-        <para>Structure describing a Unity Package.</para>
+        <para>Type of package relation to a project.</para>
       </summary>
     </member>
-    <member name="P:UnityEditor.PackageManager.PackageInfo.category">
+    <member name="F:UnityEditor.PackageManager.RelationType.Excluded">
       <summary>
-        <para>Category of the package.</para>
+        <para>Denote a package excluded from the project.</para>
       </summary>
     </member>
-    <member name="P:UnityEditor.PackageManager.PackageInfo.description">
+    <member name="F:UnityEditor.PackageManager.RelationType.Internalized">
       <summary>
-        <para>Detailed description of the package.</para>
+        <para>Denote a package internalized in the project.</para>
       </summary>
     </member>
-    <member name="P:UnityEditor.PackageManager.PackageInfo.displayName">
+    <member name="F:UnityEditor.PackageManager.RelationType.ReadOnly">
       <summary>
-        <para>Friendly display name of the package.</para>
+        <para>Denote a  package referenced by the project as provided by the registry.</para>
       </summary>
     </member>
-    <member name="P:UnityEditor.PackageManager.PackageInfo.name">
+    <member name="F:UnityEditor.PackageManager.RelationType.Unknown">
       <summary>
-        <para>Unique name of the package.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEditor.PackageManager.PackageInfo.packageId">
-      <summary>
-        <para>Identifier of the package.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEditor.PackageManager.PackageInfo.resolvedPath">
-      <summary>
-        <para>The local path of the project on disk.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEditor.PackageManager.PackageInfo.version">
-      <summary>
-        <para>Version of the package.</para>
+        <para>Unknown relation type.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.PackageManager.Requests.AddRequest">
@@ -22111,6 +22078,66 @@ If the target name is in the provided list of existing names, a unique name is g
     <member name="F:UnityEditor.PackageManager.StatusCode.Success">
       <summary>
         <para>Package manager operation completed successfully.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.PackageManager.UpmPackageInfo">
+      <summary>
+        <para>Structure describing a Unity Package.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEditor.PackageManager.UpmPackageInfo.category">
+      <summary>
+        <para>Category of the package.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEditor.PackageManager.UpmPackageInfo.description">
+      <summary>
+        <para>Detailed description of the package.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEditor.PackageManager.UpmPackageInfo.displayName">
+      <summary>
+        <para>Friendly display name of the package.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEditor.PackageManager.UpmPackageInfo.name">
+      <summary>
+        <para>Unique name of the package.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEditor.PackageManager.UpmPackageInfo.originLocation">
+      <summary>
+        <para>Location of the source of the package.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEditor.PackageManager.UpmPackageInfo.originType">
+      <summary>
+        <para>Type of the origin path specified in originLocation.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEditor.PackageManager.UpmPackageInfo.packageId">
+      <summary>
+        <para>Identifier of the package.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEditor.PackageManager.UpmPackageInfo.relationType">
+      <summary>
+        <para>The relation of the package with the current project.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEditor.PackageManager.UpmPackageInfo.resolvedPath">
+      <summary>
+        <para>The local path of the project on disk.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEditor.PackageManager.UpmPackageInfo.tag">
+      <summary>
+        <para>Tag associated with the expected package revision.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEditor.PackageManager.UpmPackageInfo.version">
+      <summary>
+        <para>Version of the package.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.PauseState">
@@ -22825,7 +22852,7 @@ See Also: PhysicsVisualizationSettings.</para>
     </member>
     <member name="P:UnityEditor.PlayerSettings.virtualRealitySupported">
       <summary>
-        <para>Enable Virtual Reality support on the current build target.</para>
+        <para>Enable virtual reality support.</para>
       </summary>
     </member>
     <member name="P:UnityEditor.PlayerSettings.visibleInBackground">
@@ -22981,15 +23008,6 @@ See Also: PhysicsVisualizationSettings.</para>
       </summary>
       <param name="targetGroup"></param>
     </member>
-    <member name="M:UnityEditor.PlayerSettings.GetAvailableVirtualRealitySDKs(UnityEditor.BuildTargetGroup)">
-      <summary>
-        <para>Returns a list of the available Virtual Reality SDKs that are supported on a given BuildTargetGroup.</para>
-      </summary>
-      <param name="targetGroup">The BuildTargetGroup to return the list for.</param>
-      <returns>
-        <para>List of available Virtual Reality SDKs.</para>
-      </returns>
-    </member>
     <member name="M:UnityEditor.PlayerSettings.GetGraphicsAPIs(UnityEditor.BuildTarget)">
       <summary>
         <para>Get graphics APIs to be used on a build platform.</para>
@@ -23141,24 +23159,6 @@ See Also: PhysicsVisualizationSettings.</para>
         <para>Should best available graphics API be used.</para>
       </returns>
     </member>
-    <member name="M:UnityEditor.PlayerSettings.GetVirtualRealitySDKs(UnityEditor.BuildTargetGroup)">
-      <summary>
-        <para>Get the List of Virtual Reality SDKs for a given BuildTargetGroup.</para>
-      </summary>
-      <param name="targetGroup">The BuildTargetGroup to return the SDK list for.</param>
-      <returns>
-        <para>Ordered list of Virtual Reality SDKs.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEditor.PlayerSettings.GetVirtualRealitySupported(UnityEditor.BuildTargetGroup)">
-      <summary>
-        <para>Returns whether or not Virtual Reality Support is enabled for a given BuildTargetGroup.</para>
-      </summary>
-      <param name="targetGroup">The BuildTargetGroup to return the value for.</param>
-      <returns>
-        <para>True if Virtual Reality Support is enabled.</para>
-      </returns>
-    </member>
     <member name="M:UnityEditor.PlayerSettings.HasAspectRatio(UnityEditor.AspectRatio)">
       <summary>
         <para>Returns whether or not the specified aspect ratio is enabled.</para>
@@ -23210,11 +23210,6 @@ See Also: PhysicsVisualizationSettings.</para>
         <para>Describes the reason for access to the user's camera.</para>
       </summary>
     </member>
-    <member name="P:UnityEditor.PlayerSettings.iOS.deferSystemGesturesMode">
-      <summary>
-        <para>Defer system gestures until the second swipe on specific edges.</para>
-      </summary>
-    </member>
     <member name="P:UnityEditor.PlayerSettings.iOS.disableDepthAndStencilBuffers">
       <summary>
         <para>Disable Depth and Stencil Buffers.</para>
@@ -23228,11 +23223,6 @@ See Also: PhysicsVisualizationSettings.</para>
     <member name="P:UnityEditor.PlayerSettings.iOS.forceHardShadowsOnMetal">
       <summary>
         <para>Should hard shadows be enforced when running on (mobile) Metal.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEditor.PlayerSettings.iOS.hideHomeButton">
-      <summary>
-        <para>Specifies whether the home button should be hidden in the iOS build of this application.</para>
       </summary>
     </member>
     <member name="P:UnityEditor.PlayerSettings.iOS.iOSManualProvisioningProfileID">
@@ -24055,20 +24045,6 @@ Note: calling this function will implicitly call Application.SetStackTraceLogTyp
       <param name="platform">Platform to set the flag for.</param>
       <param name="automatic">Should best available graphics API be used?</param>
     </member>
-    <member name="M:UnityEditor.PlayerSettings.SetVirtualRealitySDKs(UnityEditor.BuildTargetGroup,System.String[])">
-      <summary>
-        <para>Set the List of Virtual Reality SDKs for a given BuildTargetGroup.</para>
-      </summary>
-      <param name="targetGroup">The BuildTargetGroup to set the SDK list for.</param>
-      <param name="sdks">List of Virtual Reality SDKs.</param>
-    </member>
-    <member name="M:UnityEditor.PlayerSettings.SetVirtualRealitySupported(UnityEditor.BuildTargetGroup,System.Boolean)">
-      <summary>
-        <para>Sets whether or not Virtual Reality Support is enabled for a given BuildTargetGroup.</para>
-      </summary>
-      <param name="targetGroup">The BuildTargetGroup to set the value for.</param>
-      <param name="value">The value to set, true to enable, false to disable.</param>
-    </member>
     <member name="T:UnityEditor.PlayerSettings.SplashScreen">
       <summary>
         <para>Interface to splash screen player settings.</para>
@@ -24582,21 +24558,6 @@ Set this property to limit your application to only run on devices that support 
         <para>Set the lowest level of head tracking required to run your application.
 
 Set this property to limit your application to only run on devices that support this minimum level of head tracking.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEditor.PlayerSettings.VROculus">
-      <summary>
-        <para>Class used to access properties of the Oculus VR device.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEditor.PlayerSettings.VROculus.dashSupport">
-      <summary>
-        <para>Enable Oculus Dash support for the application.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEditor.PlayerSettings.VROculus.sharedDepthBuffer">
-      <summary>
-        <para>Enable Shared Depth Buffer support with Oculus.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.PlayerSettings.WebGL">
@@ -27682,14 +27643,11 @@ See Also:</para>
 See Also: AssetDatabase.IsOpenForEdit, AssetDatabase.IsMetaFileOpenForEdit.</para>
       </summary>
     </member>
-    <member name="F:UnityEditor.StatusQueryOptions.UseCachedAsync">
-      <summary>
-        <para>This option sets the status query to first use the latest valid version control system status of the file and query for a valid status asynchronously if otherwise.</para>
-      </summary>
-    </member>
     <member name="F:UnityEditor.StatusQueryOptions.UseCachedIfPossible">
       <summary>
-        <para>This option sets the status query to first use the latest valid version control system status of the file and query for a valid status synchronously if otherwise.</para>
+        <para>Use the last known version control system status of the file. This is faster on average but less accurate than forcing an update, as it will cache the status of the file for a period of time.
+
+See Also: AssetDatabase.IsOpenForEdit, AssetDatabase.IsMetaFileOpenForEdit.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.StereoRenderingPath">

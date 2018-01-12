@@ -21,8 +21,10 @@ public class GenericUnit : MonoBehaviour {
 
     private WalkDireciton m_Direciton;
 
+    [SerializeField]
     private UnitData m_Data;
 
+    [SerializeField]
     private Vector3 m_Target;
 
     private Rigidbody m_Rigidbody;
@@ -58,16 +60,26 @@ public class GenericUnit : MonoBehaviour {
         UnitStart();
     }
 
+    private void Start()
+    {
+        m_Health = m_Data.Health;
+        m_Speed = m_Data.Speed;
+        m_Range = m_Data.Range;
+        m_AttackSpeed = m_Data.AttackSpeed;
+
+        UnitStart();
+    }
+
     //First thing called
     void UnitStart()
     {
         if(m_Team == Team.Team1)
         {
-            m_Direciton = WalkDireciton.Left;
+            m_Direciton = WalkDireciton.Right;
         }
         if(m_Team == Team.Team2)
         {
-            m_Direciton = WalkDireciton.Right;
+            m_Direciton = WalkDireciton.Left;
         }
 
 
@@ -142,6 +154,20 @@ public class GenericUnit : MonoBehaviour {
     }
 
     /// <summary>
+    /// Returns the health of the unit.
+    /// </summary>
+    /// <returns>Unit Health</returns>
+    public float GetHealth()
+    {
+        return m_Health;
+    }
+
+    public UnitData GetUnitData()
+    {
+        return m_Data;
+    }
+
+    /// <summary>
     /// Returns the team the unit is in.
     /// </summary>
     /// <returns>Other unit team</returns>
@@ -161,6 +187,11 @@ public class GenericUnit : MonoBehaviour {
                 m_FocussedUnit = unit;
             }
         }
+
+        if (other.tag.Contains("Waypoint"))
+        {
+            m_Target = (other.GetComponent<Waypoints>().GetTarget(m_Direciton) - transform.position).normalized;
+        }
     }
 
 
@@ -169,6 +200,7 @@ public class GenericUnit : MonoBehaviour {
         if (collision.collider.tag.Contains("Waypoint"))
         {
             m_Target = collision.collider.GetComponent<Waypoints>().GetTarget(m_Direciton);
+            m_Target = (m_Target - transform.position).normalized;
         }
     }
 
@@ -176,8 +208,7 @@ public class GenericUnit : MonoBehaviour {
     {
         if (other.tag.Contains("Waypoint"))
         {
-            m_Target = other.GetComponent<Waypoints>().GetTarget(m_Direciton);
-            m_Target = (m_Target - transform.position).normalized;
+            m_Target = (other.GetComponent<Waypoints>().GetTarget(m_Direciton) - transform.position).normalized;
         }
     }
 

@@ -3388,11 +3388,6 @@ The position stream is always enabled, and any attempts to remove it will be ign
         <para>The action to perform when the Particle System stops.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.ParticleSystemStopAction.Callback">
-      <summary>
-        <para>Call OnPaticleSystemStopped on the ParticleSystem script.</para>
-      </summary>
-    </member>
     <member name="F:UnityEngine.ParticleSystemStopAction.Destroy">
       <summary>
         <para>Destroy the GameObject containing the Particle System.</para>
@@ -3465,17 +3460,17 @@ The position stream is always enabled, and any attempts to remove it will be ign
     </member>
     <member name="F:UnityEngine.ParticleSystemSubEmitterType.Birth">
       <summary>
-        <para>Spawns new particles when particles from the parent system are born.</para>
+        <para>Spawn new particles when particles from the parent system are born.</para>
       </summary>
     </member>
     <member name="F:UnityEngine.ParticleSystemSubEmitterType.Collision">
       <summary>
-        <para>Spawns new particles when particles from the parent system collide with something.</para>
+        <para>Spawn new particles when particles from the parent system collide with something.</para>
       </summary>
     </member>
     <member name="F:UnityEngine.ParticleSystemSubEmitterType.Death">
       <summary>
-        <para>Spawns new particles when particles from the parent system die.</para>
+        <para>Spawn new particles when particles from the parent system die.</para>
       </summary>
     </member>
     <member name="T:UnityEngine.ParticleSystemTrailMode">

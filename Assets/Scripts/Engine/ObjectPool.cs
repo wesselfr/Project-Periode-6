@@ -39,7 +39,4 @@ public class ObjectPool : MonoBehaviour {
             m_ObjectPool.Push(_obj);
         }
     }
-
-
-
 }
