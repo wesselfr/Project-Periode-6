@@ -24,17 +24,6 @@ public class Switch : Waypoints {
         }
     }
 
-    public void SwitchLane()
-    {
-        m_Current++;
-        if(m_Current >= m_SwitchPositions.Length)
-        {
-            m_Current = 0;
-        }
-
-        GetTarget(m_SwitchDireciton);
-    }
-
     public override Vector3 GetTarget(WalkDireciton direction)
     {
         if(m_SwitchDireciton == WalkDireciton.Left)
