@@ -24,6 +24,7 @@ public class GenericUnit : MonoBehaviour {
     [SerializeField]
     private UnitData m_Data;
 
+    [SerializeField]
     private Vector3 m_Target;
 
     private Rigidbody m_Rigidbody;
@@ -65,6 +66,8 @@ public class GenericUnit : MonoBehaviour {
         m_Speed = m_Data.Speed;
         m_Range = m_Data.Range;
         m_AttackSpeed = m_Data.AttackSpeed;
+
+        UnitStart();
     }
 
     //First thing called
@@ -72,11 +75,11 @@ public class GenericUnit : MonoBehaviour {
     {
         if(m_Team == Team.Team1)
         {
-            m_Direciton = WalkDireciton.Left;
+            m_Direciton = WalkDireciton.Right;
         }
         if(m_Team == Team.Team2)
         {
-            m_Direciton = WalkDireciton.Right;
+            m_Direciton = WalkDireciton.Left;
         }
 
 
@@ -184,6 +187,11 @@ public class GenericUnit : MonoBehaviour {
                 m_FocussedUnit = unit;
             }
         }
+
+        if (other.tag.Contains("Waypoint"))
+        {
+            m_Target = (other.GetComponent<Waypoints>().GetTarget(m_Direciton) - transform.position).normalized;
+        }
     }
 
 
@@ -192,6 +200,7 @@ public class GenericUnit : MonoBehaviour {
         if (collision.collider.tag.Contains("Waypoint"))
         {
             m_Target = collision.collider.GetComponent<Waypoints>().GetTarget(m_Direciton);
+            m_Target = (m_Target - transform.position).normalized;
         }
     }
 
@@ -199,8 +208,7 @@ public class GenericUnit : MonoBehaviour {
     {
         if (other.tag.Contains("Waypoint"))
         {
-            m_Target = other.GetComponent<Waypoints>().GetTarget(m_Direciton);
-            m_Target = (m_Target - transform.position).normalized;
+            m_Target = (other.GetComponent<Waypoints>().GetTarget(m_Direciton) - transform.position).normalized;
         }
     }
 
