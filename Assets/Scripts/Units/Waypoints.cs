@@ -5,9 +5,9 @@ using UnityEngine;
 public class Waypoints : MonoBehaviour {
 
     [SerializeField]
-    private Transform m_LeftTarget, m_RightTarget;
+    protected Transform m_LeftTarget, m_RightTarget;
 
-    public Vector3 GetTarget(WalkDireciton direction)
+    public virtual Vector3 GetTarget(WalkDireciton direction)
     {
         Vector3 target = Vector3.zero;
 
