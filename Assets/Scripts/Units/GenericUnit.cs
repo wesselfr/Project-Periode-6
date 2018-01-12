@@ -70,6 +70,9 @@ public class GenericUnit : MonoBehaviour {
             m_Direciton = WalkDireciton.Right;
         }
 
+
+        m_Rigidbody = GetComponent<Rigidbody>();
+
         m_Walking = true; 
     }
 
@@ -166,5 +169,20 @@ public class GenericUnit : MonoBehaviour {
         {
             m_Target = collision.collider.GetComponent<Waypoints>().GetTarget(m_Direciton);
         }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag.Contains("Waypoint"))
+        {
+            m_Target = other.GetComponent<Waypoints>().GetTarget(m_Direciton);
+            m_Target = (m_Target - transform.position).normalized;
+        }
+    }
+
+
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawLine(transform.position,  transform.position + m_Target);
     }
 }

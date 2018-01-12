@@ -284,6 +284,7 @@
     <Compile Include="Assets\Scripts\Spawning\Gatherer.cs" />
     <Compile Include="Assets\Scripts\Spawning\UnitSpawner.cs" />
     <Compile Include="Assets\Scripts\UnitData.cs" />
+    <Compile Include="Assets\Scripts\Units\DebugSpawner.cs" />
     <Compile Include="Assets\Scripts\Units\GenericUnit.cs" />
     <Compile Include="Assets\Scripts\Units\Waypoints.cs" />
   </ItemGroup>
