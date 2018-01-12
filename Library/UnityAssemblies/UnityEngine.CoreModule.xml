@@ -1598,153 +1598,6 @@ Note: Using raw JNI functions requires advanced knowledge of the Android Java Na
         <para>Enable anisotropic filtering for all textures.</para>
       </summary>
     </member>
-    <member name="T:UnityEngine.Apple.ReplayKit.ReplayKit">
-      <summary>
-        <para>ReplayKit is only available on certain iPhone, iPad and iPod Touch devices running iOS 9.0 or later.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Apple.ReplayKit.ReplayKit.broadcastingAPIAvailable">
-      <summary>
-        <para>A Boolean that indicates whether ReplayKit broadcasting API is available (true means available) (Read Only).
-Check the value of this property before making ReplayKit broadcasting API calls. On iOS versions prior to iOS 10, this property will have a value of false.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Apple.ReplayKit.ReplayKit.broadcastURL">
-      <summary>
-        <para>A string property that contains an URL used to redirect the user to an on-going or completed broadcast (Read Only).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Apple.ReplayKit.ReplayKit.cameraEnabled">
-      <summary>
-        <para>Camera enabled status, true, if camera enabled, false otherwise.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Apple.ReplayKit.ReplayKit.isBroadcasting">
-      <summary>
-        <para>Boolean property that indicates whether a broadcast is currently in progress (Read Only).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Apple.ReplayKit.ReplayKit.isRecording">
-      <summary>
-        <para>A boolean that indicates whether ReplayKit is making a recording (where True means a recording is in progress). (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Apple.ReplayKit.ReplayKit.lastError">
-      <summary>
-        <para>A string value of the last error incurred by the ReplayKit: Either 'Failed to get Screen Recorder' or 'No recording available'. (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Apple.ReplayKit.ReplayKit.microphoneEnabled">
-      <summary>
-        <para>Microphone enabled status, true, if microhone enabled, false otherwise.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Apple.ReplayKit.ReplayKit.recordingAvailable">
-      <summary>
-        <para>A boolean value that indicates that a new recording is available for preview (where True means available). (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Apple.ReplayKit.ReplayKit.APIAvailable">
-      <summary>
-        <para>A boolean that indicates whether the ReplayKit API is available (where True means available). (Read Only)</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Apple.ReplayKit.ReplayKit.BroadcastStatusCallback">
-      <summary>
-        <para>Function called at the completion of broadcast startup.</para>
-      </summary>
-      <param name="hasStarted">This parameter will be true if the broadcast started successfully and false in the event of an error.</param>
-      <param name="errorMessage">In the event of failure to start a broadcast, this parameter contains the associated error message.</param>
-    </member>
-    <member name="M:UnityEngine.Apple.ReplayKit.ReplayKit.Discard">
-      <summary>
-        <para>Discard the current recording.</para>
-      </summary>
-      <returns>
-        <para>A boolean value of True if the recording was discarded successfully or False if an error occurred.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Apple.ReplayKit.ReplayKit.HideCameraPreview">
-      <summary>
-        <para>Hide the camera preview view.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Apple.ReplayKit.ReplayKit.Preview">
-      <summary>
-        <para>Preview the current recording</para>
-      </summary>
-      <returns>
-        <para>A boolean value of True if the video preview window opened successfully or False if an error occurred.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Apple.ReplayKit.ReplayKit.ShowCameraPreviewAt(System.Single,System.Single)">
-      <summary>
-        <para>Shows camera preview at coordinates posX and posY.</para>
-      </summary>
-      <param name="posX"></param>
-      <param name="posY"></param>
-    </member>
-    <member name="M:UnityEngine.Apple.ReplayKit.ReplayKit.StartBroadcasting">
-      <summary>
-        <para>Initiates and starts a new broadcast
-When StartBroadcast is called, user is presented with a broadcast provider selection screen, and then a broadcast setup screen. Once it is finished, a broadcast will be started, and the callback will be invoked.
-It will also be invoked in case of any error.
-        </para>
-      </summary>
-      <param name="callback">A callback for getting the status of broadcast initiation.</param>
-      <param name="enableMicrophone">Enable or disable the microphone while broadcasting. Enabling the microphone allows you to include user commentary while broadcasting. The default value is false.</param>
-      <param name="enableCamera">Enable or disable the camera while broadcasting. Enabling camera allows you to include user camera footage while broadcasting. The default value is false. To actually include camera footage in your broadcast, you also have to call ShowCameraPreviewAt as well to position the preview view.</param>
-    </member>
-    <member name="M:UnityEngine.Apple.ReplayKit.ReplayKit.StartRecording(System.Boolean,System.Boolean)">
-      <summary>
-        <para>Start a new recording.</para>
-      </summary>
-      <param name="enableMicrophone">Enable or disable the microphone while making a recording. Enabling the microphone allows you to include user commentary while recording. The default value is false.</param>
-      <param name="enableCamera">Enable or disable the camera while making a recording. Enabling camera allows you to include user camera footage while recording. The default value is false. To actually include camera footage in your recording, you also have to call ShowCameraPreviewAt as well to position the preview view.</param>
-      <returns>
-        <para>A boolean value of True if recording started successfully or False if an error occurred.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Apple.ReplayKit.ReplayKit.StopBroadcasting">
-      <summary>
-        <para>Stops current broadcast.
-Will terminate currently on-going broadcast. If no broadcast is in progress, does nothing.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Apple.ReplayKit.ReplayKit.StopRecording">
-      <summary>
-        <para>Stop the current recording.</para>
-      </summary>
-      <returns>
-        <para>A boolean value of True if recording stopped successfully or False if an error occurred.</para>
-      </returns>
-    </member>
-    <member name="T:UnityEngine.Apple.TV.Remote">
-      <summary>
-        <para>A class for Apple TV remote input configuration.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Apple.TV.Remote.allowExitToHome">
-      <summary>
-        <para>Configures how "Menu" button behaves on Apple TV Remote. If this property is set to true hitting "Menu" on Remote will exit to system home screen. When this property is false current application is responsible for handling "Menu" button. It is recommended to set this property to true on top level menus of your application.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Apple.TV.Remote.allowRemoteRotation">
-      <summary>
-        <para>Configures if Apple TV Remote should autorotate all the inputs when Remote is being held in horizontal orientation. Default is false.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Apple.TV.Remote.reportAbsoluteDpadValues">
-      <summary>
-        <para>Configures how touches are mapped to analog joystick axes in relative or absolute values. If set to true it will return +1 on Horizontal axis when very far right is being touched on Remote touch aread (and -1 when very left area is touched correspondingly). The same applies for Vertical axis too. When this property is set to false player should swipe instead of touching specific area of remote to generate Horizontal or Vertical input.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Apple.TV.Remote.touchesEnabled">
-      <summary>
-        <para>Disables Apple TV Remote touch propagation to Unity Input.touches API. Useful for 3rd party frameworks, which do not respect Touch.type == Indirect.
-Default is false.</para>
-      </summary>
-    </member>
     <member name="T:UnityEngine.Application">
       <summary>
         <para>Access to application run-time data.</para>
@@ -3535,7 +3388,7 @@ See Also: UnityWebRequest.GetAssetBundle, DownloadHandlerAssetBundle.</param>
     </member>
     <member name="P:UnityEngine.Bounds.extents">
       <summary>
-        <para>The extents of the Bounding Box. This is always half of the size of the Bounds.</para>
+        <para>The extents of the box. This is always half of the size.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Bounds.max">
@@ -5442,20 +5295,20 @@ The default value is Camera.MonoOrStereoscopicEye.Left, so Camera.MonoOrStereosc
         <para>Returns all components of Type type in the GameObject or any of its children.</para>
       </summary>
       <param name="t">The type of Component to retrieve.</param>
-      <param name="includeInactive">Should Components on inactive GameObjects be included in the found set? includeInactive decides which children of the GameObject will be searched.  The GameObject that you call GetComponentsInChildren on is always searched regardless.</param>
+      <param name="includeInactive">Should Components on inactive GameObjects be included in the found set?</param>
     </member>
     <member name="M:UnityEngine.Component.GetComponentsInChildren(System.Type,System.Boolean)">
       <summary>
         <para>Returns all components of Type type in the GameObject or any of its children.</para>
       </summary>
       <param name="t">The type of Component to retrieve.</param>
-      <param name="includeInactive">Should Components on inactive GameObjects be included in the found set? includeInactive decides which children of the GameObject will be searched.  The GameObject that you call GetComponentsInChildren on is always searched regardless.</param>
+      <param name="includeInactive">Should Components on inactive GameObjects be included in the found set?</param>
     </member>
     <member name="M:UnityEngine.Component.GetComponentsInChildren(System.Boolean)">
       <summary>
         <para>Generic version. See the page for more details.</para>
       </summary>
-      <param name="includeInactive">Should Components on inactive GameObjects be included in the found set? includeInactive decides which children of the GameObject will be searched.  The GameObject that you call GetComponentsInChildren on is always searched regardless.</param>
+      <param name="includeInactive">Should Components on inactive GameObjects be included in the found set?</param>
       <returns>
         <para>A list of all found components matching the specified type.</para>
       </returns>
@@ -7646,139 +7499,6 @@ Windows Store Apps: tablets are treated as desktop machines, thus DeviceType.Han
         <para>A MaterialEffectPlayable linked to the PlayableGraph.</para>
       </returns>
     </member>
-    <member name="T:UnityEngine.Experimental.Playables.TextureMixerPlayable">
-      <summary>
-        <para>An implementation of IPlayable that allows mixing two textures.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Experimental.Playables.TextureMixerPlayable.Create(UnityEngine.Playables.PlayableGraph)">
-      <summary>
-        <para>Creates a TextureMixerPlayable in the PlayableGraph.</para>
-      </summary>
-      <param name="graph">The PlayableGraph object that will own the TextureMixerPlayable.</param>
-      <returns>
-        <para>A TextureMixerPlayable linked to the PlayableGraph.</para>
-      </returns>
-    </member>
-    <member name="T:UnityEngine.Experimental.Playables.TexturePlayableOutput">
-      <summary>
-        <para>An IPlayableOutput implementation that will be used to manipulate textures.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Playables.TexturePlayableOutput.Null">
-      <summary>
-        <para>Returns an invalid TexturePlayableOutput.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Experimental.Rendering.BlendState">
-      <summary>
-        <para>Values for the blend state.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.BlendState.alphaToMask">
-      <summary>
-        <para>Turns on alpha-to-coverage.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.BlendState.blendState0">
-      <summary>
-        <para>Blend state for render target 0.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.BlendState.blendState1">
-      <summary>
-        <para>Blend state for render target 1.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.BlendState.blendState2">
-      <summary>
-        <para>Blend state for render target 2.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.BlendState.blendState3">
-      <summary>
-        <para>Blend state for render target 3.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.BlendState.blendState4">
-      <summary>
-        <para>Blend state for render target 4.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.BlendState.blendState5">
-      <summary>
-        <para>Blend state for render target 5.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.BlendState.blendState6">
-      <summary>
-        <para>Blend state for render target 6.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.BlendState.blendState7">
-      <summary>
-        <para>Blend state for render target 7.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.BlendState.separateMRTBlendStates">
-      <summary>
-        <para>Determines whether each render target uses a separate blend state.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.BlendState.#ctor(System.Boolean,System.Boolean)">
-      <summary>
-        <para>Creates a new blend state with the specified values.</para>
-      </summary>
-      <param name="separateMRTBlend">Determines whether each render target uses a separate blend state.</param>
-      <param name="alphaToMask">Turns on alpha-to-coverage.</param>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.BlendState.Default">
-      <summary>
-        <para>Default values for the blend state.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Experimental.Rendering.CameraProperties">
-      <summary>
-        <para>Camera related properties in CullingParameters.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.CameraProperties.GetCameraCullingPlane(System.Int32)">
-      <summary>
-        <para>Get a camera culling plane.</para>
-      </summary>
-      <param name="index">Plane index (up to 5).</param>
-      <returns>
-        <para>Camera culling plane.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.CameraProperties.GetShadowCullingPlane(System.Int32)">
-      <summary>
-        <para>Get a shadow culling plane.</para>
-      </summary>
-      <param name="index">Plane index (up to 5).</param>
-      <returns>
-        <para>Shadow culling plane.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.CameraProperties.SetCameraCullingPlane(System.Int32,UnityEngine.Plane)">
-      <summary>
-        <para>Set a camera culling plane.</para>
-      </summary>
-      <param name="index">Plane index (up to 5).</param>
-      <param name="plane">Camera culling plane.</param>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.CameraProperties.SetShadowCullingPlane(System.Int32,UnityEngine.Plane)">
-      <summary>
-        <para>Set a shadow culling plane.</para>
-      </summary>
-      <param name="index">Plane index (up to 5).</param>
-      <param name="plane">Shadow culling plane.</param>
-    </member>
-    <member name="T:UnityEngine.Experimental.Rendering.CoreCameraValues">
-      <summary>
-        <para>Core Camera related properties in CullingParameters.</para>
-      </summary>
-    </member>
     <member name="T:UnityEngine.Experimental.Rendering.CullResults">
       <summary>
         <para>Culling results (visible objects, lights, reflection probes).</para>
@@ -7929,53 +7649,6 @@ If an element of the array is set to -1, the light corresponding to that element
       </summary>
       <param name="mapping">Array with light indices that map from VisibleLight to internal per-object light lists.</param>
     </member>
-    <member name="T:UnityEngine.Experimental.Rendering.DepthState">
-      <summary>
-        <para>Values for the depth state.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.DepthState.compareFunction">
-      <summary>
-        <para>How should depth testing be performed.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.DepthState.writeEnabled">
-      <summary>
-        <para>Controls whether pixels from this object are written to the depth buffer.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.DepthState.#ctor(System.Boolean,UnityEngine.Rendering.CompareFunction)">
-      <summary>
-        <para>Creates a new depth state with the given values.</para>
-      </summary>
-      <param name="writeEnabled">Controls whether pixels from this object are written to the depth buffer.</param>
-      <param name="compareFunction">How should depth testing be performed.</param>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.DepthState.Default">
-      <summary>
-        <para>Default values for the depth state.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Experimental.Rendering.DrawRendererFlags">
-      <summary>
-        <para>Flags controlling RenderLoop.DrawRenderers.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.DrawRendererFlags.EnableDynamicBatching">
-      <summary>
-        <para>When set, enables dynamic batching.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.DrawRendererFlags.EnableInstancing">
-      <summary>
-        <para>When set, enables GPU instancing.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.DrawRendererFlags.None">
-      <summary>
-        <para>No flags are set.</para>
-      </summary>
-    </member>
     <member name="T:UnityEngine.Experimental.Rendering.DrawRendererSettings">
       <summary>
         <para>Settings for ScriptableRenderContext.DrawRenderers.</para>
@@ -8021,857 +7694,6 @@ If an element of the array is set to -1, the light corresponding to that element
       </summary>
       <param name="index">Index of the shader pass to use.</param>
       <param name="shaderPassName">Name of the shader pass.</param>
-    </member>
-    <member name="T:UnityEngine.Experimental.Rendering.DrawRendererSortSettings">
-      <summary>
-        <para>Describes how to sort objects during rendering.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.DrawRendererSortSettings.cameraPosition">
-      <summary>
-        <para>Camera position, used to determine distances to objects.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.DrawRendererSortSettings.flags">
-      <summary>
-        <para>What kind of sorting to do while rendering.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.DrawRendererSortSettings.sortOrthographic">
-      <summary>
-        <para>Should orthographic sorting be used?</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.DrawRendererSortSettings.worldToCameraMatrix">
-      <summary>
-        <para>Camera view matrix, used to determine distances to objects.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Experimental.Rendering.DrawShadowsSettings">
-      <summary>
-        <para>Settings for RenderLoop.DrawShadows.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.DrawShadowsSettings.cullResults">
-      <summary>
-        <para>Culling results to use.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.DrawShadowsSettings.lightIndex">
-      <summary>
-        <para>The index of the shadow-casting light to be rendered.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.DrawShadowsSettings.splitData">
-      <summary>
-        <para>The split data.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.DrawShadowsSettings.#ctor(UnityEngine.Experimental.Rendering.CullResults,System.Int32)">
-      <summary>
-        <para>Create a shadow settings object.</para>
-      </summary>
-      <param name="cullResults">The cull results for this light.</param>
-      <param name="lightIndex">The light index.</param>
-    </member>
-    <member name="T:UnityEngine.Experimental.Rendering.FilterRenderersSettings">
-      <summary>
-        <para>Filter settings for ScriptableRenderContext.DrawRenderers.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.FilterRenderersSettings.layerMask">
-      <summary>
-        <para>Only render objects in the given layer mask.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.FilterRenderersSettings.renderQueueRange">
-      <summary>
-        <para>Render objects whose material render queue in inside this range.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.FilterRenderersSettings.#ctor(System.Boolean)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="initializeValues">Specifies whether the values of the struct should be initialized.</param>
-    </member>
-    <member name="T:UnityEngine.Experimental.Rendering.FilterResults">
-      <summary>
-        <para>Describes a subset of objects to be rendered.
-
-See Also: ScriptableRenderContext.DrawRenderers.</para>
-      </summary>
-    </member>
-    <member name="?:UnityEngine.Experimental.Rendering.IRenderPipeline">
-      <summary>
-        <para>Defines a series of commands and settings that describes how Unity renders a frame.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.IRenderPipeline.disposed">
-      <summary>
-        <para>When the IRenderPipeline is invalid or destroyed this returns true.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.IRenderPipeline.Render(UnityEngine.Experimental.Rendering.ScriptableRenderContext,UnityEngine.Camera[])">
-      <summary>
-        <para>Defines custom rendering for this RenderPipeline.</para>
-      </summary>
-      <param name="renderContext">Structure that holds the rendering commands for this loop.</param>
-      <param name="cameras">Cameras to render.</param>
-    </member>
-    <member name="?:UnityEngine.Experimental.Rendering.IRenderPipelineAsset">
-      <summary>
-        <para>An asset that produces a specific IRenderPipeline.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.IRenderPipelineAsset.CreatePipeline">
-      <summary>
-        <para>Create a IRenderPipeline specific to this asset.</para>
-      </summary>
-      <returns>
-        <para>Created pipeline.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.IRenderPipelineAsset.DestroyCreatedInstances">
-      <summary>
-        <para>Override this method to destroy RenderPipeline cached state.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.IRenderPipelineAsset.GetTerrainBrushPassIndex">
-      <summary>
-        <para>The render index for the terrain brush in the editor.</para>
-      </summary>
-      <returns>
-        <para>Queue index.</para>
-      </returns>
-    </member>
-    <member name="T:UnityEngine.Experimental.Rendering.LODParameters">
-      <summary>
-        <para>LODGroup culling parameters.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.LODParameters.cameraPixelHeight">
-      <summary>
-        <para>Rendering view height in pixels.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.LODParameters.cameraPosition">
-      <summary>
-        <para>Camera position.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.LODParameters.fieldOfView">
-      <summary>
-        <para>Camera's field of view.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.LODParameters.isOrthographic">
-      <summary>
-        <para>Indicates whether camera is orthographic.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.LODParameters.orthoSize">
-      <summary>
-        <para>Orhographic camera size.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Experimental.Rendering.RasterState">
-      <summary>
-        <para>Values for the raster state.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RasterState.cullingMode">
-      <summary>
-        <para>Controls which sides of polygons should be culled (not drawn).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RasterState.depthClip">
-      <summary>
-        <para>Enable clipping based on depth.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RasterState.offsetFactor">
-      <summary>
-        <para>Scales the maximum Z slope.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RasterState.offsetUnits">
-      <summary>
-        <para>Scales the minimum resolvable depth buffer value.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RasterState.#ctor(UnityEngine.Rendering.CullMode,System.Int32,System.Single)">
-      <summary>
-        <para>Creates a new raster state with the given values.</para>
-      </summary>
-      <param name="cullingMode">Controls which sides of polygons should be culled (not drawn).</param>
-      <param name="offsetUnits">Scales the minimum resolvable depth buffer value.</param>
-      <param name="offsetFactor">Scales the maximum Z slope.</param>
-      <param name="depthClip"></param>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.RasterState.Default">
-      <summary>
-        <para>Default values for the raster state.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Experimental.Rendering.ReflectionProbeSortOptions">
-      <summary>
-        <para>Visible reflection probes sorting options.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.ReflectionProbeSortOptions.Importance">
-      <summary>
-        <para>Sort probes by importance.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.ReflectionProbeSortOptions.ImportanceThenSize">
-      <summary>
-        <para>Sort probes by importance, then by size.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.ReflectionProbeSortOptions.None">
-      <summary>
-        <para>Do not sort reflection probes.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.ReflectionProbeSortOptions.Size">
-      <summary>
-        <para>Sort probes from largest to smallest.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Experimental.Rendering.RendererConfiguration">
-      <summary>
-        <para>What kind of per-object data to setup during rendering.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.RendererConfiguration.None">
-      <summary>
-        <para>Do not setup any particular per-object data besides the transformation matrix.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.RendererConfiguration.PerObjectLightmaps">
-      <summary>
-        <para>Setup per-object lightmaps.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.RendererConfiguration.PerObjectLightProbe">
-      <summary>
-        <para>Setup per-object light probe SH data.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.RendererConfiguration.PerObjectLightProbeProxyVolume">
-      <summary>
-        <para>Setup per-object light probe proxy volume data.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.RendererConfiguration.PerObjectMotionVectors">
-      <summary>
-        <para>Setup per-object motion vectors.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.RendererConfiguration.PerObjectReflectionProbes">
-      <summary>
-        <para>Setup per-object reflection probe data.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.RendererConfiguration.ProvideLightIndices">
-      <summary>
-        <para>Setup per-object light indices.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Experimental.Rendering.RenderPass">
-      <summary>
-        <para>Object encapsulating the duration of a single renderpass that contains one or more subpasses.
-
-The RenderPass object provides a new way to switch rendertargets in the context of a Scriptable Rendering Pipeline. As opposed to the SetRenderTargets function, the RenderPass object specifies a clear beginning and an end for the rendering, alongside explicit load/store actions on the rendering surfaces.
-
-The RenderPass object also allows running multiple subpasses within the same renderpass, where the pixel shaders have a read access to the current pixel value within the renderpass. This allows for efficient implementation of various rendering methods on tile-based GPUs, such as deferred rendering.
-
-RenderPasses are natively implemented on Metal (iOS) and Vulkan, but the API is fully functional on all rendering backends via emulation (using legacy SetRenderTargets calls and reading the current pixel values via texel fetches).
-
-A quick example on how to use the RenderPass API within the Scriptable Render Pipeline to implement deferred rendering:
-
-The RenderPass mechanism has the following limitations:
-- All attachments must have the same resolution and MSAA sample count
-- The rendering results of previous subpasses are only available within the same screen-space pixel
-  coordinate via the UNITY_READ_FRAMEBUFFER_INPUT(x) macro in the shader; the attachments cannot be bound
-  as textures or otherwise accessed until the renderpass has ended
-- iOS Metal does not allow reading from the Z-Buffer, so an additional render target is needed to work around that
-- The maximum amount of attachments allowed per RenderPass is currently 8 + depth, but note that various GPUs may
-  have stricter limits.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderPass.colorAttachments">
-      <summary>
-        <para>Read only: array of RenderPassAttachment objects currently bound into this RenderPass.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderPass.context">
-      <summary>
-        <para>Read only: The ScriptableRenderContext object this RenderPass was created for.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderPass.depthAttachment">
-      <summary>
-        <para>Read only: The depth/stencil attachment used in this RenderPass, or null if none.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderPass.height">
-      <summary>
-        <para>Read only: The height of the RenderPass surfaces in pixels.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderPass.sampleCount">
-      <summary>
-        <para>Read only: MSAA sample count for this RenderPass.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderPass.width">
-      <summary>
-        <para>Read only: The width of the RenderPass surfaces in pixels.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderPass.#ctor(UnityEngine.Experimental.Rendering.ScriptableRenderContext,System.Int32,System.Int32,System.Int32,UnityEngine.Experimental.Rendering.RenderPassAttachment[],UnityEngine.Experimental.Rendering.RenderPassAttachment)">
-      <summary>
-        <para>Create a RenderPass and start it within the ScriptableRenderContext.</para>
-      </summary>
-      <param name="ctx">The ScriptableRenderContext object currently being rendered.</param>
-      <param name="w">The width of the RenderPass surfaces in pixels.</param>
-      <param name="h">The height of the RenderPass surfaces in pixels.</param>
-      <param name="samples">MSAA sample count; set to 1 to disable antialiasing.</param>
-      <param name="colors">Array of color attachments to use within this RenderPass.</param>
-      <param name="depth">The attachment to be used as the depthstencil buffer for this RenderPass, or null to disable depthstencil.</param>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderPass.Dispose">
-      <summary>
-        <para>End the RenderPass.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Experimental.Rendering.RenderPass.SubPass">
-      <summary>
-        <para>This class encapsulates a single subpass within a RenderPass. RenderPasses can never be standalone, they must always contain at least one SubPass. See Also: RenderPass.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderPass.SubPass.#ctor(UnityEngine.Experimental.Rendering.RenderPass,UnityEngine.Experimental.Rendering.RenderPassAttachment[],UnityEngine.Experimental.Rendering.RenderPassAttachment[],System.Boolean)">
-      <summary>
-        <para>Create a subpass and start it.</para>
-      </summary>
-      <param name="renderPass">The RenderPass object this subpass is part of.</param>
-      <param name="colors">Array of attachments to be used as the color render targets in this subpass. All attachments in this array must also be declared in the RenderPass constructor.</param>
-      <param name="inputs">Array of attachments to be used as input attachments in this subpass. All attachments in this array must also be declared in the RenderPass constructor.</param>
-      <param name="readOnlyDepth">If true, the depth attachment is read-only in this subpass. Some renderers require this in order to be able to use the depth attachment as input.</param>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderPass.SubPass.Dispose">
-      <summary>
-        <para>End the subpass.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Experimental.Rendering.RenderPassAttachment">
-      <summary>
-        <para>A declaration of a single color or depth rendering surface to be attached into a RenderPass.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderPassAttachment.clearColor">
-      <summary>
-        <para>The currently assigned clear color for this attachment. Default is black.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderPassAttachment.clearDepth">
-      <summary>
-        <para>Currently assigned depth clear value for this attachment. Default value is 1.0.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderPassAttachment.clearStencil">
-      <summary>
-        <para>Currently assigned stencil clear value for this attachment. Default is 0.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderPassAttachment.format">
-      <summary>
-        <para>The RenderTextureFormat of this attachment.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderPassAttachment.loadAction">
-      <summary>
-        <para>The load action to be used on this attachment when the RenderPass starts.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderPassAttachment.storeAction">
-      <summary>
-        <para>The store action to use with this attachment when the RenderPass ends. Only used when either BindSurface or BindResolveSurface has been called.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderPassAttachment.BindResolveSurface(UnityEngine.Rendering.RenderTargetIdentifier)">
-      <summary>
-        <para>When the renderpass that uses this attachment ends, resolve the MSAA surface into the given target.</para>
-      </summary>
-      <param name="tgt">The target surface to receive the MSAA-resolved pixels.</param>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderPassAttachment.BindSurface(UnityEngine.Rendering.RenderTargetIdentifier,System.Boolean,System.Boolean)">
-      <summary>
-        <para>Binds this RenderPassAttachment to the given target surface.</para>
-      </summary>
-      <param name="tgt">The surface to use as the backing storage for this RenderPassAttachment.</param>
-      <param name="loadExistingContents">Whether to read in the existing contents of the surface when the RenderPass starts.</param>
-      <param name="storeResults">Whether to store the rendering results of the attachment when the RenderPass ends.</param>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderPassAttachment.Clear(UnityEngine.Color,System.Single,System.UInt32)">
-      <summary>
-        <para>When the RenderPass starts, clear this attachment into the color or depth/stencil values given (depending on the format of this attachment). Changes loadAction to RenderBufferLoadAction.Clear.</para>
-      </summary>
-      <param name="clearCol">Color clear value. Ignored on depth/stencil attachments.</param>
-      <param name="clearDep">Depth clear value. Ignored on color surfaces.</param>
-      <param name="clearStenc">Stencil clear value. Ignored on color or depth-only surfaces.</param>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderPassAttachment.#ctor(UnityEngine.RenderTextureFormat)">
-      <summary>
-        <para>Create a RenderPassAttachment to be used with RenderPass.</para>
-      </summary>
-      <param name="fmt">The format of this attachment.</param>
-    </member>
-    <member name="T:UnityEngine.Experimental.Rendering.RenderPipeline">
-      <summary>
-        <para>Defines a series of commands and settings that describes how Unity renders a frame.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderPipeline.disposed">
-      <summary>
-        <para>When the IRenderPipeline is invalid or destroyed this returns true.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderPipeline.Dispose">
-      <summary>
-        <para>Dispose the Renderpipeline destroying all internal state.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderPipeline.Render(UnityEngine.Experimental.Rendering.ScriptableRenderContext,UnityEngine.Camera[])">
-      <summary>
-        <para>Defines custom rendering for this RenderPipeline.</para>
-      </summary>
-      <param name="renderContext"></param>
-      <param name="cameras"></param>
-    </member>
-    <member name="T:UnityEngine.Experimental.Rendering.RenderPipelineAsset">
-      <summary>
-        <para>An asset that produces a specific IRenderPipeline.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderPipelineAsset.CreatedInstances">
-      <summary>
-        <para>Returns the list of current IRenderPipeline's created by the asset.</para>
-      </summary>
-      <returns>
-        <para>Enumerable of created pipelines.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderPipelineAsset.CreatePipeline">
-      <summary>
-        <para>Create a IRenderPipeline specific to this asset.</para>
-      </summary>
-      <returns>
-        <para>Created pipeline.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderPipelineAsset.DestroyCreatedInstances">
-      <summary>
-        <para>Destroys all cached data and created IRenderLoop's.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderPipelineAsset.GetDefault2DMaterial">
-      <summary>
-        <para>Return the default 2D Material for this pipeline.</para>
-      </summary>
-      <returns>
-        <para>Default material.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderPipelineAsset.GetDefaultLineMaterial">
-      <summary>
-        <para>Return the default Line Material for this pipeline.</para>
-      </summary>
-      <returns>
-        <para>Default material.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderPipelineAsset.GetDefaultMaterial">
-      <summary>
-        <para>Return the default Material for this pipeline.</para>
-      </summary>
-      <returns>
-        <para>Default material.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderPipelineAsset.GetDefaultParticleMaterial">
-      <summary>
-        <para>Return the default particle Material for this pipeline.</para>
-      </summary>
-      <returns>
-        <para>Default material.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderPipelineAsset.GetDefaultShader">
-      <summary>
-        <para>Return the default Shader for this pipeline.</para>
-      </summary>
-      <returns>
-        <para>Default shader.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderPipelineAsset.GetDefaultTerrainMaterial">
-      <summary>
-        <para>Return the default Terrain  Material for this pipeline.</para>
-      </summary>
-      <returns>
-        <para>Default material.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderPipelineAsset.GetDefaultUIETC1SupportedMaterial">
-      <summary>
-        <para>Return the default UI ETC1  Material for this pipeline.</para>
-      </summary>
-      <returns>
-        <para>Default material.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderPipelineAsset.GetDefaultUIMaterial">
-      <summary>
-        <para>Return the default UI Material for this pipeline.</para>
-      </summary>
-      <returns>
-        <para>Default material.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderPipelineAsset.GetDefaultUIOverdrawMaterial">
-      <summary>
-        <para>Return the default UI overdraw Material for this pipeline.</para>
-      </summary>
-      <returns>
-        <para>Default material.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderPipelineAsset.GetTerrainBrushPassIndex">
-      <summary>
-        <para>The render index for the terrain brush in the editor.</para>
-      </summary>
-      <returns>
-        <para>Queue index.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderPipelineAsset.InternalCreatePipeline">
-      <summary>
-        <para>Create a IRenderPipeline specific to this asset.</para>
-      </summary>
-      <returns>
-        <para>Created pipeline.</para>
-      </returns>
-    </member>
-    <member name="T:UnityEngine.Experimental.Rendering.RenderPipelineManager">
-      <summary>
-        <para>Render Pipeline manager.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderPipelineManager.currentPipeline">
-      <summary>
-        <para>Returns the instance of the currently used Render Pipeline.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Experimental.Rendering.RenderQueueRange">
-      <summary>
-        <para>Describes a material render queue range.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderQueueRange.all">
-      <summary>
-        <para>A range that includes all objects.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.RenderQueueRange.max">
-      <summary>
-        <para>Inclusive upper bound for the range.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.RenderQueueRange.min">
-      <summary>
-        <para>Inclusive lower bound for the range.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderQueueRange.opaque">
-      <summary>
-        <para>A range that includes only opaque objects.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderQueueRange.transparent">
-      <summary>
-        <para>A range that includes only transparent objects.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Experimental.Rendering.RenderStateBlock">
-      <summary>
-        <para>A set of values used to override the render state. Note that it is not enough to set e.g. blendState, but that mask must also include RenderStateMask.Blend for the override to occur.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderStateBlock.blendState">
-      <summary>
-        <para>Specifies the new blend state.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderStateBlock.depthState">
-      <summary>
-        <para>Specifies the new depth state.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderStateBlock.mask">
-      <summary>
-        <para>Specifies which parts of the render state that is overriden.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderStateBlock.rasterState">
-      <summary>
-        <para>Specifies the new raster state.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderStateBlock.stencilReference">
-      <summary>
-        <para>The value to be compared against and/or the value to be written to the buffer based on the stencil state.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderStateBlock.stencilState">
-      <summary>
-        <para>Specifies the new stencil state.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderStateBlock.#ctor(UnityEngine.Experimental.Rendering.RenderStateMask)">
-      <summary>
-        <para>Creates a new render state block with the specified mask.</para>
-      </summary>
-      <param name="mask">Specifies which parts of the render state that is overriden.</param>
-    </member>
-    <member name="T:UnityEngine.Experimental.Rendering.RenderStateMapping">
-      <summary>
-        <para>Maps a RenderType to a specific render state override.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderStateMapping.renderType">
-      <summary>
-        <para>Specifices the RenderType to override the render state for.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderStateMapping.stateBlock">
-      <summary>
-        <para>Specifies the values to override the render state with.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderStateMapping.#ctor(UnityEngine.Experimental.Rendering.RenderStateBlock)">
-      <summary>
-        <para>Creates a new render state mapping with the specified values.</para>
-      </summary>
-      <param name="renderType">Specifices the RenderType to override the render state for.</param>
-      <param name="stateBlock">Specifies the values to override the render state with.</param>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderStateMapping.#ctor(System.String,UnityEngine.Experimental.Rendering.RenderStateBlock)">
-      <summary>
-        <para>Creates a new render state mapping with the specified values.</para>
-      </summary>
-      <param name="renderType">Specifices the RenderType to override the render state for.</param>
-      <param name="stateBlock">Specifies the values to override the render state with.</param>
-    </member>
-    <member name="T:UnityEngine.Experimental.Rendering.RenderStateMask">
-      <summary>
-        <para>Specifies which parts of the render state that is overriden.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.RenderStateMask.Blend">
-      <summary>
-        <para>When set, the blend state is overridden.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.RenderStateMask.Depth">
-      <summary>
-        <para>When set, the depth state is overridden.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.RenderStateMask.Everything">
-      <summary>
-        <para>When set, all render states are overridden.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.RenderStateMask.Nothing">
-      <summary>
-        <para>No render states are overridden.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.RenderStateMask.Raster">
-      <summary>
-        <para>When set, the raster state is overridden.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.RenderStateMask.Stencil">
-      <summary>
-        <para>When set, the stencil state and reference value is overridden.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Experimental.Rendering.RenderTargetBlendState">
-      <summary>
-        <para>Values for the blend state.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderTargetBlendState.alphaBlendOperation">
-      <summary>
-        <para>Operation used for blending the alpha (A) channel.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderTargetBlendState.colorBlendOperation">
-      <summary>
-        <para>Operation used for blending the color (RGB) channel.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderTargetBlendState.destinationAlphaBlendMode">
-      <summary>
-        <para>Blend factor used for the alpha (A) channel of the destination.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderTargetBlendState.destinationColorBlendMode">
-      <summary>
-        <para>Blend factor used for the color (RGB) channel of the destination.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderTargetBlendState.sourceAlphaBlendMode">
-      <summary>
-        <para>Blend factor used for the alpha (A) channel of the source.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderTargetBlendState.sourceColorBlendMode">
-      <summary>
-        <para>Blend factor used for the color (RGB) channel of the source.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderTargetBlendState.writeMask">
-      <summary>
-        <para>Specifies which color components will get written into the target framebuffer.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.RenderTargetBlendState.#ctor(UnityEngine.Rendering.ColorWriteMask,UnityEngine.Rendering.BlendMode,UnityEngine.Rendering.BlendMode,UnityEngine.Rendering.BlendMode,UnityEngine.Rendering.BlendMode,UnityEngine.Rendering.BlendOp,UnityEngine.Rendering.BlendOp)">
-      <summary>
-        <para>Creates a new blend state with the given values.</para>
-      </summary>
-      <param name="writeMask">Specifies which color components will get written into the target framebuffer.</param>
-      <param name="sourceColorBlendMode">Blend factor used for the color (RGB) channel of the source.</param>
-      <param name="destinationColorBlendMode">Blend factor used for the color (RGB) channel of the destination.</param>
-      <param name="sourceAlphaBlendMode">Blend factor used for the alpha (A) channel of the source.</param>
-      <param name="destinationAlphaBlendMode">Blend factor used for the alpha (A) channel of the destination.</param>
-      <param name="colorBlendOperation">Operation used for blending the color (RGB) channel.</param>
-      <param name="alphaBlendOperation">Operation used for blending the alpha (A) channel.</param>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.RenderTargetBlendState.Default">
-      <summary>
-        <para>Default values for the blend state.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Experimental.Rendering.ScriptableCullingParameters">
-      <summary>
-        <para>Parameters controlling culling process in CullResults.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.ScriptableCullingParameters.cameraProperties">
-      <summary>
-        <para>Camera Properties used for culling.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.ScriptableCullingParameters.cullingFlags">
-      <summary>
-        <para>Culling Flags for the culling.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.ScriptableCullingParameters.cullingMask">
-      <summary>
-        <para>CullingMask used for culling.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.ScriptableCullingParameters.cullingMatrix">
-      <summary>
-        <para>CullingMatrix used for culling.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.ScriptableCullingParameters.cullingPlaneCount">
-      <summary>
-        <para>Number of culling planes to use.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.ScriptableCullingParameters.cullStereoProj">
-      <summary>
-        <para>The projection matrix generated for single-pass stereo culling.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.ScriptableCullingParameters.cullStereoSeparation">
-      <summary>
-        <para>Distance between the virtual eyes.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.ScriptableCullingParameters.cullStereoView">
-      <summary>
-        <para>The view matrix generated for single-pass stereo culling.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.ScriptableCullingParameters.isOrthographic">
-      <summary>
-        <para>Is the cull orthographic.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.ScriptableCullingParameters.layerCull">
-      <summary>
-        <para>Layers to cull.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.ScriptableCullingParameters.lodParameters">
-      <summary>
-        <para>LODParameters for culling.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.ScriptableCullingParameters.position">
-      <summary>
-        <para>Position for the origin of th cull.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.ScriptableCullingParameters.reflectionProbeSortOptions">
-      <summary>
-        <para>Reflection Probe Sort options for the cull.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.ScriptableCullingParameters.sceneMask">
-      <summary>
-        <para>Scene Mask to use for the cull.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.ScriptableCullingParameters.shadowDistance">
-      <summary>
-        <para>Shadow distance to use for the cull.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.ScriptableCullingParameters.GetCullingPlane(System.Int32)">
-      <summary>
-        <para>Fetch the culling plane at the given index.</para>
-      </summary>
-      <param name="index"></param>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.ScriptableCullingParameters.GetLayerCullDistance(System.Int32)">
-      <summary>
-        <para>Get the distance for the culling of a specific layer.</para>
-      </summary>
-      <param name="layerIndex"></param>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.ScriptableCullingParameters.SetCullingPlane(System.Int32,UnityEngine.Plane)">
-      <summary>
-        <para>Set the culling plane at a given index.</para>
-      </summary>
-      <param name="index"></param>
-      <param name="plane"></param>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.ScriptableCullingParameters.SetLayerCullDistance(System.Int32,System.Single)">
-      <summary>
-        <para>Set the distance for the culling of a specific layer.</para>
-      </summary>
-      <param name="layerIndex"></param>
-      <param name="distance"></param>
     </member>
     <member name="T:UnityEngine.Experimental.Rendering.ScriptableRenderContext">
       <summary>
@@ -9017,212 +7839,6 @@ All of the commands within the buffer are guaranteed to be executed on the same 
       </summary>
       <param name="name">Pass name.</param>
     </member>
-    <member name="T:UnityEngine.Experimental.Rendering.ShadowSplitData">
-      <summary>
-        <para>Describes the culling information for a given shadow split (e.g. directional cascade).</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.ShadowSplitData.cullingPlaneCount">
-      <summary>
-        <para>The number of culling planes.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.ShadowSplitData.cullingSphere">
-      <summary>
-        <para>The culling sphere.  The first three components of the vector describe the sphere center, and the last component specifies the radius.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.ShadowSplitData.GetCullingPlane(System.Int32)">
-      <summary>
-        <para>Gets a culling plane.</para>
-      </summary>
-      <param name="index">The culling plane index.</param>
-      <returns>
-        <para>The culling plane.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.ShadowSplitData.SetCullingPlane(System.Int32,UnityEngine.Plane)">
-      <summary>
-        <para>Sets a culling plane.</para>
-      </summary>
-      <param name="index">The index of the culling plane to set.</param>
-      <param name="plane">The culling plane.</param>
-    </member>
-    <member name="T:UnityEngine.Experimental.Rendering.SortFlags">
-      <summary>
-        <para>How to sort objects during rendering.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.SortFlags.BackToFront">
-      <summary>
-        <para>Sort objects back to front.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.SortFlags.CanvasOrder">
-      <summary>
-        <para>Sort renderers taking canvas order into account.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.SortFlags.CommonOpaque">
-      <summary>
-        <para>Typical sorting for opaque objects.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.SortFlags.CommonTransparent">
-      <summary>
-        <para>Typical sorting for transparencies.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.SortFlags.None">
-      <summary>
-        <para>Do not sort objects.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.SortFlags.OptimizeStateChanges">
-      <summary>
-        <para>Sort objects to reduce draw state changes.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.SortFlags.QuantizedFrontToBack">
-      <summary>
-        <para>Sort objects in rough front-to-back buckets.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.SortFlags.RenderQueue">
-      <summary>
-        <para>Sort by material render queue.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.SortFlags.SortingLayer">
-      <summary>
-        <para>Sort by renderer sorting layer.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Experimental.Rendering.StencilState">
-      <summary>
-        <para>Values for the stencil state.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.StencilState.compareFunction">
-      <summary>
-        <para>The function used to compare the reference value to the current contents of the buffer.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.StencilState.compareFunctionBack">
-      <summary>
-        <para>The function used to compare the reference value to the current contents of the buffer for back-facing geometry.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.StencilState.compareFunctionFront">
-      <summary>
-        <para>The function used to compare the reference value to the current contents of the buffer for front-facing geometry.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.StencilState.enabled">
-      <summary>
-        <para>Controls whether the stencil buffer is enabled.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.StencilState.failOperation">
-      <summary>
-        <para>What to do with the contents of the buffer if the stencil test fails.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.StencilState.failOperationBack">
-      <summary>
-        <para>What to do with the contents of the buffer if the stencil test fails for back-facing geometry.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.StencilState.failOperationFront">
-      <summary>
-        <para>What to do with the contents of the buffer if the stencil test fails for front-facing geometry.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.StencilState.passOperation">
-      <summary>
-        <para>What to do with the contents of the buffer if the stencil test (and the depth test) passes.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.StencilState.passOperationBack">
-      <summary>
-        <para>What to do with the contents of the buffer if the stencil test (and the depth test) passes for back-facing geometry.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.StencilState.passOperationFront">
-      <summary>
-        <para>What to do with the contents of the buffer if the stencil test (and the depth test) passes for front-facing geometry.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.StencilState.readMask">
-      <summary>
-        <para>An 8 bit mask as an 0–255 integer, used when comparing the reference value with the contents of the buffer.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.StencilState.writeMask">
-      <summary>
-        <para>An 8 bit mask as an 0–255 integer, used when writing to the buffer.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.StencilState.zFailOperation">
-      <summary>
-        <para>What to do with the contents of the buffer if the stencil test passes, but the depth test fails.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.StencilState.zFailOperationBack">
-      <summary>
-        <para>What to do with the contents of the buffer if the stencil test passes, but the depth test fails for back-facing geometry.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.StencilState.zFailOperationFront">
-      <summary>
-        <para>What to do with the contents of the buffer if the stencil test passes, but the depth test fails for front-facing geometry.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.StencilState.#ctor(System.Boolean,System.Byte,System.Byte,UnityEngine.Rendering.CompareFunction,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.StencilOp)">
-      <summary>
-        <para>Creates a new stencil state with the given values.</para>
-      </summary>
-      <param name="readMask">An 8 bit mask as an 0–255 integer, used when comparing the reference value with the contents of the buffer.</param>
-      <param name="writeMask">An 8 bit mask as an 0–255 integer, used when writing to the buffer.</param>
-      <param name="enabled">Controls whether the stencil buffer is enabled.</param>
-      <param name="compareFunctionFront">The function used to compare the reference value to the current contents of the buffer for front-facing geometry.</param>
-      <param name="passOperationFront">What to do with the contents of the buffer if the stencil test (and the depth test) passes for front-facing geometry.</param>
-      <param name="failOperationFront">What to do with the contents of the buffer if the stencil test fails for front-facing geometry.</param>
-      <param name="zFailOperationFront">What to do with the contents of the buffer if the stencil test passes, but the depth test fails for front-facing geometry.</param>
-      <param name="compareFunctionBack">The function used to compare the reference value to the current contents of the buffer for back-facing geometry.</param>
-      <param name="passOperationBack">What to do with the contents of the buffer if the stencil test (and the depth test) passes for back-facing geometry.</param>
-      <param name="failOperationBack">What to do with the contents of the buffer if the stencil test fails for back-facing geometry.</param>
-      <param name="zFailOperationBack">What to do with the contents of the buffer if the stencil test passes, but the depth test fails for back-facing geometry.</param>
-      <param name="compareFunction">The function used to compare the reference value to the current contents of the buffer.</param>
-      <param name="passOperation">What to do with the contents of the buffer if the stencil test (and the depth test) passes.</param>
-      <param name="failOperation">What to do with the contents of the buffer if the stencil test fails.</param>
-      <param name="zFailOperation">What to do with the contents of the buffer if the stencil test passes, but the depth test.</param>
-    </member>
-    <member name="M:UnityEngine.Experimental.Rendering.StencilState.#ctor(System.Boolean,System.Byte,System.Byte,UnityEngine.Rendering.CompareFunction,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.CompareFunction,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.StencilOp)">
-      <summary>
-        <para>Creates a new stencil state with the given values.</para>
-      </summary>
-      <param name="readMask">An 8 bit mask as an 0–255 integer, used when comparing the reference value with the contents of the buffer.</param>
-      <param name="writeMask">An 8 bit mask as an 0–255 integer, used when writing to the buffer.</param>
-      <param name="enabled">Controls whether the stencil buffer is enabled.</param>
-      <param name="compareFunctionFront">The function used to compare the reference value to the current contents of the buffer for front-facing geometry.</param>
-      <param name="passOperationFront">What to do with the contents of the buffer if the stencil test (and the depth test) passes for front-facing geometry.</param>
-      <param name="failOperationFront">What to do with the contents of the buffer if the stencil test fails for front-facing geometry.</param>
-      <param name="zFailOperationFront">What to do with the contents of the buffer if the stencil test passes, but the depth test fails for front-facing geometry.</param>
-      <param name="compareFunctionBack">The function used to compare the reference value to the current contents of the buffer for back-facing geometry.</param>
-      <param name="passOperationBack">What to do with the contents of the buffer if the stencil test (and the depth test) passes for back-facing geometry.</param>
-      <param name="failOperationBack">What to do with the contents of the buffer if the stencil test fails for back-facing geometry.</param>
-      <param name="zFailOperationBack">What to do with the contents of the buffer if the stencil test passes, but the depth test fails for back-facing geometry.</param>
-      <param name="compareFunction">The function used to compare the reference value to the current contents of the buffer.</param>
-      <param name="passOperation">What to do with the contents of the buffer if the stencil test (and the depth test) passes.</param>
-      <param name="failOperation">What to do with the contents of the buffer if the stencil test fails.</param>
-      <param name="zFailOperation">What to do with the contents of the buffer if the stencil test passes, but the depth test.</param>
-    </member>
-    <member name="P:UnityEngine.Experimental.Rendering.StencilState.Default">
-      <summary>
-        <para>Default values for the stencil state.</para>
-      </summary>
-    </member>
     <member name="T:UnityEngine.Experimental.Rendering.VisibleLight">
       <summary>
         <para>Holds data of a visible light.</para>
@@ -9266,26 +7882,6 @@ All of the commands within the buffer are guaranteed to be executed on the same 
     <member name="F:UnityEngine.Experimental.Rendering.VisibleLight.spotAngle">
       <summary>
         <para>Spot light angle.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Experimental.Rendering.VisibleLightFlags">
-      <summary>
-        <para>Flags for VisibleLight.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.VisibleLightFlags.IntersectsFarPlane">
-      <summary>
-        <para>Light intersects far clipping plane.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.VisibleLightFlags.IntersectsNearPlane">
-      <summary>
-        <para>Light intersects near clipping plane.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Experimental.Rendering.VisibleLightFlags.None">
-      <summary>
-        <para>No flags are set.</para>
       </summary>
     </member>
     <member name="T:UnityEngine.Experimental.Rendering.VisibleReflectionProbe">
@@ -11824,165 +10420,6 @@ Color buffers to render into (for multiple render target effects).</param>
       <param name="id">Identifier of the ExposedReference.</param>
       <param name="value">The value to assigned to the ExposedReference.</param>
     </member>
-    <member name="?:UnityEngine.ILogger">
-      <summary>
-        <para>Interface for custom logger implementation.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.ILogger.filterLogType">
-      <summary>
-        <para>To selective enable debug log message.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.ILogger.logEnabled">
-      <summary>
-        <para>To runtime toggle debug logging [ON/OFF].</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.ILogger.logHandler">
-      <summary>
-        <para>Set Logger.ILogHandler.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.ILogger.IsLogTypeAllowed(UnityEngine.LogType)">
-      <summary>
-        <para>Check logging is enabled based on the LogType.</para>
-      </summary>
-      <param name="logType"></param>
-      <returns>
-        <para>Retrun true in case logs of LogType will be logged otherwise returns false.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.ILogger.Log(UnityEngine.LogType,System.Object)">
-      <summary>
-        <para>Logs message to the Unity Console using default logger.</para>
-      </summary>
-      <param name="logType"></param>
-      <param name="message"></param>
-      <param name="context"></param>
-      <param name="tag"></param>
-    </member>
-    <member name="M:UnityEngine.ILogger.Log(UnityEngine.LogType,System.Object,UnityEngine.Object)">
-      <summary>
-        <para>Logs message to the Unity Console using default logger.</para>
-      </summary>
-      <param name="logType"></param>
-      <param name="message"></param>
-      <param name="context"></param>
-      <param name="tag"></param>
-    </member>
-    <member name="M:UnityEngine.ILogger.Log(UnityEngine.LogType,System.String,System.Object)">
-      <summary>
-        <para>Logs message to the Unity Console using default logger.</para>
-      </summary>
-      <param name="logType"></param>
-      <param name="message"></param>
-      <param name="context"></param>
-      <param name="tag"></param>
-    </member>
-    <member name="M:UnityEngine.ILogger.Log(UnityEngine.LogType,System.String,System.Object,UnityEngine.Object)">
-      <summary>
-        <para>Logs message to the Unity Console using default logger.</para>
-      </summary>
-      <param name="logType"></param>
-      <param name="message"></param>
-      <param name="context"></param>
-      <param name="tag"></param>
-    </member>
-    <member name="M:UnityEngine.ILogger.Log(System.Object)">
-      <summary>
-        <para>Logs message to the Unity Console using default logger.</para>
-      </summary>
-      <param name="logType"></param>
-      <param name="message"></param>
-      <param name="context"></param>
-      <param name="tag"></param>
-    </member>
-    <member name="M:UnityEngine.ILogger.Log(System.String,System.Object)">
-      <summary>
-        <para>Logs message to the Unity Console using default logger.</para>
-      </summary>
-      <param name="logType"></param>
-      <param name="message"></param>
-      <param name="context"></param>
-      <param name="tag"></param>
-    </member>
-    <member name="M:UnityEngine.ILogger.Log(System.String,System.Object,UnityEngine.Object)">
-      <summary>
-        <para>Logs message to the Unity Console using default logger.</para>
-      </summary>
-      <param name="logType"></param>
-      <param name="message"></param>
-      <param name="context"></param>
-      <param name="tag"></param>
-    </member>
-    <member name="M:UnityEngine.ILogger.LogError(System.String,System.Object)">
-      <summary>
-        <para>A variant of ILogger.Log that logs an error message.</para>
-      </summary>
-      <param name="tag"></param>
-      <param name="message"></param>
-      <param name="context"></param>
-    </member>
-    <member name="M:UnityEngine.ILogger.LogError(System.String,System.Object,UnityEngine.Object)">
-      <summary>
-        <para>A variant of ILogger.Log that logs an error message.</para>
-      </summary>
-      <param name="tag"></param>
-      <param name="message"></param>
-      <param name="context"></param>
-    </member>
-    <member name="M:UnityEngine.ILogger.LogException(System.Exception)">
-      <summary>
-        <para>A variant of ILogger.Log that logs an exception message.</para>
-      </summary>
-      <param name="exception"></param>
-    </member>
-    <member name="M:UnityEngine.ILogger.LogFormat(UnityEngine.LogType,System.String,System.Object[])">
-      <summary>
-        <para>Logs a formatted message.</para>
-      </summary>
-      <param name="logType"></param>
-      <param name="format"></param>
-      <param name="args"></param>
-    </member>
-    <member name="M:UnityEngine.ILogger.LogWarning(System.String,System.Object)">
-      <summary>
-        <para>A variant of Logger.Log that logs an warning message.</para>
-      </summary>
-      <param name="tag"></param>
-      <param name="message"></param>
-      <param name="context"></param>
-    </member>
-    <member name="M:UnityEngine.ILogger.LogWarning(System.String,System.Object,UnityEngine.Object)">
-      <summary>
-        <para>A variant of Logger.Log that logs an warning message.</para>
-      </summary>
-      <param name="tag"></param>
-      <param name="message"></param>
-      <param name="context"></param>
-    </member>
-    <member name="?:UnityEngine.ILogHandler">
-      <summary>
-        <para>Interface for custom log handler implementation.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.ILogHandler.LogException(System.Exception,UnityEngine.Object)">
-      <summary>
-        <para>A variant of ILogHandler.LogFormat that logs an exception message.</para>
-      </summary>
-      <param name="exception">Runtime Exception.</param>
-      <param name="context">Object to which the message applies.</param>
-    </member>
-    <member name="M:UnityEngine.ILogHandler.LogFormat(UnityEngine.LogType,UnityEngine.Object,System.String,System.Object[])">
-      <summary>
-        <para>Logs a formatted message.</para>
-      </summary>
-      <param name="logType">The type of the log message.</param>
-      <param name="context">Object to which the message applies.</param>
-      <param name="format">A composite format string.</param>
-      <param name="args">Format arguments.</param>
-    </member>
     <member name="T:UnityEngine.ImageEffectAfterScale">
       <summary>
         <para>Any Image Effect with this attribute will be rendered after Dynamic Resolution stage.</para>
@@ -12278,880 +10715,6 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
     <member name="M:UnityEngine.Input.ResetInputAxes">
       <summary>
         <para>Resets all input. After ResetInputAxes all axes return to 0 and all buttons return to 0 for one frame.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.ActivityIndicatorStyle">
-      <summary>
-        <para>ActivityIndicator Style (iOS Specific).</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ActivityIndicatorStyle.DontShow">
-      <summary>
-        <para>Do not show ActivityIndicator.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ActivityIndicatorStyle.Gray">
-      <summary>
-        <para>The standard gray style of indicator (UIActivityIndicatorViewStyleGray).</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ActivityIndicatorStyle.White">
-      <summary>
-        <para>The standard white style of indicator (UIActivityIndicatorViewStyleWhite).</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ActivityIndicatorStyle.WhiteLarge">
-      <summary>
-        <para>The large white style of indicator (UIActivityIndicatorViewStyleWhiteLarge).</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.ADBannerView">
-      <summary>
-        <para>ADBannerView is a wrapper around the ADBannerView class found in the Apple iAd framework and is only available on iOS.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.ADBannerView.layout">
-      <summary>
-        <para>Banner layout.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.ADBannerView.loaded">
-      <summary>
-        <para>Checks if banner contents are loaded.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.ADBannerView.position">
-      <summary>
-        <para>The position of the banner view.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.ADBannerView.size">
-      <summary>
-        <para>The size of the banner view.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.ADBannerView.visible">
-      <summary>
-        <para>Banner visibility. Initially banner is not visible.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.ADBannerView.BannerFailedToLoadDelegate">
-      <summary>
-        <para>Will be fired when banner ad failed to load.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.ADBannerView.BannerWasClickedDelegate">
-      <summary>
-        <para>Will be fired when banner was clicked.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.ADBannerView.BannerWasLoadedDelegate">
-      <summary>
-        <para>Will be fired when banner loaded new ad.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.iOS.ADBannerView.#ctor(UnityEngine.iOS.ADBannerView/Type,UnityEngine.iOS.ADBannerView/Layout)">
-      <summary>
-        <para>Creates a banner view with given type and auto-layout params.</para>
-      </summary>
-      <param name="type"></param>
-      <param name="layout"></param>
-    </member>
-    <member name="M:UnityEngine.iOS.ADBannerView.IsAvailable(UnityEngine.iOS.ADBannerView/Type)">
-      <summary>
-        <para>Checks if the banner type is available (e.g. MediumRect is available only starting with ios6).</para>
-      </summary>
-      <param name="type"></param>
-    </member>
-    <member name="T:UnityEngine.iOS.ADBannerView.Layout">
-      <summary>
-        <para>Specifies how banner should be layed out on screen.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Layout.Bottom">
-      <summary>
-        <para>Traditional Banner: align to screen bottom.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Layout.BottomCenter">
-      <summary>
-        <para>Rect Banner: align to screen bottom, placing at the center.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Layout.BottomLeft">
-      <summary>
-        <para>Rect Banner: place in bottom-left corner.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Layout.BottomRight">
-      <summary>
-        <para>Rect Banner: place in bottom-right corner.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Layout.Center">
-      <summary>
-        <para>Rect Banner: place exactly at screen center.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Layout.CenterLeft">
-      <summary>
-        <para>Rect Banner: align to screen left, placing at the center.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Layout.CenterRight">
-      <summary>
-        <para>Rect Banner: align to screen right, placing at the center.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Layout.Manual">
-      <summary>
-        <para>Completely manual positioning.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Layout.Top">
-      <summary>
-        <para>Traditional Banner: align to screen top.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Layout.TopCenter">
-      <summary>
-        <para>Rect Banner: align to screen top, placing at the center.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Layout.TopLeft">
-      <summary>
-        <para>Rect Banner: place in top-left corner.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Layout.TopRight">
-      <summary>
-        <para>Rect Banner: place in top-right corner.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.ADBannerView.Type">
-      <summary>
-        <para>The type of the banner view.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Type.Banner">
-      <summary>
-        <para>Traditional Banner (it takes full screen width).</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.ADBannerView.Type.MediumRect">
-      <summary>
-        <para>Rect Banner (300x250).</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.ADInterstitialAd">
-      <summary>
-        <para>ADInterstitialAd is a wrapper around the ADInterstitialAd class found in the Apple iAd framework and is only available on iPad.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.ADInterstitialAd.isAvailable">
-      <summary>
-        <para>Checks if InterstitialAd is available (it is available on iPad since iOS 4.3, and on iPhone since iOS 7.0).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.ADInterstitialAd.loaded">
-      <summary>
-        <para>Has the interstitial ad object downloaded an advertisement? (Read Only)</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.iOS.ADInterstitialAd.#ctor">
-      <summary>
-        <para>Creates an interstitial ad.</para>
-      </summary>
-      <param name="autoReload"></param>
-    </member>
-    <member name="M:UnityEngine.iOS.ADInterstitialAd.#ctor(System.Boolean)">
-      <summary>
-        <para>Creates an interstitial ad.</para>
-      </summary>
-      <param name="autoReload"></param>
-    </member>
-    <member name="T:UnityEngine.iOS.ADInterstitialAd.InterstitialWasLoadedDelegate">
-      <summary>
-        <para>Will be called when ad is ready to be shown.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.ADInterstitialAd.InterstitialWasViewedDelegate">
-      <summary>
-        <para>Will be called when user viewed ad contents: i.e. they went past the initial screen. Please note that it is impossible to determine if they clicked on any links in ad sequences that follows the initial screen.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.iOS.ADInterstitialAd.ReloadAd">
-      <summary>
-        <para>Reload advertisement.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.iOS.ADInterstitialAd.Show">
-      <summary>
-        <para>Shows full-screen advertisement to user.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.CalendarIdentifier">
-      <summary>
-        <para>Specify calendar types.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarIdentifier.BuddhistCalendar">
-      <summary>
-        <para>Identifies the Buddhist calendar.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarIdentifier.ChineseCalendar">
-      <summary>
-        <para>Identifies the Chinese calendar.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarIdentifier.GregorianCalendar">
-      <summary>
-        <para>Identifies the Gregorian calendar.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarIdentifier.HebrewCalendar">
-      <summary>
-        <para>Identifies the Hebrew calendar.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarIdentifier.IndianCalendar">
-      <summary>
-        <para>Identifies the Indian calendar.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarIdentifier.IslamicCalendar">
-      <summary>
-        <para>Identifies the Islamic calendar.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarIdentifier.IslamicCivilCalendar">
-      <summary>
-        <para>Identifies the Islamic civil calendar.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarIdentifier.ISO8601Calendar">
-      <summary>
-        <para>Identifies the ISO8601.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarIdentifier.JapaneseCalendar">
-      <summary>
-        <para>Identifies the Japanese calendar.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarIdentifier.PersianCalendar">
-      <summary>
-        <para>Identifies the Persian calendar.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarIdentifier.RepublicOfChinaCalendar">
-      <summary>
-        <para>Identifies the Republic of China (Taiwan) calendar.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.CalendarUnit">
-      <summary>
-        <para>Specify calendrical units.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarUnit.Day">
-      <summary>
-        <para>Specifies the day unit.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarUnit.Era">
-      <summary>
-        <para>Specifies the era unit.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarUnit.Hour">
-      <summary>
-        <para>Specifies the hour unit.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarUnit.Minute">
-      <summary>
-        <para>Specifies the minute unit.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarUnit.Month">
-      <summary>
-        <para>Specifies the month unit.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarUnit.Quarter">
-      <summary>
-        <para>Specifies the quarter of the calendar.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarUnit.Second">
-      <summary>
-        <para>Specifies the second unit.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarUnit.Week">
-      <summary>
-        <para>Specifies the week unit.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarUnit.Weekday">
-      <summary>
-        <para>Specifies the weekday unit.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarUnit.WeekdayOrdinal">
-      <summary>
-        <para>Specifies the ordinal weekday unit.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.CalendarUnit.Year">
-      <summary>
-        <para>Specifies the year unit.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.Device">
-      <summary>
-        <para>Interface into iOS specific functionality.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.Device.advertisingIdentifier">
-      <summary>
-        <para>Advertising ID.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.Device.advertisingTrackingEnabled">
-      <summary>
-        <para>Is advertising tracking enabled.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.Device.generation">
-      <summary>
-        <para>The generation of the device. (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.Device.systemVersion">
-      <summary>
-        <para>iOS version.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.Device.vendorIdentifier">
-      <summary>
-        <para>Vendor ID.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.iOS.Device.RequestStoreReview">
-      <summary>
-        <para>Request App Store rating and review from the user.</para>
-      </summary>
-      <returns>
-        <para>Value indicating whether the underlying API is available or not. False indicates that the iOS version isn't recent enough or that the StoreKit framework is not linked with the app.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.iOS.Device.ResetNoBackupFlag(System.String)">
-      <summary>
-        <para>Reset "no backup" file flag: file will be synced with iCloud/iTunes backup and can be deleted by OS in low storage situations.</para>
-      </summary>
-      <param name="path"></param>
-    </member>
-    <member name="M:UnityEngine.iOS.Device.SetNoBackupFlag(System.String)">
-      <summary>
-        <para>Set file flag to be excluded from iCloud/iTunes backup.</para>
-      </summary>
-      <param name="path"></param>
-    </member>
-    <member name="T:UnityEngine.iOS.DeviceGeneration">
-      <summary>
-        <para>iOS device generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPad1Gen">
-      <summary>
-        <para>iPad, first generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPad2Gen">
-      <summary>
-        <para>iPad, second generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPad3Gen">
-      <summary>
-        <para>iPad, third generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPad4Gen">
-      <summary>
-        <para>iPad, fourth generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPad5Gen">
-      <summary>
-        <para>iPad Air, fifth generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPadAir1">
-      <summary>
-        <para>iPad Air.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPadAir2">
-      <summary>
-        <para>iPad Air 2.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPadMini1Gen">
-      <summary>
-        <para>iPadMini, first generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPadMini2Gen">
-      <summary>
-        <para>iPadMini Retina, second generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPadMini3Gen">
-      <summary>
-        <para>iPad Mini 3.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPadMini4Gen">
-      <summary>
-        <para>iPad Mini, fourth generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPadPro10Inch1Gen">
-      <summary>
-        <para>iPad Pro 9.7", first generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPadPro10Inch2Gen">
-      <summary>
-        <para>iPad Pro 10.5", second generation 10" iPad.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPadPro1Gen">
-      <summary>
-        <para>iPad Pro 12.9", first generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPadPro2Gen">
-      <summary>
-        <para>iPad Pro 12.9", second generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPadUnknown">
-      <summary>
-        <para>Yet unknown iPad.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone">
-      <summary>
-        <para>iPhone, first generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone3G">
-      <summary>
-        <para>iPhone, second generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone3GS">
-      <summary>
-        <para>iPhone, third generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone4">
-      <summary>
-        <para>iPhone, fourth generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone4S">
-      <summary>
-        <para>iPhone, fifth generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone5">
-      <summary>
-        <para>iPhone5.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone5C">
-      <summary>
-        <para>iPhone 5C.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone5S">
-      <summary>
-        <para>iPhone 5S.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone6">
-      <summary>
-        <para>iPhone 6.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone6Plus">
-      <summary>
-        <para>iPhone 6 plus.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone6S">
-      <summary>
-        <para>iPhone 6S.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone6SPlus">
-      <summary>
-        <para>iPhone 6S Plus.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone7">
-      <summary>
-        <para>iPhone 7.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone7Plus">
-      <summary>
-        <para>iPhone 7 Plus.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone8">
-      <summary>
-        <para>iPhone 8.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone8Plus">
-      <summary>
-        <para>iPhone 8 Plus.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhoneSE1Gen">
-      <summary>
-        <para>iPhone SE, first generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhoneUnknown">
-      <summary>
-        <para>Yet unknown iPhone.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhoneX">
-      <summary>
-        <para>iPhone X.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPodTouch1Gen">
-      <summary>
-        <para>iPod Touch, first generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPodTouch2Gen">
-      <summary>
-        <para>iPod Touch, second generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPodTouch3Gen">
-      <summary>
-        <para>iPod Touch, third generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPodTouch4Gen">
-      <summary>
-        <para>iPod Touch, fourth generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPodTouch5Gen">
-      <summary>
-        <para>iPod Touch, fifth generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPodTouch6Gen">
-      <summary>
-        <para>iPod Touch, sixth generation.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPodTouchUnknown">
-      <summary>
-        <para>Yet unknown iPod Touch.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.LocalNotification">
-      <summary>
-        <para>iOS.LocalNotification is a wrapper around the UILocalNotification class found in the Apple UIKit framework and is only available on iPhoneiPadiPod Touch.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.LocalNotification.alertAction">
-      <summary>
-        <para>The title of the action button or slider.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.LocalNotification.alertBody">
-      <summary>
-        <para>The message displayed in the notification alert.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.LocalNotification.alertLaunchImage">
-      <summary>
-        <para>Identifies the image used as the launch image when the user taps the action button.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.LocalNotification.applicationIconBadgeNumber">
-      <summary>
-        <para>The number to display as the application's icon badge.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.LocalNotification.defaultSoundName">
-      <summary>
-        <para>The default system sound. (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.LocalNotification.fireDate">
-      <summary>
-        <para>The date and time when the system should deliver the notification.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.LocalNotification.hasAction">
-      <summary>
-        <para>A boolean value that controls whether the alert action is visible or not.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.LocalNotification.repeatCalendar">
-      <summary>
-        <para>The calendar type (Gregorian, Chinese, etc) to use for rescheduling the notification.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.LocalNotification.repeatInterval">
-      <summary>
-        <para>The calendar interval at which to reschedule the notification.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.LocalNotification.soundName">
-      <summary>
-        <para>The name of the sound file to play when an alert is displayed.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.LocalNotification.timeZone">
-      <summary>
-        <para>The time zone of the notification's fire date.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.LocalNotification.userInfo">
-      <summary>
-        <para>A dictionary for passing custom information to the notified application.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.iOS.LocalNotification.#ctor">
-      <summary>
-        <para>Creates a new local notification.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.NotificationServices">
-      <summary>
-        <para>NotificationServices is only available on iPhoneiPadiPod Touch.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.NotificationServices.deviceToken">
-      <summary>
-        <para>Device token received from Apple Push Service after calling NotificationServices.RegisterForRemoteNotificationTypes. (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.NotificationServices.enabledNotificationTypes">
-      <summary>
-        <para>Enabled local and remote notification types.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.NotificationServices.localNotificationCount">
-      <summary>
-        <para>The number of received local notifications. (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.NotificationServices.localNotifications">
-      <summary>
-        <para>The list of objects representing received local notifications. (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.NotificationServices.registrationError">
-      <summary>
-        <para>Returns an error that might occur on registration for remote notifications via NotificationServices.RegisterForRemoteNotificationTypes. (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.NotificationServices.remoteNotificationCount">
-      <summary>
-        <para>The number of received remote notifications. (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.NotificationServices.remoteNotifications">
-      <summary>
-        <para>The list of objects representing received remote notifications. (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.NotificationServices.scheduledLocalNotifications">
-      <summary>
-        <para>All currently scheduled local notifications.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.iOS.NotificationServices.CancelAllLocalNotifications">
-      <summary>
-        <para>Cancels the delivery of all scheduled local notifications.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.iOS.NotificationServices.CancelLocalNotification(UnityEngine.iOS.LocalNotification)">
-      <summary>
-        <para>Cancels the delivery of the specified scheduled local notification.</para>
-      </summary>
-      <param name="notification"></param>
-    </member>
-    <member name="M:UnityEngine.iOS.NotificationServices.ClearLocalNotifications">
-      <summary>
-        <para>Discards of all received local notifications.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.iOS.NotificationServices.ClearRemoteNotifications">
-      <summary>
-        <para>Discards of all received remote notifications.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.iOS.NotificationServices.GetLocalNotification(System.Int32)">
-      <summary>
-        <para>Returns an object representing a specific local notification. (Read Only)</para>
-      </summary>
-      <param name="index"></param>
-    </member>
-    <member name="M:UnityEngine.iOS.NotificationServices.GetRemoteNotification(System.Int32)">
-      <summary>
-        <para>Returns an object representing a specific remote notification. (Read Only)</para>
-      </summary>
-      <param name="index"></param>
-    </member>
-    <member name="M:UnityEngine.iOS.NotificationServices.PresentLocalNotificationNow(UnityEngine.iOS.LocalNotification)">
-      <summary>
-        <para>Presents a local notification immediately.</para>
-      </summary>
-      <param name="notification"></param>
-    </member>
-    <member name="M:UnityEngine.iOS.NotificationServices.RegisterForNotifications(UnityEngine.iOS.NotificationType)">
-      <summary>
-        <para>Register to receive local and remote notifications of the specified types from a provider via Apple Push Service.</para>
-      </summary>
-      <param name="notificationTypes">Notification types to register for.</param>
-      <param name="registerForRemote">Specify true to also register for remote notifications.</param>
-    </member>
-    <member name="M:UnityEngine.iOS.NotificationServices.RegisterForNotifications(UnityEngine.iOS.NotificationType,System.Boolean)">
-      <summary>
-        <para>Register to receive local and remote notifications of the specified types from a provider via Apple Push Service.</para>
-      </summary>
-      <param name="notificationTypes">Notification types to register for.</param>
-      <param name="registerForRemote">Specify true to also register for remote notifications.</param>
-    </member>
-    <member name="M:UnityEngine.iOS.NotificationServices.ScheduleLocalNotification(UnityEngine.iOS.LocalNotification)">
-      <summary>
-        <para>Schedules a local notification.</para>
-      </summary>
-      <param name="notification"></param>
-    </member>
-    <member name="M:UnityEngine.iOS.NotificationServices.UnregisterForRemoteNotifications">
-      <summary>
-        <para>Unregister for remote notifications.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.NotificationType">
-      <summary>
-        <para>Specifies local and remote notification types.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.NotificationType.Alert">
-      <summary>
-        <para>Notification is an alert message.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.NotificationType.Badge">
-      <summary>
-        <para>Notification is a badge shown above the application's icon.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.NotificationType.None">
-      <summary>
-        <para>No notification types specified.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.iOS.NotificationType.Sound">
-      <summary>
-        <para>Notification is an alert sound.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.iOS.OnDemandResources">
-      <summary>
-        <para>On Demand Resources API.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.OnDemandResources.enabled">
-      <summary>
-        <para>Indicates whether player was built with "Use On Demand Resources" player setting enabled.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.iOS.OnDemandResources.PreloadAsync(System.String[])">
-      <summary>
-        <para>Creates an On Demand Resources (ODR) request.</para>
-      </summary>
-      <param name="tags">Tags for On Demand Resources that should be included in the request.</param>
-      <returns>
-        <para>Object representing ODR request.</para>
-      </returns>
-    </member>
-    <member name="T:UnityEngine.iOS.OnDemandResourcesRequest">
-      <summary>
-        <para>Represents a request for On Demand Resources (ODR). It's an AsyncOperation and can be yielded in a coroutine.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.OnDemandResourcesRequest.error">
-      <summary>
-        <para>Returns an error after operation is complete.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.OnDemandResourcesRequest.loadingPriority">
-      <summary>
-        <para>Sets the priority for request.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.iOS.OnDemandResourcesRequest.Dispose">
-      <summary>
-        <para>Release all resources kept alive by On Demand Resources (ODR) request.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.iOS.OnDemandResourcesRequest.GetResourcePath(System.String)">
-      <summary>
-        <para>Gets file system's path to the resource available in On Demand Resources (ODR) request.</para>
-      </summary>
-      <param name="resourceName">Resource name.</param>
-    </member>
-    <member name="T:UnityEngine.iOS.RemoteNotification">
-      <summary>
-        <para>RemoteNotification is only available on iPhoneiPadiPod Touch.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.RemoteNotification.alertBody">
-      <summary>
-        <para>The message displayed in the notification alert. (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.RemoteNotification.applicationIconBadgeNumber">
-      <summary>
-        <para>The number to display as the application's icon badge. (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.RemoteNotification.hasAction">
-      <summary>
-        <para>A boolean value that controls whether the alert action is visible or not. (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.RemoteNotification.soundName">
-      <summary>
-        <para>The name of the sound file to play when an alert is displayed. (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.iOS.RemoteNotification.userInfo">
-      <summary>
-        <para>A dictionary for passing custom information to the notified application. (Read Only)</para>
       </summary>
     </member>
     <member name="?:UnityEngine.ISerializationCallbackReceiver">
@@ -14541,37 +12104,37 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
     </member>
     <member name="F:UnityEngine.KeyCode.Mouse0">
       <summary>
-        <para>The Left (or primary) mouse button.</para>
+        <para>First (primary) mouse button.</para>
       </summary>
     </member>
     <member name="F:UnityEngine.KeyCode.Mouse1">
       <summary>
-        <para>Right mouse button (or secondary mouse button).</para>
+        <para>Second (secondary) mouse button.</para>
       </summary>
     </member>
     <member name="F:UnityEngine.KeyCode.Mouse2">
       <summary>
-        <para>Middle mouse button (or third button).</para>
+        <para>Third mouse button.</para>
       </summary>
     </member>
     <member name="F:UnityEngine.KeyCode.Mouse3">
       <summary>
-        <para>Additional (fourth) mouse button.</para>
+        <para>Fourth mouse button.</para>
       </summary>
     </member>
     <member name="F:UnityEngine.KeyCode.Mouse4">
       <summary>
-        <para>Additional (fifth) mouse button.</para>
+        <para>Fifth mouse button.</para>
       </summary>
     </member>
     <member name="F:UnityEngine.KeyCode.Mouse5">
       <summary>
-        <para>Additional (or sixth) mouse button.</para>
+        <para>Sixth mouse button.</para>
       </summary>
     </member>
     <member name="F:UnityEngine.KeyCode.Mouse6">
       <summary>
-        <para>Additional (or seventh) mouse button.</para>
+        <para>Seventh mouse button.</para>
       </summary>
     </member>
     <member name="F:UnityEngine.KeyCode.N">
@@ -15885,168 +13448,6 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
       </summary>
       <param name="lods">The LODs to use for this group.</param>
     </member>
-    <member name="T:UnityEngine.Logger">
-      <summary>
-        <para>Initializes a new instance of the Logger.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Logger.filterLogType">
-      <summary>
-        <para>To selective enable debug log message.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Logger.logEnabled">
-      <summary>
-        <para>To runtime toggle debug logging [ON/OFF].</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Logger.logHandler">
-      <summary>
-        <para>Set  Logger.ILogHandler.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Logger.#ctor(UnityEngine.ILogHandler)">
-      <summary>
-        <para>Create a custom Logger.</para>
-      </summary>
-      <param name="logHandler">Pass in default log handler or custom log handler.</param>
-    </member>
-    <member name="M:UnityEngine.Logger.IsLogTypeAllowed(UnityEngine.LogType)">
-      <summary>
-        <para>Check logging is enabled based on the LogType.</para>
-      </summary>
-      <param name="logType">The type of the log message.</param>
-      <returns>
-        <para>Retrun true in case logs of LogType will be logged otherwise returns false.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Logger.Log(UnityEngine.LogType,System.Object)">
-      <summary>
-        <para>Logs message to the Unity Console using default logger.</para>
-      </summary>
-      <param name="logType">The type of the log message.</param>
-      <param name="tag">Used to identify the source of a log message. It usually identifies the class where the log call occurs.</param>
-      <param name="message">String or object to be converted to string representation for display.</param>
-      <param name="context">Object to which the message applies.</param>
-    </member>
-    <member name="M:UnityEngine.Logger.Log(UnityEngine.LogType,System.Object,UnityEngine.Object)">
-      <summary>
-        <para>Logs message to the Unity Console using default logger.</para>
-      </summary>
-      <param name="logType">The type of the log message.</param>
-      <param name="tag">Used to identify the source of a log message. It usually identifies the class where the log call occurs.</param>
-      <param name="message">String or object to be converted to string representation for display.</param>
-      <param name="context">Object to which the message applies.</param>
-    </member>
-    <member name="M:UnityEngine.Logger.Log(UnityEngine.LogType,System.String,System.Object)">
-      <summary>
-        <para>Logs message to the Unity Console using default logger.</para>
-      </summary>
-      <param name="logType">The type of the log message.</param>
-      <param name="tag">Used to identify the source of a log message. It usually identifies the class where the log call occurs.</param>
-      <param name="message">String or object to be converted to string representation for display.</param>
-      <param name="context">Object to which the message applies.</param>
-    </member>
-    <member name="M:UnityEngine.Logger.Log(UnityEngine.LogType,System.String,System.Object,UnityEngine.Object)">
-      <summary>
-        <para>Logs message to the Unity Console using default logger.</para>
-      </summary>
-      <param name="logType">The type of the log message.</param>
-      <param name="tag">Used to identify the source of a log message. It usually identifies the class where the log call occurs.</param>
-      <param name="message">String or object to be converted to string representation for display.</param>
-      <param name="context">Object to which the message applies.</param>
-    </member>
-    <member name="M:UnityEngine.Logger.Log(System.Object)">
-      <summary>
-        <para>Logs message to the Unity Console using default logger.</para>
-      </summary>
-      <param name="logType">The type of the log message.</param>
-      <param name="tag">Used to identify the source of a log message. It usually identifies the class where the log call occurs.</param>
-      <param name="message">String or object to be converted to string representation for display.</param>
-      <param name="context">Object to which the message applies.</param>
-    </member>
-    <member name="M:UnityEngine.Logger.Log(System.String,System.Object)">
-      <summary>
-        <para>Logs message to the Unity Console using default logger.</para>
-      </summary>
-      <param name="logType">The type of the log message.</param>
-      <param name="tag">Used to identify the source of a log message. It usually identifies the class where the log call occurs.</param>
-      <param name="message">String or object to be converted to string representation for display.</param>
-      <param name="context">Object to which the message applies.</param>
-    </member>
-    <member name="M:UnityEngine.Logger.Log(System.String,System.Object,UnityEngine.Object)">
-      <summary>
-        <para>Logs message to the Unity Console using default logger.</para>
-      </summary>
-      <param name="logType">The type of the log message.</param>
-      <param name="tag">Used to identify the source of a log message. It usually identifies the class where the log call occurs.</param>
-      <param name="message">String or object to be converted to string representation for display.</param>
-      <param name="context">Object to which the message applies.</param>
-    </member>
-    <member name="M:UnityEngine.Logger.LogError(System.String,System.Object)">
-      <summary>
-        <para>A variant of Logger.Log that logs an error message.</para>
-      </summary>
-      <param name="tag">Used to identify the source of a log message. It usually identifies the class where the log call occurs.</param>
-      <param name="message">String or object to be converted to string representation for display.</param>
-      <param name="context">Object to which the message applies.</param>
-    </member>
-    <member name="M:UnityEngine.Logger.LogError(System.String,System.Object,UnityEngine.Object)">
-      <summary>
-        <para>A variant of Logger.Log that logs an error message.</para>
-      </summary>
-      <param name="tag">Used to identify the source of a log message. It usually identifies the class where the log call occurs.</param>
-      <param name="message">String or object to be converted to string representation for display.</param>
-      <param name="context">Object to which the message applies.</param>
-    </member>
-    <member name="M:UnityEngine.Logger.LogException(System.Exception)">
-      <summary>
-        <para>A variant of Logger.Log that logs an exception message.</para>
-      </summary>
-      <param name="exception">Runtime Exception.</param>
-      <param name="context">Object to which the message applies.</param>
-    </member>
-    <member name="M:UnityEngine.Logger.LogException(System.Exception,UnityEngine.Object)">
-      <summary>
-        <para>A variant of Logger.Log that logs an exception message.</para>
-      </summary>
-      <param name="exception">Runtime Exception.</param>
-      <param name="context">Object to which the message applies.</param>
-    </member>
-    <member name="M:UnityEngine.Logger.LogFormat(UnityEngine.LogType,System.String,System.Object[])">
-      <summary>
-        <para>Logs a formatted message.</para>
-      </summary>
-      <param name="logType">The type of the log message.</param>
-      <param name="context">Object to which the message applies.</param>
-      <param name="format">A composite format string.</param>
-      <param name="args">Format arguments.</param>
-    </member>
-    <member name="M:UnityEngine.Logger.LogFormat(UnityEngine.LogType,UnityEngine.Object,System.String,System.Object[])">
-      <summary>
-        <para>Logs a formatted message.</para>
-      </summary>
-      <param name="logType">The type of the log message.</param>
-      <param name="context">Object to which the message applies.</param>
-      <param name="format">A composite format string.</param>
-      <param name="args">Format arguments.</param>
-    </member>
-    <member name="M:UnityEngine.Logger.LogWarning(System.String,System.Object)">
-      <summary>
-        <para>A variant of Logger.Log that logs an warning message.</para>
-      </summary>
-      <param name="tag">Used to identify the source of a log message. It usually identifies the class where the log call occurs.</param>
-      <param name="message">String or object to be converted to string representation for display.</param>
-      <param name="context">Object to which the message applies.</param>
-    </member>
-    <member name="M:UnityEngine.Logger.LogWarning(System.String,System.Object,UnityEngine.Object)">
-      <summary>
-        <para>A variant of Logger.Log that logs an warning message.</para>
-      </summary>
-      <param name="tag">Used to identify the source of a log message. It usually identifies the class where the log call occurs.</param>
-      <param name="message">String or object to be converted to string representation for display.</param>
-      <param name="context">Object to which the message applies.</param>
-    </member>
     <member name="T:UnityEngine.LogType">
       <summary>
         <para>The type of the log message in Debug.unityLogger.Log or delegate registered with Application.RegisterLogCallback.</para>
@@ -16887,20 +14288,6 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
       <summary>
         <para>Clear material property values.</para>
       </summary>
-    </member>
-    <member name="M:UnityEngine.MaterialPropertyBlock.GetColor(System.String)">
-      <summary>
-        <para>Get a color from the property block.</para>
-      </summary>
-      <param name="name"></param>
-      <param name="nameID"></param>
-    </member>
-    <member name="M:UnityEngine.MaterialPropertyBlock.GetColor(System.Int32)">
-      <summary>
-        <para>Get a color from the property block.</para>
-      </summary>
-      <param name="name"></param>
-      <param name="nameID"></param>
     </member>
     <member name="M:UnityEngine.MaterialPropertyBlock.GetFloat(System.String)">
       <summary>
@@ -19071,87 +16458,6 @@ Use false when you want to use the existing bounding box and reduce the CPU cost
         <para>The connection to the system has been lost, no reliable packets could be delivered.</para>
       </summary>
     </member>
-    <member name="T:UnityEngine.Networking.PlayerConnection.MessageEventArgs">
-      <summary>
-        <para>Arguments passed to Action callbacks registered in PlayerConnection.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Networking.PlayerConnection.MessageEventArgs.data">
-      <summary>
-        <para>Data that is received.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Networking.PlayerConnection.MessageEventArgs.playerId">
-      <summary>
-        <para>The Player ID that the data is received from.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Networking.PlayerConnection.PlayerConnection">
-      <summary>
-        <para>Used for handling the network connection from the Player to the Editor.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Networking.PlayerConnection.PlayerConnection.instance">
-      <summary>
-        <para>Singleton instance.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Networking.PlayerConnection.PlayerConnection.isConnected">
-      <summary>
-        <para>Returns true when Editor is connected to the player.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Networking.PlayerConnection.PlayerConnection.BlockUntilRecvMsg(System.Guid,System.Int32)">
-      <summary>
-        <para>Blocks the calling thread until either a message with the specified messageId is received or the specified time-out elapses.</para>
-      </summary>
-      <param name="messageId">The type ID of the message that is sent to the Editor.</param>
-      <param name="timeout">The time-out specified in milliseconds.</param>
-      <returns>
-        <para>Returns true when the message is received and false if the call timed out.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Networking.PlayerConnection.PlayerConnection.DisconnectAll">
-      <summary>
-        <para>This disconnects all of the active connections.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Networking.PlayerConnection.PlayerConnection.Register(System.Guid,UnityEngine.Events.UnityAction`1&lt;UnityEngine.Networking.PlayerConnection.MessageEventArgs&gt;)">
-      <summary>
-        <para>Registers a listener for a specific message ID, with an Action to be executed whenever that message is received by the Editor.
-This ID must be the same as for messages sent from EditorConnection.Send().</para>
-      </summary>
-      <param name="messageId">The message ID that should cause the Action callback to be executed when received.</param>
-      <param name="callback">Action that is executed when a message with ID messageId is received by the Editor.
-The callback includes the data that is sent from the Player, and the Player ID.
-The Player ID is always 1, because only one Editor can be connected.</param>
-    </member>
-    <member name="M:UnityEngine.Networking.PlayerConnection.PlayerConnection.RegisterConnection(UnityEngine.Events.UnityAction`1&lt;System.Int32&gt;)">
-      <summary>
-        <para>Registers a callback that is invoked when the Editor connects to the Player.</para>
-      </summary>
-      <param name="callback">Action called when Player connects, with the Player ID of the Editor.</param>
-    </member>
-    <member name="M:UnityEngine.Networking.PlayerConnection.PlayerConnection.RegisterDisconnection(UnityEngine.Events.UnityAction`1&lt;System.Int32&gt;)">
-      <summary>
-        <para>Registers a callback to be called when Editor disconnects.</para>
-      </summary>
-      <param name="callback">The Action that is called when a Player disconnects.</param>
-    </member>
-    <member name="M:UnityEngine.Networking.PlayerConnection.PlayerConnection.Send(System.Guid,System.Byte[])">
-      <summary>
-        <para>Sends data to the Editor.</para>
-      </summary>
-      <param name="messageId">The type ID of the message that is sent to the Editor.</param>
-      <param name="data"></param>
-    </member>
-    <member name="M:UnityEngine.Networking.PlayerConnection.PlayerConnection.Unregister(System.Guid,UnityEngine.Events.UnityAction`1&lt;UnityEngine.Networking.PlayerConnection.MessageEventArgs&gt;)">
-      <summary>
-        <para>Deregisters a message listener.</para>
-      </summary>
-      <param name="messageId">Message ID associated with the callback that you wish to deregister.</param>
-      <param name="callback">The associated callback function you wish to deregister.</param>
-    </member>
     <member name="T:UnityEngine.NetworkLogLevel">
       <summary>
         <para>Describes different levels of log information the network layer supports.</para>
@@ -19870,12 +17176,12 @@ The Player ID is always 1, because only one Editor can be connected.</param>
     </member>
     <member name="F:UnityEngine.Playables.DataStreamType.Animation">
       <summary>
-        <para>Describes that the information flowing in and out of the Playable is of Animation type.</para>
+        <para>Describes that the information flowing in and out of the Playable is of type Animation.</para>
       </summary>
     </member>
     <member name="F:UnityEngine.Playables.DataStreamType.Audio">
       <summary>
-        <para>Describes that the information flowing in and out of the Playable is of Audio type.</para>
+        <para>Describes that the information flowing in and out of the Playable is Audio.</para>
       </summary>
     </member>
     <member name="F:UnityEngine.Playables.DataStreamType.None">
@@ -20025,7 +17331,7 @@ The Player ID is always 1, because only one Editor can be connected.</param>
     </member>
     <member name="T:UnityEngine.Playables.Playable">
       <summary>
-        <para>Playables are customizable runtime objects that can be connected together and are contained in a PlayableGraph to create complex behaviours.</para>
+        <para>Playables are customizable runtime objects that can be connected together in a tree contained in a PlayableGraph to create complex behaviours.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Playables.Playable.Null">
@@ -20182,7 +17488,7 @@ The Player ID is always 1, because only one Editor can be connected.</param>
         <para>The index of the newly created input port.</para>
       </returns>
     </member>
-    <member name="M:UnityEngine.Playables.PlayableExtensions.ConnectInput(U,System.Int32,V,System.Int32,System.Single)">
+    <member name="M:UnityEngine.Playables.PlayableExtensions.ConnectInput(U,System.Int32,V,System.Int32)">
       <summary>
         <para>Connect the output port of a Playable to one of the input ports.</para>
       </summary>
@@ -20190,7 +17496,6 @@ The Player ID is always 1, because only one Editor can be connected.</param>
       <param name="inputIndex">The input port index.</param>
       <param name="sourcePlayable">The Playable to connect to.</param>
       <param name="sourceOutputIndex">The output port of the Playable.</param>
-      <param name="weight">The weight of the input port.</param>
     </member>
     <member name="M:UnityEngine.Playables.PlayableExtensions.Destroy(U)">
       <summary>
@@ -20280,15 +17585,6 @@ The Player ID is always 1, because only one Editor can be connected.</param>
       <param name="playable">The Playable used by this operation.</param>
       <returns>
         <para>The current PlayState of the Playable.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Playables.PlayableExtensions.GetPreviousTime(U)">
-      <summary>
-        <para>Returns the previous local time of the Playable.</para>
-      </summary>
-      <param name="playable">The Playable used by this operation.</param>
-      <returns>
-        <para>The previous time in seconds.</para>
       </returns>
     </member>
     <member name="M:UnityEngine.Playables.PlayableExtensions.GetPropagateSetTime(U)">
@@ -20440,10 +17736,10 @@ The Player ID is always 1, because only one Editor can be connected.</param>
     </member>
     <member name="T:UnityEngine.Playables.PlayableGraph">
       <summary>
-        <para>Use the PlayableGraph to manage Playable creations and destructions.</para>
+        <para>The PlayableGraph is used to manage Playable creation, destruction and connections.</para>
       </summary>
     </member>
-    <member name="M:UnityEngine.Playables.PlayableGraph.Connect(U,System.Int32,V,System.Int32)">
+    <member name="M:UnityEngine.Playables.PlayableGraph.Connect">
       <summary>
         <para>Connects two Playable instances.</para>
       </summary>
@@ -20459,9 +17755,6 @@ The Player ID is always 1, because only one Editor can be connected.</param>
       <summary>
         <para>Creates a PlayableGraph.</para>
       </summary>
-      <returns>
-        <para>The newly created PlayableGraph.</para>
-      </returns>
     </member>
     <member name="M:UnityEngine.Playables.PlayableGraph.Destroy">
       <summary>
@@ -20474,30 +17767,24 @@ The Player ID is always 1, because only one Editor can be connected.</param>
       </summary>
       <param name="output">The output to destroy.</param>
     </member>
-    <member name="M:UnityEngine.Playables.PlayableGraph.DestroyPlayable(U)">
+    <member name="M:UnityEngine.Playables.PlayableGraph.DestroyPlayable">
       <summary>
         <para>Destroys the Playable.</para>
       </summary>
       <param name="playable">The playable to destroy.</param>
     </member>
-    <member name="M:UnityEngine.Playables.PlayableGraph.DestroySubgraph(U)">
+    <member name="M:UnityEngine.Playables.PlayableGraph.DestroySubgraph">
       <summary>
-        <para>Destroys the Playable and all its inputs, recursively.</para>
+        <para>Recursively destroys the given Playable and all children connected to its inputs.</para>
       </summary>
-      <param name="playable">The Playable to destroy.</param>
+      <param name="playable">The playable to destroy.</param>
     </member>
-    <member name="M:UnityEngine.Playables.PlayableGraph.Disconnect(U,System.Int32)">
+    <member name="M:UnityEngine.Playables.PlayableGraph.Disconnect">
       <summary>
-        <para>Disconnects the Playable. The connections determine the topology of the PlayableGraph and how it is evaluated.</para>
+        <para>Disconnects Playable.  The connections determine the topology of the PlayableGraph and how its is evaluated.</para>
       </summary>
-      <param name="input">The source playabe or its handle.</param>
+      <param name="playable">The source playabe or its handle.</param>
       <param name="inputPort">The port used in the source playable.</param>
-    </member>
-    <member name="M:UnityEngine.Playables.PlayableGraph.Evaluate(System.Single)">
-      <summary>
-        <para>Evaluates all the PlayableOutputs in the graph, and updates all the connected Playables in the graph.</para>
-      </summary>
-      <param name="deltaTime">The time in seconds by which to advance each Playable in the graph.</param>
     </member>
     <member name="M:UnityEngine.Playables.PlayableGraph.Evaluate">
       <summary>
@@ -20509,44 +17796,17 @@ The Player ID is always 1, because only one Editor can be connected.</param>
       <summary>
         <para>Get PlayableOutput at the given index in the graph.</para>
       </summary>
-      <param name="index">The output index.</param>
-      <returns>
-        <para>The PlayableOutput at this given index, otherwise null.</para>
-      </returns>
+      <param name="index"></param>
     </member>
     <member name="M:UnityEngine.Playables.PlayableGraph.GetOutputByType(System.Int32)">
       <summary>
         <para>Get PlayableOutput of the requested type at the given index in the graph.</para>
       </summary>
-      <param name="index">The output index.</param>
-      <returns>
-        <para>The PlayableOutput at the given index among all the PlayableOutput of the same type T.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Playables.PlayableGraph.GetOutputCount">
-      <summary>
-        <para>Returns the number of PlayableOutput in the graph.</para>
-      </summary>
-      <returns>
-        <para>The number of PlayableOutput in the graph.</para>
-      </returns>
+      <param name="index"></param>
     </member>
     <member name="M:UnityEngine.Playables.PlayableGraph.GetOutputCountByType">
       <summary>
         <para>Get the number of PlayableOutput of the requested type in the graph.</para>
-      </summary>
-      <returns>
-        <para>The number of PlayableOutput of the same type T in the graph.</para>
-      </returns>
-    </member>
-    <member name="M:UnityEngine.Playables.PlayableGraph.GetPlayableCount">
-      <summary>
-        <para>Returns the number of Playable owned by the Graph.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Playables.PlayableGraph.GetResolver">
-      <summary>
-        <para>Returns the table used by the graph to resolve ExposedReferences.</para>
       </summary>
     </member>
     <member name="M:UnityEngine.Playables.PlayableGraph.GetRootPlayable(System.Int32)">
@@ -20554,16 +17814,6 @@ The Player ID is always 1, because only one Editor can be connected.</param>
         <para>Returns the Playable with no output connections at the given index.</para>
       </summary>
       <param name="index">The index of the root Playable.</param>
-    </member>
-    <member name="M:UnityEngine.Playables.PlayableGraph.GetRootPlayableCount">
-      <summary>
-        <para>Returns the number of Playable owned by the Graph that have no connected outputs.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Playables.PlayableGraph.GetTimeUpdateMode">
-      <summary>
-        <para>Returns how time is incremented when playing back.</para>
-      </summary>
     </member>
     <member name="M:UnityEngine.Playables.PlayableGraph.IsDone">
       <summary>
@@ -20594,71 +17844,9 @@ The Player ID is always 1, because only one Editor can be connected.</param>
         <para>Plays the graph.</para>
       </summary>
     </member>
-    <member name="M:UnityEngine.Playables.PlayableGraph.SetResolver(UnityEngine.IExposedPropertyTable)">
-      <summary>
-        <para>Changes the table used by the graph to resolve ExposedReferences.</para>
-      </summary>
-      <param name="value"></param>
-    </member>
-    <member name="M:UnityEngine.Playables.PlayableGraph.SetTimeUpdateMode(UnityEngine.Playables.DirectorUpdateMode)">
-      <summary>
-        <para>Changes how time is incremented when playing back.</para>
-      </summary>
-      <param name="value">The new DirectorUpdateMode.</param>
-    </member>
     <member name="M:UnityEngine.Playables.PlayableGraph.Stop">
       <summary>
         <para>Stops the graph, if it is playing.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Playables.PlayableOutputExtensions">
-      <summary>
-        <para>Extensions for all the types that implements IPlayableOutput.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Playables.PlayState">
-      <summary>
-        <para>Status of a Playable.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Playables.PlayState.Delayed">
-      <summary>
-        <para>The Playable has been delayed, using SetDelay. It will not start until the delay is entirely consumed.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Playables.PlayState.Paused">
-      <summary>
-        <para>The Playable has been paused. Its local time will not advance.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Playables.PlayState.Playing">
-      <summary>
-        <para>The Playable is currently Playing.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Playables.ScriptPlayable`1">
-      <summary>
-        <para>A IPlayable implementation that contains a PlayableBehaviour for the PlayableGraph. PlayableBehaviour can be used to write custom Playable that implement their own PrepareFrame callback.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Playables.ScriptPlayableOutput">
-      <summary>
-        <para>A IPlayableOutput implementation that contains a script output for the a PlayableGraph.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Playables.ScriptPlayableOutput.Create(UnityEngine.Playables.PlayableGraph,System.String)">
-      <summary>
-        <para>Creates a new ScriptPlayableOutput in the associated PlayableGraph.</para>
-      </summary>
-      <param name="graph">The PlayableGraph that will contain the ScriptPlayableOutput.</param>
-      <param name="name">The name of this ScriptPlayableOutput.</param>
-      <returns>
-        <para>The created ScriptPlayableOutput.</para>
-      </returns>
-    </member>
-    <member name="P:UnityEngine.Playables.ScriptPlayableOutput.Null">
-      <summary>
-        <para>Returns an invalid ScriptPlayableOutput.</para>
       </summary>
     </member>
     <member name="T:UnityEngine.PlayerPrefs">
@@ -21835,7 +19023,8 @@ frame. Minimum value is 1 and maximum is 33.</para>
     </member>
     <member name="P:UnityEngine.QualitySettings.resolutionScalingFixedDPIFactor">
       <summary>
-        <para>In resolution scaling mode, this factor is used to multiply with the target Fixed DPI specified to get the actual Fixed DPI to use for this quality setting.</para>
+        <para>In resolution scaling mode, this factor is used to multiply with the target Fixed DPI specified to get the actual Fixed DPI to use for this quality setting.
+        </para>
       </summary>
     </member>
     <member name="P:UnityEngine.QualitySettings.shadowCascade2Split">
@@ -27373,7 +24562,7 @@ See RenderTexture.useMipMap.</para>
     </member>
     <member name="F:UnityEngine.RuntimePlatform.WebGLPlayer">
       <summary>
-        <para>In the player on WebGL</para>
+        <para>In the player on WebGL?</para>
       </summary>
     </member>
     <member name="F:UnityEngine.RuntimePlatform.WiiU">
@@ -27532,52 +24721,52 @@ A scene may be invalid if, for example, you tried to open a scene that does not 
     </member>
     <member name="?:UnityEngine.SceneManagement.SceneManager.activeSceneChanged(UnityEngine.Events.UnityAction`2&lt;UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.Scene&gt;)">
       <summary>
-        <para>Add a delegate to this to get notifications when the active Scene has changed</para>
+        <para>Add a delegate to this to get notifications when the active scene has changed</para>
       </summary>
       <param name="value"></param>
     </member>
     <member name="P:UnityEngine.SceneManagement.SceneManager.sceneCount">
       <summary>
-        <para>The total number of currently loaded Scenes.</para>
+        <para>The total number of currently loaded scenes.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.SceneManagement.SceneManager.sceneCountInBuildSettings">
       <summary>
-        <para>Number of Scenes in Build Settings.</para>
+        <para>Number of scenes in Build Settings.</para>
       </summary>
     </member>
     <member name="?:UnityEngine.SceneManagement.SceneManager.sceneLoaded(UnityEngine.Events.UnityAction`2&lt;UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode&gt;)">
       <summary>
-        <para>Add a delegate to this to get notifications when a Scene has loaded.</para>
+        <para>Add a delegate to this to get notifications when a scene has loaded.</para>
       </summary>
       <param name="value"></param>
     </member>
     <member name="?:UnityEngine.SceneManagement.SceneManager.sceneUnloaded(UnityEngine.Events.UnityAction`1&lt;UnityEngine.SceneManagement.Scene&gt;)">
       <summary>
-        <para>Add a delegate to this to get notifications when a Scene has unloaded</para>
+        <para>Add a delegate to this to get notifications when a scene has unloaded</para>
       </summary>
       <param name="value"></param>
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.CreateScene(System.String)">
       <summary>
-        <para>Create an empty new Scene at runtime with the given name.</para>
+        <para>Create an empty new scene at runtime with the given name.</para>
       </summary>
-      <param name="sceneName">The name of the new Scene. It cannot be empty or null, or same as the name of the existing Scenes.</param>
+      <param name="sceneName">The name of the new scene. It cannot be empty or null, or same as the name of the existing scenes.</param>
       <returns>
-        <para>A reference to the new Scene that was created, or an invalid Scene if creation failed.</para>
+        <para>A reference to the new scene that was created, or an invalid scene if creation failed.</para>
       </returns>
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.GetActiveScene">
       <summary>
-        <para>Gets the currently active Scene.</para>
+        <para>Gets the currently active scene.</para>
       </summary>
       <returns>
-        <para>The active Scene.</para>
+        <para>The active scene.</para>
       </returns>
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.GetAllScenes">
       <summary>
-        <para>Returns an array of all the Scenes currently open in the hierarchy.</para>
+        <para>Returns an array of all the scenes currently open in the hierarchy.</para>
       </summary>
       <returns>
         <para>Array of Scenes in the Hierarchy.</para>
@@ -27585,142 +24774,142 @@ A scene may be invalid if, for example, you tried to open a scene that does not 
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.GetSceneAt(System.Int32)">
       <summary>
-        <para>Get the Scene at index in the SceneManager's list of loaded Scenes.</para>
+        <para>Get the scene at index in the SceneManager's list of loaded scenes.</para>
       </summary>
-      <param name="index">Index of the Scene to get. Index must be greater than or equal to 0 and less than SceneManager.sceneCount.</param>
+      <param name="index">Index of the scene to get. Index must be greater than or equal to 0 and less than SceneManager.sceneCount.</param>
       <returns>
-        <para>A reference to the Scene at the index specified.</para>
+        <para>A reference to the scene at the index specified.</para>
       </returns>
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.GetSceneByBuildIndex(System.Int32)">
       <summary>
-        <para>Get a Scene struct from a build index.</para>
+        <para>Get a scene struct from a build index.</para>
       </summary>
       <param name="buildIndex">Build index as shown in the Build Settings window.</param>
       <returns>
-        <para>A reference to the Scene, if valid. If not, an invalid Scene is returned.</para>
+        <para>A reference to the scene, if valid. If not, an invalid scene is returned.</para>
       </returns>
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.GetSceneByName(System.String)">
       <summary>
-        <para>Searches through the Scenes added to the SceneManager for a Scene with the given name.</para>
+        <para>Searches through the scenes added to the SceneManager for a scene with the given name.</para>
       </summary>
-      <param name="name">Name of Scene to find.</param>
+      <param name="name">Name of scene to find.</param>
       <returns>
-        <para>A reference to the Scene, if valid. If not, an invalid Scene is returned.</para>
+        <para>A reference to the scene, if valid. If not, an invalid scene is returned.</para>
       </returns>
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.GetSceneByPath(System.String)">
       <summary>
-        <para>Searches all Scenes added to the SceneManager for a Scene that has the given asset path.</para>
+        <para>Searches all scenes added to the SceneManager for a scene that has the given asset path.</para>
       </summary>
-      <param name="scenePath">Path of the Scene. Should be relative to the project folder. Like: "AssetsMyScenesMyScene.unity".</param>
+      <param name="scenePath">Path of the scene. Should be relative to the project folder. Like: "AssetsMyScenesMyScene.unity".</param>
       <returns>
-        <para>A reference to the Scene, if valid. If not, an invalid Scene is returned.</para>
+        <para>A reference to the scene, if valid. If not, an invalid scene is returned.</para>
       </returns>
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.LoadScene(System.Int32,UnityEngine.SceneManagement.LoadSceneMode)">
       <summary>
-        <para>Loads the Scene by its name or index in Build Settings.</para>
+        <para>Loads the scene by its name or index in Build Settings.</para>
       </summary>
-      <param name="sceneName">Name or path of the Scene to load.</param>
-      <param name="sceneBuildIndex">Index of the Scene in the Build Settings to load.</param>
-      <param name="mode">Allows you to specify whether or not to load the Scene additively.
+      <param name="sceneName">Name or path of the scene to load.</param>
+      <param name="sceneBuildIndex">Index of the scene in the Build Settings to load.</param>
+      <param name="mode">Allows you to specify whether or not to load the scene additively.
         See SceneManagement.LoadSceneMode for more information about the options.</param>
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.LoadScene(System.String,UnityEngine.SceneManagement.LoadSceneMode)">
       <summary>
-        <para>Loads the Scene by its name or index in Build Settings.</para>
+        <para>Loads the scene by its name or index in Build Settings.</para>
       </summary>
-      <param name="sceneName">Name or path of the Scene to load.</param>
-      <param name="sceneBuildIndex">Index of the Scene in the Build Settings to load.</param>
-      <param name="mode">Allows you to specify whether or not to load the Scene additively.
+      <param name="sceneName">Name or path of the scene to load.</param>
+      <param name="sceneBuildIndex">Index of the scene in the Build Settings to load.</param>
+      <param name="mode">Allows you to specify whether or not to load the scene additively.
         See SceneManagement.LoadSceneMode for more information about the options.</param>
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(System.String,UnityEngine.SceneManagement.LoadSceneMode)">
       <summary>
-        <para>Loads the Scene asynchronously in the background.</para>
+        <para>Loads the scene asynchronously in the background.</para>
       </summary>
-      <param name="sceneName">Name or path of the Scene to load.</param>
-      <param name="sceneBuildIndex">Index of the Scene in the Build Settings to load.</param>
-      <param name="mode">If LoadSceneMode.Single then all current Scenes will be unloaded before loading.</param>
+      <param name="sceneName">Name or path of the scene to load.</param>
+      <param name="sceneBuildIndex">Index of the scene in the Build Settings to load.</param>
+      <param name="mode">If LoadSceneMode.Single then all current scenes will be unloaded before loading.</param>
       <returns>
         <para>Use the AsyncOperation to determine if the operation has completed.</para>
       </returns>
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(System.Int32,UnityEngine.SceneManagement.LoadSceneMode)">
       <summary>
-        <para>Loads the Scene asynchronously in the background.</para>
+        <para>Loads the scene asynchronously in the background.</para>
       </summary>
-      <param name="sceneName">Name or path of the Scene to load.</param>
-      <param name="sceneBuildIndex">Index of the Scene in the Build Settings to load.</param>
-      <param name="mode">If LoadSceneMode.Single then all current Scenes will be unloaded before loading.</param>
+      <param name="sceneName">Name or path of the scene to load.</param>
+      <param name="sceneBuildIndex">Index of the scene in the Build Settings to load.</param>
+      <param name="mode">If LoadSceneMode.Single then all current scenes will be unloaded before loading.</param>
       <returns>
         <para>Use the AsyncOperation to determine if the operation has completed.</para>
       </returns>
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.MergeScenes(UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.Scene)">
       <summary>
-        <para>This will merge the source Scene into the destinationScene.</para>
+        <para>This will merge the source scene into the destinationScene.</para>
       </summary>
-      <param name="sourceScene">The Scene that will be merged into the destination Scene.</param>
-      <param name="destinationScene">Existing Scene to merge the source Scene into.</param>
+      <param name="sourceScene">The scene that will be merged into the destination scene.</param>
+      <param name="destinationScene">Existing scene to merge the source scene into.</param>
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.MoveGameObjectToScene(UnityEngine.GameObject,UnityEngine.SceneManagement.Scene)">
       <summary>
-        <para>Move a GameObject from its current Scene to a new Scene.</para>
+        <para>Move a GameObject from its current scene to a new Scene.</para>
       </summary>
       <param name="go">GameObject to move.</param>
       <param name="scene">Scene to move into.</param>
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.SetActiveScene(UnityEngine.SceneManagement.Scene)">
       <summary>
-        <para>Set the Scene to be active.</para>
+        <para>Set the scene to be active.</para>
       </summary>
-      <param name="scene">The Scene to be set.</param>
+      <param name="scene">The scene to be set.</param>
       <returns>
-        <para>Returns false if the Scene is not loaded yet.</para>
+        <para>Returns false if the scene is not loaded yet.</para>
       </returns>
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.UnloadScene(System.Int32)">
       <summary>
-        <para>Destroys all GameObjects associated with the given Scene and removes the Scene from the SceneManager.</para>
+        <para>Destroys all GameObjects associated with the given scene and removes the scene from the SceneManager.</para>
       </summary>
-      <param name="sceneBuildIndex">Index of the Scene in the Build Settings to unload.</param>
-      <param name="sceneName">Name or path of the Scene to unload.</param>
+      <param name="sceneBuildIndex">Index of the scene in the Build Settings to unload.</param>
+      <param name="sceneName">Name or path of the scene to unload.</param>
       <param name="scene">Scene to unload.</param>
       <returns>
-        <para>Returns true if the Scene is unloaded.</para>
+        <para>Returns true if the scene is unloaded.</para>
       </returns>
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.UnloadScene(System.String)">
       <summary>
-        <para>Destroys all GameObjects associated with the given Scene and removes the Scene from the SceneManager.</para>
+        <para>Destroys all GameObjects associated with the given scene and removes the scene from the SceneManager.</para>
       </summary>
-      <param name="sceneBuildIndex">Index of the Scene in the Build Settings to unload.</param>
-      <param name="sceneName">Name or path of the Scene to unload.</param>
+      <param name="sceneBuildIndex">Index of the scene in the Build Settings to unload.</param>
+      <param name="sceneName">Name or path of the scene to unload.</param>
       <param name="scene">Scene to unload.</param>
       <returns>
-        <para>Returns true if the Scene is unloaded.</para>
+        <para>Returns true if the scene is unloaded.</para>
       </returns>
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.UnloadScene(UnityEngine.SceneManagement.Scene)">
       <summary>
-        <para>Destroys all GameObjects associated with the given Scene and removes the Scene from the SceneManager.</para>
+        <para>Destroys all GameObjects associated with the given scene and removes the scene from the SceneManager.</para>
       </summary>
-      <param name="sceneBuildIndex">Index of the Scene in the Build Settings to unload.</param>
-      <param name="sceneName">Name or path of the Scene to unload.</param>
+      <param name="sceneBuildIndex">Index of the scene in the Build Settings to unload.</param>
+      <param name="sceneName">Name or path of the scene to unload.</param>
       <param name="scene">Scene to unload.</param>
       <returns>
-        <para>Returns true if the Scene is unloaded.</para>
+        <para>Returns true if the scene is unloaded.</para>
       </returns>
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(System.Int32)">
       <summary>
-        <para>Destroys all GameObjects associated with the given Scene and removes the Scene from the SceneManager.</para>
+        <para>Destroys all GameObjects associated with the given scene and removes the scene from the SceneManager.</para>
       </summary>
-      <param name="sceneBuildIndex">Index of the Scene in BuildSettings.</param>
-      <param name="sceneName">Name or path of the Scene to unload.</param>
+      <param name="sceneBuildIndex">Index of the scene in BuildSettings.</param>
+      <param name="sceneName">Name or path of the scene to unload.</param>
       <param name="scene">Scene to unload.</param>
       <returns>
         <para>Use the AsyncOperation to determine if the operation has completed.</para>
@@ -27728,10 +24917,10 @@ A scene may be invalid if, for example, you tried to open a scene that does not 
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(System.String)">
       <summary>
-        <para>Destroys all GameObjects associated with the given Scene and removes the Scene from the SceneManager.</para>
+        <para>Destroys all GameObjects associated with the given scene and removes the scene from the SceneManager.</para>
       </summary>
-      <param name="sceneBuildIndex">Index of the Scene in BuildSettings.</param>
-      <param name="sceneName">Name or path of the Scene to unload.</param>
+      <param name="sceneBuildIndex">Index of the scene in BuildSettings.</param>
+      <param name="sceneName">Name or path of the scene to unload.</param>
       <param name="scene">Scene to unload.</param>
       <returns>
         <para>Use the AsyncOperation to determine if the operation has completed.</para>
@@ -27739,10 +24928,10 @@ A scene may be invalid if, for example, you tried to open a scene that does not 
     </member>
     <member name="M:UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(UnityEngine.SceneManagement.Scene)">
       <summary>
-        <para>Destroys all GameObjects associated with the given Scene and removes the Scene from the SceneManager.</para>
+        <para>Destroys all GameObjects associated with the given scene and removes the scene from the SceneManager.</para>
       </summary>
-      <param name="sceneBuildIndex">Index of the Scene in BuildSettings.</param>
-      <param name="sceneName">Name or path of the Scene to unload.</param>
+      <param name="sceneBuildIndex">Index of the scene in BuildSettings.</param>
+      <param name="sceneName">Name or path of the scene to unload.</param>
       <param name="scene">Scene to unload.</param>
       <returns>
         <para>Use the AsyncOperation to determine if the operation has completed.</para>
@@ -27829,11 +25018,6 @@ A scene may be invalid if, for example, you tried to open a scene that does not 
     <member name="P:UnityEngine.Screen.resolutions">
       <summary>
         <para>All fullscreen resolutions supported by the monitor (Read Only).</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Screen.safeArea">
-      <summary>
-        <para>Returns the safe area of the screen in pixels (Read Only).</para>
       </summary>
     </member>
     <member name="P:UnityEngine.Screen.showCursor">
@@ -27932,11 +25116,6 @@ A scene may be invalid if, for example, you tried to open a scene that does not 
         <para>The created ScriptableObject.</para>
       </returns>
     </member>
-    <member name="T:UnityEngine.Scripting.PreserveAttribute">
-      <summary>
-        <para>PreserveAttribute prevents byte code stripping from removing a class, method, field, or property.</para>
-      </summary>
-    </member>
     <member name="T:UnityEngine.Security">
       <summary>
         <para>Webplayer security related class. Not supported from 5.4.0 onwards.</para>
@@ -27997,22 +25176,6 @@ A scene may be invalid if, for example, you tried to open a scene that does not 
       <summary>
         <para>A receiver is required for SendMessage.</para>
       </summary>
-    </member>
-    <member name="T:UnityEngine.Serialization.FormerlySerializedAsAttribute">
-      <summary>
-        <para>Use this attribute to rename a field without losing its serialized value.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.Serialization.FormerlySerializedAsAttribute.oldName">
-      <summary>
-        <para>The name of the field before the rename.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Serialization.FormerlySerializedAsAttribute.#ctor(System.String)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="oldName">The name of the field before renaming.</param>
     </member>
     <member name="T:UnityEngine.SerializeField">
       <summary>
@@ -29298,24 +26461,6 @@ Returns NULL if there is no associated alpha texture for the source sprite. This
         <para>Only managed stack trace will be outputed.</para>
       </summary>
     </member>
-    <member name="T:UnityEngine.StaticBatchingUtility">
-      <summary>
-        <para>StaticBatchingUtility can prepare your objects to take advantage of Unity's static batching.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.StaticBatchingUtility.Combine(UnityEngine.GameObject)">
-      <summary>
-        <para>StaticBatchingUtility.Combine prepares all children of the staticBatchRoot for static batching.</para>
-      </summary>
-      <param name="staticBatchRoot"></param>
-    </member>
-    <member name="M:UnityEngine.StaticBatchingUtility.Combine(UnityEngine.GameObject[],UnityEngine.GameObject)">
-      <summary>
-        <para>StaticBatchingUtility.Combine prepares all gos for static batching. staticBatchRoot is treated as their parent.</para>
-      </summary>
-      <param name="gos"></param>
-      <param name="staticBatchRoot"></param>
-    </member>
     <member name="T:UnityEngine.StereoTargetEyeMask">
       <summary>
         <para>Enum values for the Camera's targetEye property.</para>
@@ -29583,11 +26728,6 @@ Note that GPUFences are only supported on PS4.</para>
     <member name="P:UnityEngine.SystemInfo.supportsStencil">
       <summary>
         <para>Is the stencil buffer supported? (Read Only)</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.SystemInfo.supportsTextureWrapMirrorOnce">
-      <summary>
-        <para>Returns true if the 'Mirror Once' texture wrap mode is supported. (Read Only)</para>
       </summary>
     </member>
     <member name="P:UnityEngine.SystemInfo.supportsVibration">
@@ -33290,71 +30430,6 @@ Useful for restarting a trail from a new position.</para>
         <para>Returns the path to the crash report folder on Windows.</para>
       </summary>
     </member>
-    <member name="T:UnityEngine.Windows.Speech.ConfidenceLevel">
-      <summary>
-        <para>Used by KeywordRecognizer, GrammarRecognizer, DictationRecognizer. Phrases under the specified minimum level will be ignored.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.ConfidenceLevel.High">
-      <summary>
-        <para>High confidence level.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.ConfidenceLevel.Low">
-      <summary>
-        <para>Low confidence level.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.ConfidenceLevel.Medium">
-      <summary>
-        <para>Medium confidence level.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.ConfidenceLevel.Rejected">
-      <summary>
-        <para>Everything is rejected.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Windows.Speech.DictationCompletionCause">
-      <summary>
-        <para>Represents the reason why dictation session has completed.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.DictationCompletionCause.AudioQualityFailure">
-      <summary>
-        <para>Dictation session completion was caused by bad audio quality.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.DictationCompletionCause.Canceled">
-      <summary>
-        <para>Dictation session was either cancelled, or the application was paused while dictation session was in progress.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.DictationCompletionCause.Complete">
-      <summary>
-        <para>Dictation session has completed successfully.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.DictationCompletionCause.MicrophoneUnavailable">
-      <summary>
-        <para>Dictation session has finished because a microphone was not available.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.DictationCompletionCause.NetworkFailure">
-      <summary>
-        <para>Dictation session has finished because network connection was not available.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.DictationCompletionCause.TimeoutExceeded">
-      <summary>
-        <para>Dictation session has reached its timeout.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.DictationCompletionCause.UnknownError">
-      <summary>
-        <para>Dictation session has completed due to an unknown error.</para>
-      </summary>
-    </member>
     <member name="T:UnityEngine.Windows.Speech.DictationRecognizer">
       <summary>
         <para>DictationRecognizer listens to speech input and attempts to determine what phrase was uttered.</para>
@@ -33472,75 +30547,6 @@ Useful for restarting a trail from a new position.</para>
         <para>Stops the dictation recognization session.</para>
       </summary>
     </member>
-    <member name="T:UnityEngine.Windows.Speech.DictationTopicConstraint">
-      <summary>
-        <para>DictationTopicConstraint enum specifies the scenario for which a specific dictation recognizer should optimize.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.DictationTopicConstraint.Dictation">
-      <summary>
-        <para>Dictation recognizer will optimize for dictation scenario.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.DictationTopicConstraint.Form">
-      <summary>
-        <para>Dictation recognizer will optimize for form-filling scenario.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.DictationTopicConstraint.WebSearch">
-      <summary>
-        <para>Dictation recognizer will optimize for web search scenario.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Windows.Speech.GrammarRecognizer">
-      <summary>
-        <para>The GrammarRecognizer is a complement to the KeywordRecognizer. In many cases developers will find the KeywordRecognizer fills all their development needs. However, in some cases, more complex grammars will be better expressed in the form of an xml file on disk.
-The GrammarRecognizer uses Extensible Markup Language (XML) elements and attributes, as specified in the World Wide Web Consortium (W3C) Speech Recognition Grammar Specification (SRGS) Version 1.0. These XML elements and attributes represent the rule structures that define the words or phrases (commands) recognized by speech recognition engines.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Windows.Speech.GrammarRecognizer.#ctor(System.String)">
-      <summary>
-        <para>Creates a grammar recognizer using specified file path and minimum confidence.</para>
-      </summary>
-      <param name="grammarFilePath">Path of the grammar file.</param>
-      <param name="minimumConfidence">The confidence level at which the recognizer will begin accepting phrases.</param>
-    </member>
-    <member name="M:UnityEngine.Windows.Speech.GrammarRecognizer.#ctor(System.String,UnityEngine.Windows.Speech.ConfidenceLevel)">
-      <summary>
-        <para>Creates a grammar recognizer using specified file path and minimum confidence.</para>
-      </summary>
-      <param name="grammarFilePath">Path of the grammar file.</param>
-      <param name="minimumConfidence">The confidence level at which the recognizer will begin accepting phrases.</param>
-    </member>
-    <member name="P:UnityEngine.Windows.Speech.GrammarRecognizer.GrammarFilePath">
-      <summary>
-        <para>Returns the grammar file path which was supplied when the grammar recognizer was created.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Windows.Speech.KeywordRecognizer">
-      <summary>
-        <para>KeywordRecognizer listens to speech input and attempts to match uttered phrases to a list of registered keywords.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Windows.Speech.KeywordRecognizer.#ctor(System.String[])">
-      <summary>
-        <para>Create a KeywordRecognizer which listens to specified keywords with the specified minimum confidence.  Phrases under the specified minimum level will be ignored.</para>
-      </summary>
-      <param name="keywords">The keywords that the recognizer will listen to.</param>
-      <param name="minimumConfidence">The minimum confidence level of speech recognition that the recognizer will accept.</param>
-    </member>
-    <member name="M:UnityEngine.Windows.Speech.KeywordRecognizer.#ctor(System.String[],UnityEngine.Windows.Speech.ConfidenceLevel)">
-      <summary>
-        <para>Create a KeywordRecognizer which listens to specified keywords with the specified minimum confidence.  Phrases under the specified minimum level will be ignored.</para>
-      </summary>
-      <param name="keywords">The keywords that the recognizer will listen to.</param>
-      <param name="minimumConfidence">The minimum confidence level of speech recognition that the recognizer will accept.</param>
-    </member>
-    <member name="P:UnityEngine.Windows.Speech.KeywordRecognizer.Keywords">
-      <summary>
-        <para>Returns the list of keywords which was supplied when the keyword recognizer was created.</para>
-      </summary>
-    </member>
     <member name="T:UnityEngine.Windows.Speech.PhraseRecognitionSystem">
       <summary>
         <para>Phrase recognition system is responsible for managing phrase recognizers and dispatching recognition events to them.</para>
@@ -33590,36 +30596,6 @@ The GrammarRecognizer uses Extensible Markup Language (XML) elements and attribu
       </summary>
       <param name="status">The new status of the phrase recognition system.</param>
     </member>
-    <member name="T:UnityEngine.Windows.Speech.PhraseRecognizedEventArgs">
-      <summary>
-        <para>Provides information about a phrase recognized event.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.PhraseRecognizedEventArgs.confidence">
-      <summary>
-        <para>A measure of correct recognition certainty.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.PhraseRecognizedEventArgs.phraseDuration">
-      <summary>
-        <para>The time it took for the phrase to be uttered.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.PhraseRecognizedEventArgs.phraseStartTime">
-      <summary>
-        <para>The moment in time when uttering of the phrase began.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.PhraseRecognizedEventArgs.semanticMeanings">
-      <summary>
-        <para>A semantic meaning of recognized phrase.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.PhraseRecognizedEventArgs.text">
-      <summary>
-        <para>The text that was recognized.</para>
-      </summary>
-    </member>
     <member name="T:UnityEngine.Windows.Speech.PhraseRecognizer">
       <summary>
         <para>A common base class for both keyword recognizer and grammar recognizer.</para>
@@ -33655,86 +30631,6 @@ The GrammarRecognizer uses Extensible Markup Language (XML) elements and attribu
     <member name="M:UnityEngine.Windows.Speech.PhraseRecognizer.Stop">
       <summary>
         <para>Stops the phrase recognizer from listening to phrases.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Windows.Speech.SemanticMeaning">
-      <summary>
-        <para>Semantic meaning is a collection of semantic properties of a recognized phrase. These semantic properties can be specified in SRGS grammar files.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.SemanticMeaning.key">
-      <summary>
-        <para>A key of semaning meaning.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.SemanticMeaning.values">
-      <summary>
-        <para>Values of semantic property that the correspond to the semantic meaning key.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Windows.Speech.SpeechError">
-      <summary>
-        <para>Represents an error in a speech recognition system.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.SpeechError.AudioQualityFailure">
-      <summary>
-        <para>Speech recognition engine failed because the audio quality was too low.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.SpeechError.GrammarCompilationFailure">
-      <summary>
-        <para>Speech recognition engine failed to compiled specified grammar.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.SpeechError.MicrophoneUnavailable">
-      <summary>
-        <para>Speech error occurred because a microphone was not available.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.SpeechError.NetworkFailure">
-      <summary>
-        <para>Speech error occurred due to a network failure.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.SpeechError.NoError">
-      <summary>
-        <para>No error occurred.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.SpeechError.TimeoutExceeded">
-      <summary>
-        <para>A speech recognition system has timed out.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.SpeechError.TopicLanguageNotSupported">
-      <summary>
-        <para>Supplied grammar file language is not supported.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.SpeechError.UnknownError">
-      <summary>
-        <para>A speech recognition system has encountered an unknown error.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Windows.Speech.SpeechSystemStatus">
-      <summary>
-        <para>Represents the current status of the speech recognition system or a dictation recognizer.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.SpeechSystemStatus.Failed">
-      <summary>
-        <para>Speech recognition system has encountered an error and is in an indeterminate state.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.SpeechSystemStatus.Running">
-      <summary>
-        <para>Speech recognition system is running.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.Windows.Speech.SpeechSystemStatus.Stopped">
-      <summary>
-        <para>Speech recognition system is stopped.</para>
       </summary>
     </member>
     <member name="T:UnityEngine.WrapMode">

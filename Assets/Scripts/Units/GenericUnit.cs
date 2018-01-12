@@ -21,6 +21,7 @@ public class GenericUnit : MonoBehaviour {
 
     private WalkDireciton m_Direciton;
 
+    [SerializeField]
     private UnitData m_Data;
 
     private Vector3 m_Target;
@@ -56,6 +57,14 @@ public class GenericUnit : MonoBehaviour {
         m_Team = team;
 
         UnitStart();
+    }
+
+    private void Start()
+    {
+        m_Health = m_Data.Health;
+        m_Speed = m_Data.Speed;
+        m_Range = m_Data.Range;
+        m_AttackSpeed = m_Data.AttackSpeed;
     }
 
     //First thing called
@@ -139,6 +148,20 @@ public class GenericUnit : MonoBehaviour {
     public void DealDamage(float amount)
     {
         m_Health -= amount;
+    }
+
+    /// <summary>
+    /// Returns the health of the unit.
+    /// </summary>
+    /// <returns>Unit Health</returns>
+    public float GetHealth()
+    {
+        return m_Health;
+    }
+
+    public UnitData GetUnitData()
+    {
+        return m_Data;
     }
 
     /// <summary>
