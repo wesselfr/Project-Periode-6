@@ -287,6 +287,8 @@
     <Compile Include="Assets\Scripts\Units\DebugSpawner.cs" />
     <Compile Include="Assets\Scripts\Units\GenericUnit.cs" />
     <Compile Include="Assets\Scripts\Units\Waypoints.cs" />
+    <Compile Include="Assets\Scripts\Weapons\Arrow.cs" />
+    <Compile Include="Assets\Scripts\Weapons\Bow.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

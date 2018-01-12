@@ -163,6 +163,7 @@ public class GenericUnit : MonoBehaviour {
         }
     }
 
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.tag.Contains("Waypoint"))
@@ -170,6 +171,7 @@ public class GenericUnit : MonoBehaviour {
             m_Target = collision.collider.GetComponent<Waypoints>().GetTarget(m_Direciton);
         }
     }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag.Contains("Waypoint"))
