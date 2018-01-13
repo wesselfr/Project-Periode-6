@@ -240,6 +240,8 @@
     <Compile Include="Assets\Scripts\MatchUi\UIGrid.cs" />
     <Compile Include="Assets\Scripts\MatchUi\UiUnitData.cs" />
     <Compile Include="Assets\Scripts\Spawning\Gatherer.cs" />
+    <Compile Include="Assets\Scripts\Spawning\Tower.cs" />
+    <Compile Include="Assets\Scripts\Spawning\TowerUI.cs" />
     <Compile Include="Assets\Scripts\Spawning\UnitSpawner.cs" />
     <Compile Include="Assets\Scripts\Switch.cs" />
     <Compile Include="Assets\Scripts\UnitData.cs" />
