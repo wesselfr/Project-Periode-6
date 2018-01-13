@@ -294,6 +294,7 @@
     <Compile Include="Assets\Scripts\Units\DebugSpawner.cs" />
     <Compile Include="Assets\Scripts\Units\GenericUnit.cs" />
     <Compile Include="Assets\Scripts\Units\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\Units\SpelcasterUnit.cs" />
     <Compile Include="Assets\Scripts\Units\Waypoints.cs" />
     <Compile Include="Assets\Scripts\Weapons\Arrow.cs" />
     <Compile Include="Assets\Scripts\Weapons\Bow.cs" />
