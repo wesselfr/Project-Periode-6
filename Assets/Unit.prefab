@@ -123,7 +123,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5, y: 5, z: 5}
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114776559878239300
 MonoBehaviour:
@@ -137,5 +137,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Team: 0
-  m_Data: {fileID: 0}
+  m_Data: {fileID: 11400000, guid: d32a4c7560ba0fb44ac66a5e9c2f1912, type: 2}
   m_Target: {x: 0, y: 0, z: 0}
