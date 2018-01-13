@@ -234,6 +234,7 @@
     <Compile Include="Assets\Scripts\AI\ScriptableAI.cs" />
     <Compile Include="Assets\Scripts\AI\SimpleAI.cs" />
     <Compile Include="Assets\Scripts\Base.cs" />
+    <Compile Include="Assets\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\Engine\ObjectPool.cs" />
     <Compile Include="Assets\Scripts\Gold.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MainMenu.cs" />
