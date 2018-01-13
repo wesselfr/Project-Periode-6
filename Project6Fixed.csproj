@@ -278,6 +278,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\AI\ScriptableAI.cs" />
     <Compile Include="Assets\Scripts\AI\SimpleAI.cs" />
+    <Compile Include="Assets\Scripts\Base.cs" />
     <Compile Include="Assets\Scripts\Engine\ObjectPool.cs" />
     <Compile Include="Assets\Scripts\Gold.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MainMenu.cs" />
@@ -289,6 +290,7 @@
     <Compile Include="Assets\Scripts\Spawning\UnitSpawner.cs" />
     <Compile Include="Assets\Scripts\Switch.cs" />
     <Compile Include="Assets\Scripts\UnitData.cs" />
+    <Compile Include="Assets\Scripts\Units\ArcherUnit.cs" />
     <Compile Include="Assets\Scripts\Units\DebugSpawner.cs" />
     <Compile Include="Assets\Scripts\Units\GenericUnit.cs" />
     <Compile Include="Assets\Scripts\Units\HealthBar.cs" />
@@ -297,6 +299,7 @@
     <Compile Include="Assets\Scripts\Weapons\Bow.cs" />
     <Compile Include="Assets\Scripts\Weapons\Lightning.cs" />
     <Compile Include="Assets\Scripts\Weapons\LightningBolt.cs" />
+    <Compile Include="Assets\Scripts\WinLoseScreen.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
