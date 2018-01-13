@@ -17,29 +17,29 @@ Right
 public class GenericUnit : MonoBehaviour {
 
     [SerializeField]
-    private Team m_Team;
+    protected Team m_Team;
 
-    private WalkDireciton m_Direciton;
-
-    [SerializeField]
-    private UnitData m_Data;
+    protected WalkDireciton m_Direciton;
 
     [SerializeField]
-    private Vector3 m_Target;
+    protected UnitData m_Data;
 
-    private Rigidbody m_Rigidbody;
+    [SerializeField]
+    protected Vector3 m_Target;
 
-    private float m_AttackDelay;
+    protected Rigidbody m_Rigidbody;
 
-    private float m_Health;
-    private float m_Speed;
-    private float m_Range;
-    private float m_AttackSpeed;
+    protected float m_AttackDelay;
 
-    private bool m_Attacking = false;
-    private bool m_Walking = false;
+    protected float m_Health;
+    protected float m_Speed;
+    protected float m_Range;
+    protected float m_AttackSpeed;
 
-    private GenericUnit m_FocussedUnit;
+    protected bool m_Attacking = false;
+    protected bool m_Walking = false;
+
+    protected GenericUnit m_FocussedUnit;
 
     /// <summary>
     /// Initializes a new unit
@@ -89,7 +89,7 @@ public class GenericUnit : MonoBehaviour {
     }
 
 	// Update is called once per frame
-	void Update () {
+	public virtual void Update () {
         if(m_Health <= 0)
         {
             Destroy(this.gameObject);
@@ -107,7 +107,7 @@ public class GenericUnit : MonoBehaviour {
 	}
 
     //Unit Attack Phase
-    public void AttackUnit(GenericUnit unit)
+    public virtual void AttackUnit(GenericUnit unit)
     {
         //If Focus is not destoryed.
         if(unit != null)
