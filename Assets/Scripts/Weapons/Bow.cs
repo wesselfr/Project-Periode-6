@@ -12,8 +12,7 @@ public class Bow : MonoBehaviour {
     [SerializeField] private Transform m_Arrow;
     public Transform GSArrow { get { return m_Arrow; } private set { m_Arrow = value; } }
 
-    private Transform myTransform;
-   
+    private Transform m_ThisTransform;
 
     public void Initialize(Transform otherTarget, Transform arrow)
     {
@@ -23,44 +22,39 @@ public class Bow : MonoBehaviour {
 
     void Awake()
     {
-        myTransform = transform;
+        m_ThisTransform = transform;
     }
-
-
-
-
 
     public IEnumerator SimulateProjectile()
     {
-        // Short delay added before Projectile is thrown
+        
         yield return new WaitForSeconds(1.5f);
 
-        // Move projectile to the position of throwing object + add some offset if needed.
-        m_Arrow.position = myTransform.position + new Vector3(0, 0.0f, 0);
 
-        // Calculate distance to target
-        float target_Distance = Vector3.Distance(m_Arrow.position, m_OtherTarget.position);
+        m_Arrow.position = m_ThisTransform.position + new Vector3(0, 0.0f, 0);
 
-        // Calculate the velocity needed to throw the object to the target at specified angle.
-        float projectile_Velocity = target_Distance / (Mathf.Sin(2 * m_Angle * Mathf.Deg2Rad) / m_Gravity);
 
-        // Extract the X  Y componenent of the velocity
-        float Vx = Mathf.Sqrt(projectile_Velocity) * Mathf.Cos(m_Angle * Mathf.Deg2Rad);
-        float Vy = Mathf.Sqrt(projectile_Velocity) * Mathf.Sin(m_Angle * Mathf.Deg2Rad);
+        float targetDistance = Vector3.Distance(m_Arrow.position, m_OtherTarget.position);
 
-        // Calculate flight time.
-        float flightDuration = target_Distance / Vx;
 
-        // Rotate projectile to face the target.
+        float projectileVelocity = targetDistance / (Mathf.Sin(2 * m_Angle * Mathf.Deg2Rad) / m_Gravity);
+        
+        float x = Mathf.Sqrt(projectileVelocity) * Mathf.Cos(m_Angle * Mathf.Deg2Rad);
+        float y = Mathf.Sqrt(projectileVelocity) * Mathf.Sin(m_Angle * Mathf.Deg2Rad);
+
+
+        float flyingTime = targetDistance / x;
+
+
         m_Arrow.rotation = Quaternion.LookRotation(m_OtherTarget.position - m_Arrow.position);
 
-        float elapse_time = 0;
+        float elapsedTime = 0;
 
-        while (elapse_time < flightDuration)
+        while (elapsedTime < flyingTime)
         {
-            m_Arrow.Translate(0, (Vy - (m_Gravity * elapse_time)) * Time.deltaTime, Vx * Time.deltaTime);
+            m_Arrow.Translate(0, (y - (m_Gravity * elapsedTime)) * Time.deltaTime, x * Time.deltaTime);
 
-            elapse_time += Time.deltaTime;
+            elapsedTime += Time.deltaTime;
 
             yield return null;
         }
