@@ -14,7 +14,7 @@ public class Bow : MonoBehaviour {
 
     private Transform m_ThisTransform;
 
-    public void Initialized(Transform otherTarget, Transform arrow)
+    public void Initialize(Transform otherTarget, Transform arrow)
     {
         m_OtherTarget = otherTarget;
         m_Arrow = arrow;
