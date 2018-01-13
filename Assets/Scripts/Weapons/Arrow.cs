@@ -5,7 +5,7 @@ using UnityEngine;
 public class Arrow : MonoBehaviour
 {
     private float m_Damage;
-    public float Damage { get { return m_Damage; } private set { m_Damage = value; } }
+    public float Damage { get { return m_Damage; }  set { m_Damage = value; } }
 
     private void OnCollisionEnter(Collision collision)
     {
