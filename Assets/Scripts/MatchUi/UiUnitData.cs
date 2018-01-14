@@ -14,6 +14,8 @@ public class UiUnitData : MonoBehaviour, IPointerClickHandler
         Gold.OnGoldRetraction += OnGold;
     }
 
+
+
     [SerializeField] private GameObject m_SpawnObject;
     private void Start()
     {
@@ -25,9 +27,10 @@ public class UiUnitData : MonoBehaviour, IPointerClickHandler
         Gold.DrawGold(retractAmount);
     }
 
+
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (m_UnitData.SpawnAtBase && m_UnitData.m_UnitType == UnitType.Warrior /* Cost check */ )
+        if (m_UnitData.SpawnAtBase && m_UnitData.m_UnitType == UnitType.Warrior /* Cost check */)
         {
             OnGold(m_UnitData.Cost);
             SpawnObject(m_SpawnObject,m_UnitData);
