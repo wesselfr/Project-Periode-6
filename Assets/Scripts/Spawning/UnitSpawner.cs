@@ -9,12 +9,15 @@ public class UnitSpawner : MonoBehaviour
     public static event OnSpawnCall OnSpanCalled;
 
     [SerializeField] private List<GameObject> m_GathererTowers;
+    [SerializeField] private GameObject m_ParentTransform;
 
     private static List<GameObject> m_StaticTowers;
+    private static GameObject m_StaticParent;
 
     private void Update()
     {
         m_StaticTowers = m_GathererTowers;
+        m_StaticParent = m_ParentTransform;
     }
 
     public static void Spawn(GameObject spawn, UnitData unitData)
@@ -33,5 +36,6 @@ public class UnitSpawner : MonoBehaviour
         {
             go.AddComponent<Gatherer>().Initialize(unitData, spawn.gameObject, m_StaticTowers);
         }
+        go.transform.parent = GameObject.Find("_Units").transform;
     }
 }

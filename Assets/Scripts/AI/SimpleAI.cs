@@ -34,6 +34,7 @@ public class SimpleAI : MonoBehaviour
     {
         GameObject go = Instantiate(m_Enemies[Random.Range(0, m_Enemies.Count)], m_SpawnPoint.transform.position,Quaternion.identity);
         GenericUnit unit = go.GetComponent<GenericUnit>();
+        go.transform.parent = GameObject.Find("_Units").transform;
         unit.Initialize(Team.Team2, unit.GetUnitData());
     }
 }
