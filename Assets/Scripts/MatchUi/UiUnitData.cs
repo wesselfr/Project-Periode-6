@@ -14,6 +14,12 @@ public class UiUnitData : MonoBehaviour, IPointerClickHandler
         Gold.OnGoldRetraction += OnGold;
     }
 
+    [SerializeField] private GameObject m_SpawnObject;
+    private void Start()
+    {
+        m_SpawnObject = GameObject.Find("Team1_Spawn");
+    }
+
     private void OnGold(float retractAmount)
     {
         Gold.DrawGold(retractAmount);
@@ -24,12 +30,12 @@ public class UiUnitData : MonoBehaviour, IPointerClickHandler
         if (m_UnitData.SpawnAtBase && m_UnitData.m_UnitType == UnitType.Warrior /* Cost check */ )
         {
             OnGold(m_UnitData.Cost);
-            SpawnObject(m_UnitData.Unitprefab,m_UnitData);
+            SpawnObject(m_SpawnObject,m_UnitData);
         }
     }
 
     private void SpawnObject(GameObject spawn, UnitData unitData)
     {
-        UnitSpawner.SpawnCalled();
+        UnitSpawner.Spawn(spawn,unitData);
     }
 }

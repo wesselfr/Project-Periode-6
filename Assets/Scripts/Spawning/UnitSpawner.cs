@@ -8,27 +8,30 @@ public class UnitSpawner : MonoBehaviour
 {
     public static event OnSpawnCall OnSpanCalled;
 
+    [SerializeField] private List<GameObject> m_GathererTowers;
 
-    public static void SpawnCalled()
+    private static List<GameObject> m_StaticTowers;
+
+    private void Update()
     {
-        OnSpanCalled += Spawn;
+        m_StaticTowers = m_GathererTowers;
     }
 
-    public static void Spawn(GameObject spawn, UnitData unitData, List<GameObject> gatherTowers)
+    public static void Spawn(GameObject spawn, UnitData unitData)
     {
-        GameObject go = Instantiate(spawn,spawn.transform.position,Quaternion.identity);
+        GameObject go = Instantiate(unitData.Unitprefab,spawn.transform.position,Quaternion.identity);
         
         if(unitData.m_UnitType == UnitType.Archer)
         {
-            go.AddComponent<GenericUnit>().Initialize(new Team(),unitData);
+            go.AddComponent<GenericUnit>().Initialize(Team.Team1,unitData);
         }
         if(unitData.m_UnitType == UnitType.Warrior)
         {
-            go.AddComponent<GenericUnit>().Initialize(new Team(),unitData);
+            go.AddComponent<GenericUnit>().Initialize(Team.Team1,unitData);
         }
         if (unitData.m_UnitType == UnitType.Gatherer)
         {
-            go.AddComponent<Gatherer>().Initialize(unitData, spawn.gameObject, gatherTowers);
+            go.AddComponent<Gatherer>().Initialize(unitData, spawn.gameObject, m_StaticTowers);
         }
     }
 }

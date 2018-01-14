@@ -21,4 +21,4 @@ MonoBehaviour:
   SpawnAtBase: 1
   MoneyReturned: 50
   UiImage: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  Unitprefab: {fileID: 0}
+  Unitprefab: {fileID: 1762142561771028, guid: d90448cc79dc0104cbccac833c7350a5, type: 2}
