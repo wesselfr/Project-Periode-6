@@ -18,7 +18,7 @@ public class CameraMovement : MonoBehaviour {
         {
             if(transform.position.x < m_MinX)
             {
-                transform.position = transform.position + Vector3.right * 0.1f * ((m_MaxX - transform.position.x) / 10);
+                transform.position = transform.position + Vector3.right * 0.1f * ((m_MinX - transform.position.x) / 10);
             }
             else if(transform.position.x > m_MaxX)
             {
