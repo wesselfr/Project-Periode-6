@@ -1,0 +1,337 @@
+fileFormatVersion: 2
+guid: f9405eaffba68564e94942b5f6475e0b
+timeCreated: 1515939805
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Shaman_0
+    21300002: Shaman_1
+    21300004: Shaman_2
+    21300006: Shaman_3
+    21300008: Shaman_4
+    21300010: Shaman_5
+    21300012: Shaman_6
+    21300014: Shaman_7
+    21300016: Shaman_8
+    21300018: Shaman_9
+    21300020: Shaman_10
+    21300022: Shaman_11
+    21300024: Shaman_12
+    21300026: Shaman_13
+    21300028: Shaman_14
+    21300030: Shaman_15
+    21300032: Shaman_16
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Shaman_0
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 401
+        width: 83
+        height: 87
+      alignment: 9
+      pivot: {x: 0.3870592, y: 0.31144136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shaman_1
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 275
+        width: 68
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shaman_2
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 282
+        width: 83
+        height: 226
+      alignment: 9
+      pivot: {x: 0.5988232, y: 0.22779953}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shaman_3
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 307
+        width: 46
+        height: 66
+      alignment: 9
+      pivot: {x: 0.4872639, y: 0.7840627}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shaman_4
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 308
+        width: 40
+        height: 88
+      alignment: 9
+      pivot: {x: 0.5732349, y: 0.7796246}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shaman_5
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 454
+        width: 45
+        height: 35
+      alignment: 9
+      pivot: {x: 0.52603894, y: 0.6339155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shaman_6
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 37
+        width: 384
+        height: 66
+      alignment: 9
+      pivot: {x: 0.2055345, y: 0.5088767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shaman_7
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 445
+        width: 91
+        height: 52
+      alignment: 9
+      pivot: {x: 0.2682237, y: 0.545068}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shaman_8
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 364
+        width: 84
+        height: 59
+      alignment: 9
+      pivot: {x: 0.19311087, y: 0.5496511}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shaman_9
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 303
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.42676607, y: 0.68308765}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shaman_10
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 214
+        width: 62
+        height: 77
+      alignment: 9
+      pivot: {x: 0.698443, y: 0.7434823}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shaman_11
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 135
+        width: 61
+        height: 45
+      alignment: 9
+      pivot: {x: 0.2886993, y: 0.6041565}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shaman_12
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 128
+        width: 53
+        height: 51
+      alignment: 9
+      pivot: {x: 0.42261952, y: 0.5689272}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shaman_13
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 183
+        width: 37
+        height: 83
+      alignment: 9
+      pivot: {x: 0.50000083, y: 0.76117516}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shaman_14
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 182
+        width: 32
+        height: 80
+      alignment: 9
+      pivot: {x: 0.48224664, y: 0.71677566}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shaman_15
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 150
+        width: 59
+        height: 134
+      alignment: 9
+      pivot: {x: 0.5893716, y: 0.15022118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shaman_16
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 409
+        width: 80
+        height: 53
+      alignment: 9
+      pivot: {x: 0.19973716, y: 0.66581523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

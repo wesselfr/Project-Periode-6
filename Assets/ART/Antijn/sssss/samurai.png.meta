@@ -1,0 +1,397 @@
+fileFormatVersion: 2
+guid: 9b222fcafd09cc04eba26ea52bfbd160
+timeCreated: 1511035504
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: samurai_0
+    21300002: samurai_1
+    21300004: samurai_2
+    21300006: samurai_3
+    21300008: samurai_4
+    21300010: samurai_5
+    21300012: samurai_6
+    21300014: samurai_7
+    21300016: samurai_8
+    21300018: samurai_9
+    21300020: samurai_10
+    21300022: samurai_11
+    21300024: samurai_12
+    21300026: samurai_13
+    21300028: samurai_14
+    21300030: samurai_15
+    21300032: samurai_16
+    21300034: samurai_17
+    21300036: samurai_18
+    21300038: samurai_19
+    21300040: samurai_20
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: -1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 70
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: samurai_0
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 284
+        width: 104
+        height: 89
+      alignment: 9
+      pivot: {x: 0.40388185, y: 0.22808939}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 125
+        width: 148
+        height: 98
+      alignment: 9
+      pivot: {x: 0.49034706, y: 0.22302012}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_2
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 22
+        width: 97
+        height: 92
+      alignment: 9
+      pivot: {x: 0.53682023, y: 0.4301212}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_3
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 226
+        width: 86
+        height: 46
+      alignment: 9
+      pivot: {x: 0.4838051, y: 0.31833416}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_4
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 373
+        width: 121
+        height: 65
+      alignment: 9
+      pivot: {x: 0.46930537, y: 0.31007662}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_5
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 340
+        width: 86
+        height: 91
+      alignment: 9
+      pivot: {x: 0.69434, y: 0.7805947}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_6
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 20
+        width: 56
+        height: 73
+      alignment: 9
+      pivot: {x: 0.459955, y: 0.10064828}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_7
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 2
+        width: 61
+        height: 320
+      alignment: 9
+      pivot: {x: 0.43420905, y: 0.16712455}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_8
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 373
+        width: 56
+        height: 52
+      alignment: 9
+      pivot: {x: 0.2822991, y: 0.51233906}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_9
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 392
+        width: 54
+        height: 46
+      alignment: 9
+      pivot: {x: 0.6503854, y: 0.34600526}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_10
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 4
+        width: 88
+        height: 60
+      alignment: 9
+      pivot: {x: 0.37179947, y: 0.7702897}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_11
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 4
+        width: 92
+        height: 56
+      alignment: 9
+      pivot: {x: 0.3083957, y: 0.8525523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_12
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 67
+        width: 64
+        height: 105
+      alignment: 9
+      pivot: {x: 0.5771208, y: 0.8559095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_13
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 74
+        width: 101
+        height: 103
+      alignment: 9
+      pivot: {x: 0.82811743, y: 0.8080551}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_14
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 184
+        width: 66
+        height: 105
+      alignment: 9
+      pivot: {x: 0.53204995, y: 0.7954721}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_15
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 183
+        width: 88
+        height: 108
+      alignment: 9
+      pivot: {x: 0.25962344, y: 0.780736}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_16
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 110
+        width: 75
+        height: 84
+      alignment: 9
+      pivot: {x: 0.40305632, y: 0.41737747}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_17
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 200
+        width: 92
+        height: 71
+      alignment: 9
+      pivot: {x: 0.20483331, y: 0.5828187}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_18
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 291
+        width: 86
+        height: 59
+      alignment: 9
+      pivot: {x: 0.9065103, y: 0.568094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_19
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 302
+        width: 49
+        height: 100
+      alignment: 9
+      pivot: {x: 0.66861707, y: 0.2091687}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_20
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 311
+        width: 103
+        height: 84
+      alignment: 9
+      pivot: {x: 0.6989352, y: 0.80587864}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

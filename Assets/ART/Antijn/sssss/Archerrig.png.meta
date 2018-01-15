@@ -1,0 +1,352 @@
+fileFormatVersion: 2
+guid: 4fc4e8ddda520cb4b932d9bc67fac750
+timeCreated: 1511173176
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Archerrig_0
+    21300002: Archerrig_1
+    21300004: Archerrig_2
+    21300006: Archerrig_3
+    21300008: Archerrig_4
+    21300010: Archerrig_5
+    21300012: Archerrig_6
+    21300014: Archerrig_7
+    21300016: Archerrig_8
+    21300018: Archerrig_9
+    21300020: Archerrig_10
+    21300022: Archerrig_11
+    21300024: Archerrig_12
+    21300026: Archerrig_13
+    21300028: Archerrig_14
+    21300030: Archerrig_15
+    21300032: Archerrig_16
+    21300034: Archerrig_17
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: -1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Archerrig_0
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 138
+        width: 54
+        height: 137
+      alignment: 9
+      pivot: {x: 0.55164194, y: 0.8392542}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Archerrig_1
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 383
+        width: 128
+        height: 101
+      alignment: 9
+      pivot: {x: 0.5405519, y: 0.7129127}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Archerrig_2
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 332
+        width: 108
+        height: 155
+      alignment: 9
+      pivot: {x: 0.48663908, y: 0.15241107}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Archerrig_3
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 283
+        width: 56
+        height: 66
+      alignment: 9
+      pivot: {x: 0.52990294, y: 0.43099272}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Archerrig_4
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 130
+        width: 71
+        height: 132
+      alignment: 9
+      pivot: {x: 0.5277048, y: 0.80737233}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Archerrig_5
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 96
+        width: 70
+        height: 74
+      alignment: 9
+      pivot: {x: 0.6175742, y: 0.37024412}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Archerrig_6
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 13
+        width: 55
+        height: 109
+      alignment: 9
+      pivot: {x: 0.61830723, y: 0.8837619}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Archerrig_7
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 11
+        width: 63
+        height: 79
+      alignment: 9
+      pivot: {x: 0.6850712, y: 0.46527317}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Archerrig_8
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 273
+        width: 58
+        height: 42
+      alignment: 9
+      pivot: {x: 0.38781264, y: 0.69919044}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Archerrig_9
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 0
+        width: 229
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Archerrig_10
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 8
+        width: 88
+        height: 112
+      alignment: 9
+      pivot: {x: 0.268021, y: 0.15897979}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Archerrig_11
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 139
+        width: 71
+        height: 127
+      alignment: 9
+      pivot: {x: 0.3468355, y: 0.84726614}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Archerrig_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 143
+        width: 101
+        height: 104
+      alignment: 9
+      pivot: {x: 0.3085867, y: 0.5406638}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Archerrig_13
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 261
+        width: 47
+        height: 169
+      alignment: 9
+      pivot: {x: 0.5257084, y: 0.69232196}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Archerrig_14
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 271
+        width: 87
+        height: 116
+      alignment: 9
+      pivot: {x: 0.5763866, y: 0.79165757}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Archerrig_15
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 407
+        width: 48
+        height: 38
+      alignment: 9
+      pivot: {x: 0.38361487, y: 0.41134965}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Archerrig_16
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 401
+        width: 45
+        height: 47
+      alignment: 9
+      pivot: {x: 0.21033172, y: 0.56699646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Archerrig_17
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 175
+        width: 116
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
