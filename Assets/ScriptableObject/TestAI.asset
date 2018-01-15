@@ -14,4 +14,4 @@ MonoBehaviour:
   m_BaseHealth: 50000
   m_SpawnRate: 2
   m_EnemyTypes:
-  - {fileID: 1762142561771028, guid: d90448cc79dc0104cbccac833c7350a5, type: 2}
+  - {fileID: 1007837517040264, guid: 805ecc3ee99f3e941b9d4a551856df83, type: 2}
