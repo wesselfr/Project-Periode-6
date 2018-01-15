@@ -13,10 +13,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_UnitType: 1
   Health: 10
-  Damage: 2
+  Damage: 5
   Speed: 2
   AttackSpeed: 2
-  Range: 20
+  Range: 40
   Cost: 10
   SpawnAtBase: 1
   MoneyReturned: 6
