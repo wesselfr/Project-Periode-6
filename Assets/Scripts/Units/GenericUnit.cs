@@ -22,7 +22,7 @@ public class GenericUnit : MonoBehaviour {
     protected WalkDireciton m_Direciton;
 
     [SerializeField]
-    protected UnitData m_Data;
+    public UnitData m_Data;
 
     [SerializeField]
     protected Vector3 m_Target;
@@ -68,6 +68,7 @@ public class GenericUnit : MonoBehaviour {
 
     private void Start()
     {
+
         m_Health = m_Data.Health;
         m_Speed = m_Data.Speed;
         m_Range = m_Data.Range;
@@ -75,6 +76,7 @@ public class GenericUnit : MonoBehaviour {
 
         UnitStart();
     }
+
 
     //First thing called
     void UnitStart()
@@ -89,7 +91,7 @@ public class GenericUnit : MonoBehaviour {
         if(m_Team == Team.Team2)
         {
             m_Direciton = WalkDireciton.Left;
-            m_Transform.localScale.Set(-m_Transform.localScale.x, m_Transform.localScale.y, m_Transform.localScale.z);
+            m_Transform.localScale = new Vector3(-0.5f, 0.5f, 0.5f);
         }
 
         //Get Components
@@ -114,6 +116,9 @@ public class GenericUnit : MonoBehaviour {
         {
             AttackUnit(m_FocussedUnit);
         }
+
+        m_Animator.SetBool("Walk", m_Walking);
+        m_Animator.SetBool("Attacking", m_Attacking);
 	}
 
     //Unit Attack Phase

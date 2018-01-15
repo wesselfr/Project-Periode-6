@@ -20,5 +20,5 @@ MonoBehaviour:
   Cost: 15
   SpawnAtBase: 1
   MoneyReturned: 10
-  UiImage: {fileID: 21300004, guid: f9405eaffba68564e94942b5f6475e0b, type: 3}
+  UiImage: {fileID: 21300000, guid: 879696d614d922648804197140b6178b, type: 3}
   Unitprefab: {fileID: 1166914817068342, guid: 2666b8de1db145548924177b48672468, type: 2}

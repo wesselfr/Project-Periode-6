@@ -16,9 +16,9 @@ MonoBehaviour:
   Damage: 2
   Speed: 2
   AttackSpeed: 2
-  Range: 2
+  Range: 20
   Cost: 10
   SpawnAtBase: 1
   MoneyReturned: 6
-  UiImage: {fileID: 21300000, guid: 59735db45d35635419d9a80178064338, type: 3}
+  UiImage: {fileID: 21300000, guid: a8cc476b1739f144c9874d6aae250292, type: 3}
   Unitprefab: {fileID: 1007837517040264, guid: 805ecc3ee99f3e941b9d4a551856df83, type: 2}

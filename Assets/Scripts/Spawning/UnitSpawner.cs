@@ -27,11 +27,11 @@ public class UnitSpawner : MonoBehaviour
         
         if(unitData.m_UnitType == UnitType.Archer)
         {
-            go.AddComponent<GenericUnit>().Initialize(Team.Team1,unitData);
+            go.GetComponent<ArcherUnit>().Initialize(Team.Team1,unitData);
         }
         if(unitData.m_UnitType == UnitType.Warrior)
         {
-            go.AddComponent<GenericUnit>().Initialize(Team.Team1,unitData);
+            go.GetComponent<GenericUnit>().Initialize(Team.Team1,unitData);
         }
         if (unitData.m_UnitType == UnitType.Gatherer)
         {

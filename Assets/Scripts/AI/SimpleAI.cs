@@ -10,7 +10,7 @@ public class SimpleAI : MonoBehaviour
     private float m_SpawnRate;
     private float m_NextSpawn;
 
-    private List<GameObject> m_Enemies;
+    [SerializeField] private List<GameObject> m_Enemies;
 
     private void Start()
     {

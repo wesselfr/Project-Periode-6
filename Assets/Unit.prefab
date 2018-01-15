@@ -173,8 +173,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Team: 0
-  m_Data: {fileID: 11400000, guid: d32a4c7560ba0fb44ac66a5e9c2f1912, type: 2}
+  m_Data: {fileID: 11400000, guid: 90e6f1717eea74e4a84d76a8b5f44dbf, type: 2}
   m_Target: {x: 0, y: 0, z: 0}
+  m_Animator: {fileID: 0}
+  m_Transform: {fileID: 0}
 --- !u!114 &114798973911178730
 MonoBehaviour:
   m_ObjectHideFlags: 1
