@@ -41,6 +41,12 @@ public class GenericUnit : MonoBehaviour {
 
     protected GenericUnit m_FocussedUnit;
 
+    [SerializeField]
+    private Animator m_Animator;
+
+    [SerializeField]
+    private Transform m_Transform;
+
     /// <summary>
     /// Initializes a new unit
     /// </summary>
@@ -73,16 +79,20 @@ public class GenericUnit : MonoBehaviour {
     //First thing called
     void UnitStart()
     {
+        
+        //Initialize Directions
         if(m_Team == Team.Team1)
         {
             m_Direciton = WalkDireciton.Right;
+            m_Transform.localScale.Set(m_Transform.localScale.x, m_Transform.localScale.y, m_Transform.localScale.z);
         }
         if(m_Team == Team.Team2)
         {
             m_Direciton = WalkDireciton.Left;
+            m_Transform.localScale.Set(-m_Transform.localScale.x, m_Transform.localScale.y, m_Transform.localScale.z);
         }
 
-
+        //Get Components
         m_Rigidbody = GetComponent<Rigidbody>();
 
         m_Walking = true; 

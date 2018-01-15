@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c484009b2ccf6b428e8abf21c401a3e, type: 3}
+  m_Name: Mace
+  m_EditorClassIdentifier: 
+  m_UnitType: 1
+  Health: 10
+  Damage: 2
+  Speed: 2
+  AttackSpeed: 2
+  Range: 2
+  Cost: 10
+  SpawnAtBase: 1
+  MoneyReturned: 6
+  UiImage: {fileID: 21300000, guid: 59735db45d35635419d9a80178064338, type: 3}
+  Unitprefab: {fileID: 1007837517040264, guid: 805ecc3ee99f3e941b9d4a551856df83, type: 2}

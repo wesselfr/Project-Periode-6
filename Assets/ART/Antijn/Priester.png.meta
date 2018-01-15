@@ -1,0 +1,262 @@
+fileFormatVersion: 2
+guid: d248b6b4a6cd3b147bbfcdd53c972bf4
+timeCreated: 1515406071
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Priester_0
+    21300002: Priester_1
+    21300004: Priester_2
+    21300006: Priester_3
+    21300008: Priester_4
+    21300010: Priester_5
+    21300012: Priester_6
+    21300014: Priester_7
+    21300016: Priester_8
+    21300018: Priester_9
+    21300020: Priester_10
+    21300022: Priester_11
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Priester_0
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 14
+        width: 146
+        height: 135
+      alignment: 9
+      pivot: {x: 0.2712663, y: 0.18753092}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Priester_1
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 348
+        width: 138
+        height: 140
+      alignment: 9
+      pivot: {x: 0.2707429, y: 0.21961495}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Priester_2
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 324
+        width: 92
+        height: 155
+      alignment: 9
+      pivot: {x: 0.36626667, y: 0.8250687}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Priester_3
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 259
+        width: 78
+        height: 84
+      alignment: 9
+      pivot: {x: 0.4849775, y: 0.2837826}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Priester_4
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 209
+        width: 120
+        height: 93
+      alignment: 9
+      pivot: {x: 0.6562345, y: 0.6133961}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Priester_5
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 44
+        width: 84
+        height: 154
+      alignment: 9
+      pivot: {x: 0.67436874, y: 0.8728325}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Priester_6
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 37
+        width: 113
+        height: 226
+      alignment: 9
+      pivot: {x: 0.479261, y: 0.19669075}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Priester_7
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 152
+        width: 127
+        height: 85
+      alignment: 9
+      pivot: {x: 0.19552733, y: 0.45864365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Priester_8
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 247
+        width: 116
+        height: 146
+      alignment: 9
+      pivot: {x: 0.5404055, y: 0.84109414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Priester_9
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 389
+        width: 149
+        height: 120
+      alignment: 9
+      pivot: {x: 0.5747096, y: 0.8173515}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Priester_10
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 191
+        width: 87
+        height: 178
+      alignment: 9
+      pivot: {x: 0.715496, y: 0.8851005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Priester_11
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 56
+        width: 73
+        height: 145
+      alignment: 9
+      pivot: {x: 0.5080257, y: 0.8798116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
