@@ -1,0 +1,367 @@
+fileFormatVersion: 2
+guid: d4b7498838966e54bb93e96a049185d3
+timeCreated: 1515953939
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: KNtosboy_0
+    21300002: KNtosboy_1
+    21300004: KNtosboy_2
+    21300006: KNtosboy_3
+    21300008: KNtosboy_4
+    21300010: KNtosboy_5
+    21300012: KNtosboy_6
+    21300014: KNtosboy_7
+    21300016: KNtosboy_8
+    21300018: KNtosboy_9
+    21300020: KNtosboy_10
+    21300022: KNtosboy_11
+    21300024: KNtosboy_12
+    21300026: KNtosboy_13
+    21300028: KNtosboy_14
+    21300030: KNtosboy_15
+    21300032: KNtosboy_16
+    21300034: KNtosboy_17
+    21300036: KNtosboy_18
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KNtosboy_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 377
+        width: 128
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: KNtosboy_1
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 404
+        width: 98
+        height: 101
+      alignment: 9
+      pivot: {x: 0.35651943, y: 0.22736321}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: KNtosboy_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 111
+        width: 36
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: KNtosboy_3
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 27
+        width: 59
+        height: 64
+      alignment: 9
+      pivot: {x: 0.7085336, y: 0.5640804}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: KNtosboy_4
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 114
+        width: 71
+        height: 109
+      alignment: 9
+      pivot: {x: 0.59077024, y: 0.8493778}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: KNtosboy_5
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 251
+        width: 110
+        height: 161
+      alignment: 9
+      pivot: {x: 0.48402154, y: 0.14337784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: KNtosboy_6
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 307
+        width: 112
+        height: 73
+      alignment: 9
+      pivot: {x: 0.8190952, y: 0.63643783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: KNtosboy_7
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 434
+        width: 64
+        height: 71
+      alignment: 9
+      pivot: {x: 0.48169136, y: 0.26894927}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: KNtosboy_8
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 435
+        width: 120
+        height: 76
+      alignment: 9
+      pivot: {x: 0.20217845, y: 0.4845822}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: KNtosboy_9
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 327
+        width: 62
+        height: 139
+      alignment: 9
+      pivot: {x: 0.5000005, y: 0.824552}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: KNtosboy_10
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 283
+        width: 30
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5195292, y: 0.8169516}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: KNtosboy_11
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 240
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: KNtosboy_12
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 5
+        width: 71
+        height: 121
+      alignment: 9
+      pivot: {x: 0.4504893, y: 0.83893836}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: KNtosboy_13
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 0
+        width: 122
+        height: 123
+      alignment: 9
+      pivot: {x: 0.42252824, y: 0.7704059}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: KNtosboy_14
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 5
+        width: 77
+        height: 114
+      alignment: 9
+      pivot: {x: 0.5532617, y: 0.78780055}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: KNtosboy_15
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 122
+        width: 88
+        height: 119
+      alignment: 9
+      pivot: {x: 0.40013418, y: 0.79540145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: KNtosboy_16
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 220
+        width: 119
+        height: 78
+      alignment: 9
+      pivot: {x: 0.82986504, y: 0.68027085}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: KNtosboy_17
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 154
+        width: 155
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: KNtosboy_18
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 270
+        width: 72
+        height: 143
+      alignment: 9
+      pivot: {x: 0.49186242, y: 0.5614562}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,337 @@
+fileFormatVersion: 2
+guid: c50fcbd6c8ee6f146a882f7e3d0290ae
+timeCreated: 1515996529
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Assasin1_0
+    21300002: Assasin1_1
+    21300004: Assasin1_2
+    21300006: Assasin1_3
+    21300008: Assasin1_4
+    21300010: Assasin1_5
+    21300012: Assasin1_6
+    21300014: Assasin1_7
+    21300016: Assasin1_8
+    21300018: Assasin1_9
+    21300020: Assasin1_10
+    21300022: Assasin1_11
+    21300024: Assasin1_12
+    21300026: Assasin1_13
+    21300028: Assasin1_14
+    21300030: Assasin1_15
+    21300032: Assasin1_16
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Assasin1_0
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 273
+        width: 85
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5760548, y: 0.8969519}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assasin1_1
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 435
+        width: 114
+        height: 58
+      alignment: 9
+      pivot: {x: 0.123669006, y: 0.58106154}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assasin1_2
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 299
+        width: 114
+        height: 81
+      alignment: 9
+      pivot: {x: 0.7062089, y: 0.8410083}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assasin1_3
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 392
+        width: 118
+        height: 120
+      alignment: 9
+      pivot: {x: 0.20615257, y: 0.3481786}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assasin1_4
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 107
+        width: 53
+        height: 52
+      alignment: 9
+      pivot: {x: 0.63265216, y: 0.68027025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assasin1_5
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 183
+        width: 71
+        height: 63
+      alignment: 9
+      pivot: {x: 0.27720085, y: 0.7510911}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assasin1_6
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 177
+        width: 140
+        height: 72
+      alignment: 9
+      pivot: {x: 0.12639378, y: 0.5734618}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assasin1_7
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 137
+        width: 87
+        height: 125
+      alignment: 9
+      pivot: {x: 0.7837149, y: 0.8197059}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assasin1_8
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 36
+        width: 76
+        height: 122
+      alignment: 9
+      pivot: {x: 0.44587064, y: 0.7167728}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assasin1_9
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 27
+        width: 124
+        height: 91
+      alignment: 9
+      pivot: {x: 0.6943187, y: 0.66791284}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assasin1_10
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 172
+        width: 137
+        height: 91
+      alignment: 9
+      pivot: {x: 0.81315154, y: 0.70020384}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assasin1_11
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 73
+        width: 131
+        height: 93
+      alignment: 9
+      pivot: {x: 0.8544117, y: 0.20931202}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assasin1_12
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 266
+        width: 123
+        height: 146
+      alignment: 9
+      pivot: {x: 0.42832974, y: 0.18602575}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assasin1_13
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 244
+        width: 133
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assasin1_14
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 8
+        width: 97
+        height: 71
+      alignment: 9
+      pivot: {x: 0.39732, y: 0.7310511}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assasin1_15
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 11
+        width: 94
+        height: 62
+      alignment: 9
+      pivot: {x: 0.3504136, y: 0.7362419}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Assasin1_16
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 436
+        width: 78
+        height: 75
+      alignment: 9
+      pivot: {x: 0.34977463, y: 0.3750126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
