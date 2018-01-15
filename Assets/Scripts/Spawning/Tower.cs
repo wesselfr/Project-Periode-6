@@ -15,8 +15,12 @@ public class Tower : MonoBehaviour
         m_UnitData = UD;
         m_Shooting = m_UnitData.AttackSpeed;
         m_Arrow = Resources.Load("Arrow") as GameObject;
+        
+    }
+    private void Start()
+    {
         this.gameObject.AddComponent<Bow>();
-        this.gameObject.GetComponent<Bow>().Initialize(GameObject.Find("ShootingRange").transform,GameObject.Find("TowerPool").GetComponent<ObjectPool>().GetObject().transform);
+        this.gameObject.GetComponent<Bow>().Initialize(GameObject.Find("ShootingRange").transform, (Resources.Load("Arrow") as GameObject));
     }
 
     private void Update()

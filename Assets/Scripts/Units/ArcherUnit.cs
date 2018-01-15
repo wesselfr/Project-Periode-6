@@ -29,7 +29,7 @@ public class ArcherUnit : GenericUnit
                     GameObject arrow = m_ArrowPool.GetObject();
                     Arrow arrowScript = arrow.GetComponent<Arrow>();
                     arrowScript.Damage = m_Data.Damage;
-                    m_Bow.Initialize(unit.transform, arrow.transform);
+                    m_Bow.Initialize(unit.transform, arrow);
                     m_Bow.SimulateProjectile();
                     m_Attacking = false;
                     Walk();
