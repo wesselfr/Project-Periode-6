@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Unit
+  - Waypoint
   layers:
   - Default
   - TransparentFX
@@ -14,8 +15,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Team1
+  - Team2
   - 
   - 
   - 
@@ -41,4 +42,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Team1
+    uniqueID: 1252437563
+    locked: 0
+  - name: Team2
+    uniqueID: 1052047411
     locked: 0

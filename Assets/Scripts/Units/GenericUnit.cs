@@ -39,6 +39,7 @@ public class GenericUnit : MonoBehaviour {
     protected bool m_Attacking = false;
     protected bool m_Walking = false;
 
+    [SerializeField]
     protected GenericUnit m_FocussedUnit;
 
     [SerializeField]
@@ -87,11 +88,13 @@ public class GenericUnit : MonoBehaviour {
         {
             m_Direciton = WalkDireciton.Right;
             m_Transform.localScale.Set(m_Transform.localScale.x, m_Transform.localScale.y, m_Transform.localScale.z);
+            gameObject.layer = LayerMask.NameToLayer("Team1");
         }
         if(m_Team == Team.Team2)
         {
             m_Direciton = WalkDireciton.Left;
             m_Transform.localScale = new Vector3(-0.5f, 0.5f, 0.5f);
+            gameObject.layer = LayerMask.NameToLayer("Team2");
         }
 
         //Get Components
@@ -112,6 +115,29 @@ public class GenericUnit : MonoBehaviour {
             Walk();
         }
 
+        RaycastHit info;
+        string name = "";
+        if(m_Team == Team.Team1)
+        {
+            name = "Team2";
+        }
+        else if(m_Team == Team.Team2)
+        {
+            name = "Team1";
+        }
+
+        Ray ray = new Ray(transform.position, transform.position + m_Target);
+        if (Physics.Raycast(ray, out info,m_Range,LayerMask.NameToLayer(name)))
+        {
+            if(info.collider.GetComponent<GenericUnit>().GetTeam() != m_Team)
+            {
+                m_FocussedUnit = info.collider.GetComponent<GenericUnit>();
+                m_Attacking = true;
+                m_Walking = false;
+                AttackUnit(m_FocussedUnit);
+            }
+        }
+
         if(m_FocussedUnit != null)
         {
             AttackUnit(m_FocussedUnit);
@@ -129,21 +155,31 @@ public class GenericUnit : MonoBehaviour {
         {
             if (m_Attacking == true)
             {
+                m_Rigidbody.velocity = Vector3.zero;
+                m_Walking = false;
                 m_AttackDelay -= Time.deltaTime;
+                unit.FocussedUnit = this;
                 if(m_AttackDelay <= 0)
                 {
                     unit.DealDamage(m_Data.Damage);
-                    m_Attacking = false;
-                    Walk();
+                    m_Attacking = true;
+                    m_AttackDelay = m_Data.AttackSpeed;
                 }
             }
 
             //Check if focus unit is inrange.
             else
             {
-                if(Vector3.Distance(transform.position, unit.transform.position) <= m_Range)
-                m_Attacking = true;
-                m_AttackDelay = m_Data.AttackSpeed;
+                if (Vector3.Distance(transform.position, unit.transform.position) <= m_Range)
+                {
+                    m_Attacking = true;
+                    m_AttackDelay = m_Data.AttackSpeed;
+                }
+                else
+                {
+                    m_Attacking = false;
+                    m_Walking = true;
+                }
             }
         }
 
@@ -158,8 +194,8 @@ public class GenericUnit : MonoBehaviour {
     //Move unit forward
     public void Walk()
     {
-        m_Rigidbody.velocity = m_Target * m_Speed;
-        m_Walking = true;
+      m_Rigidbody.velocity = m_Target * m_Speed;
+      m_Walking = true;  
     }
 
     //Deals damage to the unit.
@@ -189,6 +225,12 @@ public class GenericUnit : MonoBehaviour {
     public Team GetTeam()
     {
         return m_Team;
+    }
+
+    public GenericUnit FocussedUnit
+    {
+        get { return m_FocussedUnit; }
+        set { m_FocussedUnit = value; }
     }
 
     private void OnTriggerStay(Collider other)
