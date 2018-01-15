@@ -9,12 +9,12 @@ public class Bow : MonoBehaviour {
     
     [SerializeField] private Transform m_OtherTarget;
     public Transform SetArrowTarget { get { return m_OtherTarget; } private set { m_OtherTarget = value; } }
-    [SerializeField] private Transform m_Arrow;
-    public Transform GSArrow { get { return m_Arrow; } private set { m_Arrow = value; } }
+    [SerializeField] private GameObject m_Arrow;
+    public GameObject GSArrow { get { return m_Arrow; } private set { m_Arrow = value; } }
 
     private Transform m_ThisTransform;
 
-    public void Initialize(Transform otherTarget, Transform arrow)
+    public void Initialize(Transform otherTarget, GameObject arrow)
     {
         m_OtherTarget = otherTarget;
         m_Arrow = arrow;
@@ -30,11 +30,12 @@ public class Bow : MonoBehaviour {
         
         yield return new WaitForSeconds(1.5f);
 
+        GameObject arrow = Instantiate(m_Arrow, this.gameObject.transform.position, Quaternion.identity);
 
-        m_Arrow.position = m_ThisTransform.position + new Vector3(0, 0.0f, 0);
+        arrow.transform.position = m_ThisTransform.position + new Vector3(0, 0.0f, 0);
 
 
-        float targetDistance = Vector3.Distance(m_Arrow.position, m_OtherTarget.position);
+        float targetDistance = Vector3.Distance(arrow.transform.position, m_OtherTarget.position);
 
 
         float projectileVelocity = targetDistance / (Mathf.Sin(2 * m_Angle * Mathf.Deg2Rad) / m_Gravity);
@@ -46,13 +47,13 @@ public class Bow : MonoBehaviour {
         float flyingTime = targetDistance / x;
 
 
-        m_Arrow.rotation = Quaternion.LookRotation(m_OtherTarget.position - m_Arrow.position);
+        arrow.transform.rotation = Quaternion.LookRotation(m_OtherTarget.position - arrow.transform.position);
 
         float elapsedTime = 0;
 
         while (elapsedTime < flyingTime)
         {
-            m_Arrow.Translate(0, (y - (m_Gravity * elapsedTime)) * Time.deltaTime, x * Time.deltaTime);
+            arrow.transform.Translate(0, (y - (m_Gravity * elapsedTime)) * Time.deltaTime, x * Time.deltaTime);
 
             elapsedTime += Time.deltaTime;
 

@@ -9,6 +9,7 @@ public class UnitSpawner : MonoBehaviour
     public static event OnSpawnCall OnSpanCalled;
 
     [SerializeField] private List<GameObject> m_GathererTowers;
+    public List<GameObject> GathererTowers { get { return m_GathererTowers; } }
     [SerializeField] private GameObject m_ParentTransform;
 
     private static List<GameObject> m_StaticTowers;
@@ -34,7 +35,11 @@ public class UnitSpawner : MonoBehaviour
         }
         if (unitData.m_UnitType == UnitType.Gatherer)
         {
-            go.AddComponent<Gatherer>().Initialize(unitData, spawn.gameObject, m_StaticTowers);
+           
+            if(go.GetComponent<Gatherer>() == null)
+                go.AddComponent<Gatherer>();
+
+            go.GetComponent<Gatherer>().Initialize(unitData, spawn.gameObject, m_StaticTowers);
         }
         go.transform.parent = GameObject.Find("_Units").transform;
     }

@@ -23,7 +23,7 @@ public class Gatherer : MonoBehaviour
         m_Health = unitData.Health;
         m_MoveSpeed = unitData.Speed;
         m_Base = baseHouse;
-        m_GathererTowers = gatherTowers;
+        m_GathererTowers = GameObject.Find("Team1_Spawn").GetComponent<UnitSpawner>().GathererTowers;
         m_GatheredResources = unitData.MoneyReturned;
         Gold.OnGoldRetraction += GoldRetracted;
 
@@ -32,14 +32,14 @@ public class Gatherer : MonoBehaviour
 
     private void Update()
     {
-        transform.position = Vector3.Lerp(m_Base.transform.position, m_GathererTowers[Random.Range(0,m_GathererTowers.Count)].transform.position, (Mathf.PingPong(Time.time * m_MoveSpeed, 1.0f)));
+        transform.position = Vector3.Lerp(m_Base.transform.position, m_GathererTowers[1].transform.position, (Mathf.PingPong(Time.time * m_MoveSpeed, 1f)));
 
         if ((this.transform.position - m_Base.transform.position).magnitude < 0.1)
         {
             GoldRetracted(m_GatheredResources);    
         }
     }
-
+        
     private void GoldRetracted(float retractAmount)
     {
         Gold.DrawGold(-retractAmount);

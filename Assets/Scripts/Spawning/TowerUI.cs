@@ -11,18 +11,19 @@ public class TowerUI : MonoBehaviour
     private GameObject m_Tower;
     private UnitData m_UnitData;
 
-    public void Initialized(UnitData unitData)
+    public void Initialized(UnitData unitData,GameObject uiItem)
     {
         m_UnitData = unitData;
-    }
-    private void Start()
-    {
-        
-        m_UiItem = Instantiate(m_UiItem, GameObject.Find("Canvas").transform.position,Quaternion.identity);
+        m_Image = m_UnitData.UiImage;
+        m_Tower = m_UnitData.Unitprefab;
+
+        m_UiItem = uiItem;
+
         m_UiItem.AddComponent<Image>();
         m_UiItem.GetComponent<Image>().sprite = m_Image;
+        m_UiItem.transform.localScale = new Vector3(0.4f, 0.4f, 0.4f);
     }
-
+  
     private void Update()
     {
         m_UiItem.transform.position = Input.mousePosition;
